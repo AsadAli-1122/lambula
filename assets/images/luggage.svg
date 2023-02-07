@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.079" height="26.683" viewBox="0 0 32.079 26.683">
+  <g id="luggage" transform="translate(-1.7 -7.7)">
+    <path id="Path_21" data-name="Path 21" d="M30.331,39.586H5.148A3.152,3.152,0,0,1,2,36.438V21.148A3.152,3.152,0,0,1,5.148,18H30.331a3.152,3.152,0,0,1,3.148,3.148v15.29a3.152,3.152,0,0,1-3.148,3.148ZM5.148,18.9A2.251,2.251,0,0,0,2.9,21.148v15.29a2.251,2.251,0,0,0,2.249,2.249H30.331a2.251,2.251,0,0,0,2.249-2.249V21.148A2.251,2.251,0,0,0,30.331,18.9Z" transform="translate(0 -5.503)" fill="#f7dd0a" stroke="#f7dd0a" stroke-width="0.6"/>
+    <path id="Path_22" data-name="Path 22" d="M35.142,13.4H23.45a.45.45,0,0,1-.45-.45v-2.7A2.251,2.251,0,0,1,25.249,8h8.095a2.251,2.251,0,0,1,2.249,2.249v2.7A.45.45,0,0,1,35.142,13.4ZM23.9,12.5H34.692V10.249A1.349,1.349,0,0,0,33.343,8.9H25.249A1.349,1.349,0,0,0,23.9,10.249Z" transform="translate(-11.556)" fill="#f7dd0a" stroke="#f7dd0a" stroke-width="0.6"/>
+    <path id="Path_23" data-name="Path 23" d="M58,19h.9V39.686H58Z" transform="translate(-30.817 -6.053)" fill="#f7dd0a" stroke="#f7dd0a" stroke-width="0.6"/>
+    <path id="Path_24" data-name="Path 24" d="M14,19h.9V39.686H14Z" transform="translate(-6.604 -6.053)" fill="#f7dd0a" stroke="#f7dd0a" stroke-width="0.6"/>
+  </g>
+</svg>

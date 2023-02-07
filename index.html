@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/dist/main.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="jsdeliver.js"></script>
-<script src="tailwind.js"></script>
+<link rel="stylesheet" href="assets/css/googlefonts.css" />
+<link rel="stylesheet" href="assets/css/jsdeliver.css" />
+<script src="assets/js/tailwindcss.com"></script>
+<script src="assets/js/tailwind.js"></script>
 <style>
 :root{
     --pink: #FF7C7C;
@@ -42,6 +39,27 @@ tailwind.config = {
 </script>
 </head>
 <body>
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+    </div>
+  </div>
+
+
 
 <header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
 <div class="text-white">
@@ -53,21 +71,24 @@ tailwind.config = {
     
 <button id="dropdowndark-grayButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-syellow rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">USD <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
 <!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm bg-black bg-opacity-60 rounded-xl" aria-labelledby="dropdowndark-grayButton">
-    <li>
-        <a href="#" class="block px-4 py-2 ">Hello baby</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Settings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Earnings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Sign out</a>
-    </li>
-    </ul>
+<div id="dropdown" class="z-10 hidden rounded-lg bg-black bg-opacity-50 shadow w-44 dark:bg-gray-700 border-2 border-syellow">
+  <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+  <li>
+      <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Dashboard</a>
+  </li>
+  <hr class="mx-6">
+  <li>
+      <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Settings</a>
+  </li>
+  <hr class="mx-6">
+  <li>
+      <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Earnings</a>
+  </li>
+  <hr class="mx-6">
+  <li>
+      <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Sign out</a>
+  </li>
+  </ul>
 </div>
 <button id="dropdowndark-grayButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-syellow rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
 <!-- Dropdown menu -->
@@ -91,10 +112,10 @@ tailwind.config = {
 </div>
 <div class="px-12 flex justify-between items-center">
     <h1 class="text-2xl whitespace-nowrap"><i class="fa-solid fa-location-dot text-syellow"></i> Lambula</h1>
-    <ul class=" flex space-x-4 text-sm ml-48 ">
-        <li><a href="index.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 tracking-wider" aria-current="true">Discover</a></li>
-        <li><a href="myblogings.html" class="underline-offset-8 tracking-wider" aria-current="true">My Blogings</a></li>
-        <li><a href="" class="tracking-wider" aria-current="true">Tour Packages</a></li>
+    <ul class=" flex text-sm ml-48 whitespace-nowrap space-x-2">
+        <li><a href="index.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 tracking-wider px-2">Discover</a></li>
+        <li><a href="myblogings.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">My Blogings</a></li>
+        <li><a href="tour.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Tour Packages</a></li>
     </ul>
     <nav class=" flex items-center space-x-12">
     <div class="hidden sm:flex items-center w-fit bg-white bg-opacity-20 px-4 rounded-full space-x-4 h-fit focus:ring-1 focus:ring-syellow">
@@ -132,7 +153,7 @@ tailwind.config = {
   id="carouselDarkVariant"
   class="carousel slide carousel-fade carousel-dark relative"
   data-bs-ride="carousel"
->
+  >
   <!-- Indicators -->
   <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
     <button
@@ -158,7 +179,7 @@ tailwind.config = {
   <div class="carousel-inner relative w-full overflow-hidden">
     <!-- Single item -->
     <div class="carousel-item active relative float-left w-full">
-      <div class="slider1 h-[600px] bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+      <div class="slider1 h-[600px] bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash_result.jpg);">
       </div>
       <div class="carousel-caption hidden md:block absolute text-center">
         <!-- <h5 class="text-xl text-white">First slide label</h5>
@@ -209,7 +230,7 @@ tailwind.config = {
     <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+  </div>
 
 </div>
 
@@ -218,35 +239,36 @@ tailwind.config = {
   <p class="text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
   <div class="max-w-7xl mx-auto my-8 flex flex-col items-center md:flex-row md:justify-between space-y-4 md:space-y-0 px-8">
     <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] md:w-[32%]">
-      <div class="flex justify-between items-center space-x-4">
+      <div class="flex justify-between items-center text-3xl space-x-4">
         <h1 class="font-semibold tracking-wider whitespace-nowrap">Discover</h1>
-        <i class="fa-solid fa-suitcase text-syellow"></i>
+        <img src="assets/images/luggage.svg" alt="luggage">
       </div>
-      <p class="text-xs my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
-      <p class="text-sm font-bold text-syellow underline underline-offset-8">Select Destination</p>
+      <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.
+      </p>
+      <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
     </div>
     <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] md:w-[32%]">
-      <div class="flex justify-between items-center space-x-4">
+      <div class="flex justify-between items-center text-3xl space-x-4">
         <h1 class="font-semibold tracking-wider whitespace-nowrap">Select Tour Package</h1>
-        <i class="fa-solid fa-user text-syellow"></i>
+        <img src="assets/images/add-group.svg" alt="add-group">
       </div>
-      <p class="text-xs my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
-      <p class="text-sm font-bold text-syellow underline underline-offset-8">Select Destination</p>
+      <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
+      <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
     </div>
     <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] md:w-[32%]">
-      <div class="flex justify-between items-center space-x-4">
+      <div class="flex justify-between items-center text-3xl space-x-4">
         <h1 class="font-semibold tracking-wider whitespace-nowrap">Quick Payment</h1>
-        <i class="fa-solid fa-credit-card text-syellow"></i>
+        <img src="assets/images/credit-card.svg" alt="">
       </div>
-      <p class="text-xs my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
-      <p class="text-sm font-bold text-syellow underline underline-offset-8">Select Destination</p>
+      <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
+      <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
     </div>
   </div>
   <div>
     <h1 class="text-6xl text-center font-bold text-syellow w-2/3 py-8 mx-auto">Our Top Destination</h1>
   <p class="text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
   </div>
-  <div class="max-w-7xl h-[500px] grid grid-cols-3 grid-rows-3 grid-flow-row mx-auto justify-center  my-4 gap-y-3 gap-x-3">
+  <div class="max-w-7xl h-[700px] grid grid-cols-3 grid-rows-3 grid-flow-row mx-auto justify-center  my-4 gap-y-3 gap-x-3">
       <div class="-[250px] -[250px]  flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" id="destination_1">Safari</div>
       <div class=" -[400px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2" id="destination_2">Lakes & Rivers</div>
       <div class="-[250px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center " id="destination_4">Lakes & Rivers</div>
@@ -255,8 +277,8 @@ tailwind.config = {
       <div class="-[400px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" id="destination_6">Lakes & Rivers</div>
     </div>
   <div>
-    <div class="map max-w-7xl flex mx-auto my-8 rounded-2xl overflow-hidden">
-      <div class="mapouter mx-auto"><div class="gmap_canvas mx-auto"><iframe width="1028px" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:1024px;}</style><a href="https://embedgooglemap.2yu.co"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:1024px;}</style></div></div>
+    <div class="map max-w-7xl flex mx-auto my-8 h-[420px] rounded-2xl overflow-hidden">
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=moon arcade moria&t=k&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
   </div>
   </div>
 <div class="my-4">
@@ -264,57 +286,60 @@ tailwind.config = {
   <p class="text-xl text-center tracking-wider w-2/3 mx-auto">We are a small Team connecting the entire world to you</p>
 </div>
 <div class="flex flex-col md:flex-row max-w-7xl justify-between mx-auto my-12 px-8 space-y-4 md:space-y-0">
-  <div class="space-y-2">
-    <h1 class="text-2xl font-light my-4"><i class="fa-solid fa-location-dot text-syellow"></i> Lambula</h1>
-    <p class="text-xs font-semibold tracking-wider my-3">Direct Channels</p>
-    <p class="text-xs font-light"><i class="fa-solid fa-phone text-syellow"></i> +256 1234 5678</p>
-    <p class="text-xs font-light"><i class="fa-solid fa-envelope text-syellow"></i> support@lambula.net</p>
-    <p class="text-xs font-light">Select Media</p>
-    <p class="text-xs font-light space-x-4">
-      <i class="fa-brands fa-facebook-f text-syellow"></i>
-      <i class="fa-brands fa-instagram text-syellow"></i>
-      <i class="fa-brands fa-twitter text-syellow"></i>
+  <div class="space-y-2 tracking-wide">
+    <h1 class="text-4xl font-light my-4"><i class="fa-solid fa-location-dot text-syellow"></i> Lambula</h1>
+    <p class="text-base font-semibold tracking-wider my-3">Direct Channels</p>
+    <p class="text-base font-light"><i class="fa-solid fa-phone text-syellow"></i> +256 1234 5678</p>
+    <p class="text-base font-light"><i class="fa-solid fa-envelope text-syellow"></i> support@lambula.net</p>
+    <p class="text-base font-light">Select Media</p>
+    <p class="text-lg font-light space-x-4">
+      <i class="fa-brands fa-facebook-f text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
+      <i class="fa-brands fa-instagram text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
+      <i class="fa-brands fa-twitter text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
     </p>
   </div>
-  <div class="flex flex-col space-y-3">
-    <p class="text-sm font-semibold tracking-wider">Feel free to send us your message</p>
+  <div class="flex flex-col space-y-3 w-[50%] min-w-[500px]">
+    <p class="text-base font-semibold tracking-wider">Feel free to send us your message</p>
     <div class="grid sm:grid-cols-2 space-y-3 sm:space-y-0 sm:space-x-3">
       <input type="text" placeholder="Your" class="bg-white bg-opacity-20 border-none rounded-md active:border-none focus:ring-1 focus:ring-syellow">
       <input type="text" placeholder="Your email" class="bg-white bg-opacity-20 border-none rounded-md focus:ring-1 focus:ring-syellow">
     </div>
     <div><input type="text" placeholder="Subject" class="bg-white bg-opacity-20 border-none rounded-md w-full focus:ring-1 focus:ring-syellow"></div>
     <div><textarea name="" id="" cols="30" rows="5" placeholder="Message" class="w-full bg-white bg-opacity-20 border-none rounded-md p-2 focus:ring-1 focus:ring-syellow"></textarea></div>
-    <button class="text-black bg-syellow px-20 py-1 rounded-md text-sm font-bold tracking-wider w-fit mx-auto focus:ring-1 focus:ring-syellow">Submit</button>
+    <button class="text-black bg-syellow px-20 py-1 rounded-md text-base font-bold tracking-wider w-fit mx-auto focus:ring-1 focus:ring-syellow hover:bg-yellow-400">Submit</button>
   </div>
 </div>
+
+
+
 <footer class="bg-black text-gray-500 p-12">
   <div class="max-w-7xl mx-auto">
       <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 md:space-y-0 items-start justify-between pb-6">
       <ul class="space-y-3 text-sm tracking-wider font-light">
           <li class="pb-4 text-xl font-semibold uppercase">Destinations</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Game Drive</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Gorilla Tracking</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Lakes and Rivers</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Mountains</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Game Drive</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Gorilla Tracking</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Lakes and Rivers</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Mountains</li>
       </ul>
       <ul class="space-y-3 text-sm tracking-wider font-light">
           <li class="pb-4 text-xl font-semibold uppercase">Parents</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Discover Africa</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Uganda Today</li>
-          <li class="hover:text-syellow hover:cursor-pointer">WWF</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Vision Tours</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Discover Africa</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Uganda Today</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">WWF</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Vision Tours</li>
       </ul>
       <ul class="space-y-3 text-sm tracking-wider font-light">
           <li class="pb-4 text-xl font-semibold uppercase">Home</li>
-          <li class="hover:text-syellow hover:cursor-pointer">About Us</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Contact Us</li>
-          <li class="hover:text-syellow hover:cursor-pointer">BLog</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">About Us</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Contact Us</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">BLog</li>
       </ul>
       <ul class="space-y-3 text-sm tracking-wider font-light">
           <li class="pb-4 text-xl font-semibold uppercase">Help Center</li>
-          <li class="hover:text-syellow hover:cursor-pointer">FAQs</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Terms of Use</li>
-          <li class="hover:text-syellow hover:cursor-pointer">Privacy Policy</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">FAQs</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Terms of Use</li>
+          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Privacy Policy</li>
       </ul>
       </div>
       <div class="flex flex-col items-end">
@@ -334,8 +359,8 @@ tailwind.config = {
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-
+<script src="assets/js/cloudflair.js"></script>
+<script src="assets/js/jsdeliver.js"></script>
+<script src="assets/js/style.js"></script>
 </body>
 </html>
