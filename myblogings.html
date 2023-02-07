@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
 <link rel="stylesheet" href="ttps://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.cssh" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="assets/js/cdntailwindcss.js"></script>
 <script src="assets/js/jsdeliver.js"></script>
 <script src="assets/js/tailwind.js"></script>
@@ -55,16 +57,16 @@ tailwind.config = {
 <!-- Dropdown menu -->
 <div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
     <ul class="py-2 text-sm bg-black bg-opacity-60 rounded-xl" aria-labelledby="dropdownDefaultButton">
-    <li>
-        <a href="#" class="block px-4 py-2 ">Hello baby</a>
+    <li class="hover:bg-gray-700 hover:text-syellow">
+        <a href="#" class="block px-4 py-2 ">Dashboard</a>
     </li>
-    <li>
+    <li class="hover:bg-gray-700 hover:text-syellow">
         <a href="#" class="block px-4 py-2 ">Settings</a>
     </li>
-    <li>
+    <li class="hover:bg-gray-700 hover:text-syellow">
         <a href="#" class="block px-4 py-2 ">Earnings</a>
     </li>
-    <li>
+    <li class="hover:bg-gray-700 hover:text-syellow">
         <a href="#" class="block px-4 py-2 ">Sign out</a>
     </li>
     </ul>
@@ -91,11 +93,13 @@ tailwind.config = {
 </div>
 <div class="px-12 flex justify-between items-center">
     <h1 class="text-2xl whitespace-nowrap"><i class="fa-solid fa-location-dot text-syellow"></i> Lambula</h1>
-    <ul class=" flex space-x-4 text-sm ">
-        <li><a href="index.html" class="active:font-bold active:text-syellow active:underline underline-offset-8 tracking-wider" aria-current="true">Discover</a></li>
-        <li><a href="" class="active:font-bold active:text-syellow active:underline underline-offset-8 tracking-wider" aria-current="true">My Blogings</a></li>
-        <li><a href="" class="active:font-bold active:text-syellow active:underline underline-offset-8 tracking-wider" aria-current="true">Tour Packages</a></li>
+    <ul class=" flex space-x-4 text-sm ml-44">
+        <li><a href="index.html" class="tracking-wider">Discover</a></li>
+        <li><a href="" class="font-bold text-syellow border-b-4 border-syellow pb-3 tracking-wider">My Blogings</a></li>
+        <li><a href="" class="tracking-wider">Tour Packages</a></li>
     </ul>
+
+
     <nav class=" flex items-center space-x-12">
     <div class="hidden sm:flex items-center w-fit bg-white bg-opacity-20 px-4 rounded-full space-x-4 h-fit focus:ring-1 focus:ring-yellow-300">
         <input type="search" placeholder="Search" class="bg-transparent border-none h-8 pl-6 w-36 placeholder-gray-400 focus:ring-0"><i class="fa-solid fa-search"></i>
@@ -131,7 +135,7 @@ tailwind.config = {
         <h1 class="text-8xl font-extrabold text-center">Our <span class="text-syellow">Travel Champions</span> Are waiting for you</h1>
         <p class="text-xl">Find a new tour operator</p>
         <div class="w-full max-w-5xl flex items-center border border-syellow rounded-xl overflow-hidden bg-white bg-opacity-40">
-            <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-white text-3xl placeholder:text-3xl p-4 px-8" placeholder="Search Categories, Packages">
+            <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-gray-300 placeholder:text-opacity-50 text-3xl placeholder:text-3xl p-4 px-8" placeholder="Search Categories, Packages">
             <i class="fa-solid fa-search text-2xl text-black h-full px-12 bg-syellow flex items-center justify-center"></i>
         </div>
         <div class="flex items-center text-[.6rem] space-x-10 whitespace-nowrap">
@@ -154,7 +158,24 @@ tailwind.config = {
             </div>
             <div class="flex items-center space-x-4 text-lg">
                 <p>Sort: </p>
-                <button class="border border-syellow text-syellow rounded-md py-1 px-2">Recommended <i class="fa-solid fa-caret-down"></i></button>
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="border border-syellow text-syellow rounded-md py-1 px-2 focus:ring-1 focus:ring-yellow-300 text-sm text-center inline-flex items-center" type="button">Recommended <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
+<!-- Dropdown menu -->
+<div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm bg-black bg-opacity-90 rounded-xl" aria-labelledby="dropdownDefaultButton">
+    <li class=" hover:bg-gray-700 text-syellow">
+        <a href="#" class="block px-4 py-2">Dashboard</a>
+    </li>
+    <li>
+        <a href="#" class="block px-4 py-2 ">Settings</a>
+    </li>
+    <li>
+        <a href="#" class="block px-4 py-2 ">Earnings</a>
+    </li>
+    <li>
+        <a href="#" class="block px-4 py-2 ">Sign out</a>
+    </li>
+    </ul>
+</div>
             </div>
         </div>
         <div class="flex flex-row justify-between w-full space-x-3">
@@ -427,74 +448,74 @@ tailwind.config = {
                         </div>
                     </div>
                     <div class="bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll">
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
+                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                 <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
                             <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1>3 Days murchison Falls</h1>
-                                <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
+                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
+                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash_result.jpg);">
+                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                 <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
                             <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1>3 Days murchison Falls</h1>
-                                <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
+                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
+                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash_result.jpg);">
+                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                 <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
                             <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1>3 Days murchison Falls</h1>
-                                <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
+                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
+                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                 <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
                             <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1>3 Days murchison Falls</h1>
-                                <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
+                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
+                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                 <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
                             <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1>3 Days murchison Falls</h1>
-                                <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
+                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
+                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                 <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
                             <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1>3 Days murchison Falls</h1>
-                                <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
+                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
+                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                 <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
                             <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1>3 Days murchison Falls</h1>
-                                <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
+                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
     
@@ -504,11 +525,11 @@ tailwind.config = {
 
             </div>
 
-            <div class="flex flex-col min-w-[300px] w-[30%] space-y-2">
+            <div class="flex flex-col p-4 rounded-xl bg-opacity-0 min-w-[400px] w-[30%] space-y-6 bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash_result.jpg);">
                 <div class=" rounded-lg overflow-hidden h-[50%]">
-                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-white bg-opacity-10">
+                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-black bg-opacity-50">
                         <div class="space-y-2">
-                            <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
+                            <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash_result.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
                             <h1 class="text-center text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
                             <p class="text-center text-sm">Provided by <span class="font-bold tracking-widest">Paramoja Safaris</span></p>
 
@@ -516,24 +537,26 @@ tailwind.config = {
                         <hr>
                         <div class="space-y-2">
                             <h2 class="font-semibold tracking-wider">About Trip</h2>
-                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto impedit molestias atque quam in dolor, possimus corrupti a magnam fuga sed facere dolorum nemo rem laboriosam nostrum quasi soluta omnis laborum perspiciatis earum! Voluptas magnam deleniti quasi assumenda, ipsa alias reiciendis doloribus id explicabo, laudantium deserunt pariatur quidem voluptatum!</p>
-                            <button class="text-syellow">Read more <i class="fa-solid fa-caret-down"></i></button>
+                            <p class="text-xs w-full max-h-40 overflow-y-scroll">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel
+                                <span id="dots1">...</span>
+                                <span id="more1" class="hidden">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                            </p>
+                            <button class="text-syellow" id="myBtn1" onclick="readMore()">Read more <i class="fa-solid fa-caret-down"></i></button>
                         </div>
-                        <div class="flex">
-                            
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            
+                        <div class="flex list-none">
+                            <li class="w-3/12 border-b-4 px-1 border-syellow border-syellow pb-4">
+                                <a href="#" class="bg-syellow text-black px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
+                            <li class="w-3/12 border-b-2 border-white pb-4 px-1">
+                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
+                            <li class="w-3/12 border-b-2 border-white pb-4  px-1">
+                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
+                            <li class="w-3/12 border-b-2 border-white pb-4  px-1">
+                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
                         </div>
                     </div>
                 </div>
@@ -548,28 +571,29 @@ tailwind.config = {
                         <hr>
                         <div class="space-y-2">
                             <h2 class="font-semibold tracking-wider">About Trip</h2>
-                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto impedit molestias atque quam in dolor, possimus corrupti a magnam fuga sed facere dolorum nemo rem laboriosam nostrum quasi soluta omnis laborum perspiciatis earum! Voluptas magnam deleniti quasi assumenda, ipsa alias reiciendis doloribus id explicabo, laudantium deserunt pariatur quidem voluptatum!</p>
-                            <button class="text-syellow">Read more <i class="fa-solid fa-caret-down"></i></button>
+                            <p class="text-xs w-full max-h-40 overflow-y-scroll">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel
+                                <span id="dots2">...</span>
+                                <span id="more2" class="hidden">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                            </p>
+                            <button class="text-syellow" id="myBtn2" onclick="readMore2()">Read more <i class="fa-solid fa-caret-down"></i></button>
                         </div>
-                        <div class="flex">
-                            
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            <div class="w-3/12 border-b-2 hover:border-b-4 hover:border-syellow border-white pb-4 px-2">
-                                <a href="#" class="hover:bg-syellow hover:text-black active:bg-syellow active:text-black px-2 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </div>
-                            
+                        <div class="flex list-none">
+                            <li class="w-3/12 border-b-4 px-1 border-syellow border-syellow pb-4">
+                                <a href="#" class="bg-syellow text-black px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
+                            <li class="w-3/12 border-b-2 border-white pb-4 px-1">
+                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
+                            <li class="w-3/12 border-b-2 border-white pb-4  px-1">
+                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
+                            <li class="w-3/12 border-b-2 border-white pb-4  px-1">
+                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                            </li>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -582,44 +606,42 @@ tailwind.config = {
 
 
 
-<footer class="bg-black text-white p-12">
+<footer class="bg-black text-gray-500 p-12">
 <div class="max-w-7xl mx-auto">
-    <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 md:space-y-0 items-center justify-between pb-6">
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 md:space-y-0 items-start justify-between pb-6">
     <ul class="space-y-3 text-sm tracking-wider font-light">
-        <li class="pb-4 text-xl font-semibold">Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
+        <li class="pb-4 text-xl font-semibold uppercase">Destinations</li>
+        <li>Game Drive</li>
+        <li>Gorilla Tracking</li>
+        <li>Lakes and Rivers</li>
+        <li>Mountains</li>
     </ul>
     <ul class="space-y-3 text-sm tracking-wider font-light">
-        <li class="pb-4 text-xl font-semibold">Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
+        <li class="pb-4 text-xl font-semibold uppercase">Parents</li>
+        <li>Discover Africa</li>
+        <li>Uganda Today</li>
+        <li>WWF</li>
+        <li>Vision Tours</li>
     </ul>
     <ul class="space-y-3 text-sm tracking-wider font-light">
-        <li class="pb-4 text-xl font-semibold">Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
+        <li class="pb-4 text-xl font-semibold uppercase">Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>BLog</li>
     </ul>
     <ul class="space-y-3 text-sm tracking-wider font-light">
-        <li class="pb-4 text-xl font-semibold">Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
-        <li>Destinations</li>
+        <li class="pb-4 text-xl font-semibold uppercase">Help Center</li>
+        <li>FAQs</li>
+        <li>Terms of Use</li>
+        <li>Privacy Policy</li>
     </ul>
     </div>
     <div class="flex flex-col items-end">
     <div class="space-y-4">
         <p>NOW AVAILABLE</p>
         <div class="flex space-x-4">
-        <img src="assets/images/appstore.png" alt="" class="w-28 rounded-md">
-        <img src="assets/images/appstore.png" alt="" class="w-28 rounded-md">
+        <img src="assets/images/appstore.png" alt="" class="w-32 px-1 bg-white rounded-md">
+        <img src="assets/images/appstore.png" alt="" class="w-32 px-1 bg-white rounded-md">
         </div>
     </div>
     </div>
