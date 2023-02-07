@@ -8,6 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
@@ -26,6 +27,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
 <header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
   <div class="text-white">
     <div class="w-full bg-transparent flex flex-row justify-center items-center">
@@ -34,10 +36,10 @@
         Call us: +256 020 100 100
       </p>
       
-  <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-4 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">USD <i class="fa-solid fa-sort-down pl-2 pb-2 text-yellow-400"></i></button>
+  <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">USD <i class="fa-solid fa-sort-down pl-2 pb-2 text-yellow-400"></i></button>
   <!-- Dropdown menu -->
   <div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
-      <ul class="py-2 text-sm bg-black bg-opacity-60" aria-labelledby="dropdownDefaultButton">
+      <ul class="py-2 text-sm bg-black bg-opacity-60 rounded-xl" aria-labelledby="dropdownDefaultButton">
         <li>
           <a href="#" class="block px-4 py-2 ">Hello baby</a>
         </li>
@@ -52,7 +54,7 @@
         </li>
       </ul>
   </div>
-  <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-4 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-sort-down pl-2 pb-2 text-yellow-400"></i></button>
+  <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-sort-down pl-2 pb-2 text-yellow-400"></i></button>
   <!-- Dropdown menu -->
   <div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
       <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
@@ -75,17 +77,17 @@
     <div class="mx-auto max-w-6xl px-12 flex justify-between items-center">
       <h1 class="text-2xl whitespace-nowrap"><i class="fa-solid fa-location-dot text-yellow-400"></i> Lambula</h1>
       <nav class=" flex items-center space-x-12">
-        <ul class="hidden lg:flex space-x-8 text-sm ">
-          <li><a href="" class="font-bold text-yellow-400 underline underline-offset-8 tracking-wider">Discover</a></li>
-          <li><a href="">My Blogings</a></li>
-          <li><a href="">Tour Packages</a></li>
+        <ul class=" flex space-x-4 text-sm ">
+          <li><a href="index.html" class="active:font-bold hover:text-yellow-400 active:text-yellow-400 active:underline underline-offset-8 tracking-wider" aria-current="true">Discover</a></li>
+          <li><a href="myblogings.html" class="active:font-bold hover:text-yellow-400 active:text-yellow-400 active:underline underline-offset-8 tracking-wider" aria-current="true">My Blogings</a></li>
+          <li><a href="" class="active:font-bold hover:text-yellow-400 active:text-yellow-400 active:underline underline-offset-8 tracking-wider" aria-current="true">Tour Packages</a></li>
         </ul>
-        <div class="hidden sm:flex items-center w-fit bg-white bg-opacity-20 px-4 rounded-full space-x-4 h-fit">
-          <input type="search" placeholder="Search" class="bg-transparent border-none h-8 pl-6 w-36 placeholder-gray-400"><i class="fa-solid fa-search"></i>
+        <div class="hidden sm:flex items-center w-fit bg-white bg-opacity-20 px-4 rounded-full space-x-4 h-fit focus:ring-1 focus:ring-yellow-300">
+          <input type="search" placeholder="Search" class="bg-transparent border-none h-8 pl-6 w-36 placeholder-gray-400 focus:ring-0"><i class="fa-solid fa-search"></i>
         </div>
         <div class="flex flex-row justify-center items-center">
           <i class="fas fa-bell text-yellow-400"></i>
-          <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-4 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit" type="button"><img src="images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-yellow-400"> <i class="fa-solid fa-chevron-down text-yellow-400"></i></div>
+          <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit" type="button"><img src="images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-yellow-400"> <i class="fa-solid fa-chevron-down text-yellow-400"></i></div>
   <!-- Dropdown menu -->
   <div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
       <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
@@ -110,90 +112,97 @@
   </div>
 </header>
 <div class="carousel">
-  <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
-    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
-    </div>
-    <div class="carousel-inner relative w-full overflow-hidden">
-      <div class="carousel-item active relative float-left w-full">
-        <img
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-          class="block w-full"
-          alt="..."
-        />
-        <div class="carousel-caption hidden md:block absolute text-center">
-          <h5 class="text-xl">First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item relative float-left w-full">
-        <img
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-          class="block w-full"
-          alt="..."
-        />
-        <div class="carousel-caption hidden md:block absolute text-center">
-          <h5 class="text-xl">Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item relative float-left w-full">
-        <img
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-          class="block w-full"
-          alt="..."
-        />
-        <div class="carousel-caption hidden md:block absolute text-center">
-          <h5 class="text-xl">Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
+  
+  <div
+  id="carouselDarkVariant"
+  class="carousel slide carousel-fade carousel-dark relative"
+  data-bs-ride="carousel"
+>
+  <!-- Indicators -->
+  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
     <button
-      class="invisible carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
     <button
-      class="invisible carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide-to="1"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide-to="2"
+      aria-label="Slide 1"
+    ></button>
   </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <!-- Single item -->
+    <div class="carousel-item active relative float-left w-full">
+      <div class="slider1 h-[600px] bg-cover bg-center" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+      </div>
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <!-- <h5 class="text-xl text-white">First slide label</h5>
+        <p class=" text-white">Some representative placeholder content for the first slide.</p> -->
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item relative float-left w-full">
+      <div class="slider1 h-[600px] bg-cover bg-center" style="background-image: url(images/laura-college-K_Na5gCmh38-unsplash.jpg);">
+      </div>
+
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <!-- <h5 class="text-xl text-white">Second slide label</h5>
+        <p class=" text-white">Some representative placeholder content for the second slide.</p> -->
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item relative float-left w-full">
+      <div class="slider1 h-[600px] bg-cover bg-center" style="background-image: url(images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
+      </div>
+
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <!-- <h5 class="text-xl text-white">Third slide label</h5>
+        <p class=" text-white">Some representative placeholder content for the third slide.</p> -->
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0 invisible"
+    type="button"
+    data-bs-target="#carouselDarkVariant"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 invisible"
+    type="button"
+    data-bs-target="#carouselDarkVariant"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 </div>
 
 <div class="w-full bg-default text-white">
   <h1 class="text-6xl text-center font-bold text-yellow-400 w-2/3 py-8 mx-auto">Why Choose us</h1>
   <p class="text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
-  <div class="max-w-[770px] mx-auto my-8 flex flex-col items-center md:flex-row md:justify-between space-y-4 md:space-y-0 px-8">
-    <div class="card p-4 bg-white bg-opacity-20 rounded-2xl md:w-[30%]">
+  <div class="max-w-[1024px] mx-auto my-8 flex flex-col items-center md:flex-row md:justify-between space-y-4 md:space-y-0 px-8">
+    <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[170px] md:w-[32%]">
       <div class="flex justify-between items-center space-x-4">
         <h1 class="font-semibold tracking-wider whitespace-nowrap">Discover</h1>
         <i class="fa-solid fa-suitcase text-yellow-400"></i>
@@ -201,7 +210,7 @@
       <p class="text-xs my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
       <p class="text-sm font-bold text-yellow-400 underline underline-offset-8">Select Destination</p>
     </div>
-    <div class="card p-4 bg-white bg-opacity-20 rounded-2xl md:w-[30%]">
+    <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[170px] md:w-[32%]">
       <div class="flex justify-between items-center space-x-4">
         <h1 class="font-semibold tracking-wider whitespace-nowrap">Select Tour Package</h1>
         <i class="fa-solid fa-user text-yellow-400"></i>
@@ -209,7 +218,7 @@
       <p class="text-xs my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
       <p class="text-sm font-bold text-yellow-400 underline underline-offset-8">Select Destination</p>
     </div>
-    <div class="card p-4 bg-white bg-opacity-20 rounded-2xl md:w-[30%]">
+    <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[170px] md:w-[32%]">
       <div class="flex justify-between items-center space-x-4">
         <h1 class="font-semibold tracking-wider whitespace-nowrap">Quick Payment</h1>
         <i class="fa-solid fa-credit-card text-yellow-400"></i>
@@ -222,30 +231,24 @@
     <h1 class="text-6xl text-center font-bold text-yellow-400 w-2/3 py-8 mx-auto">Our Top Destination</h1>
   <p class="text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
   </div>
-  <div class="max-w-[770px] h-[500px] grid grid-cols-3 grid-rows-3 grid-flow-row mx-auto justify-center  my-4 gap-y-3 gap-x-3">
-    <!-- <div class="w-[250px] h-[660px] flex flex-col justify-between"> -->
+  <div class="max-w-[1024px] h-[500px] grid grid-cols-3 grid-rows-3 grid-flow-row mx-auto justify-center  my-4 gap-y-3 gap-x-3">
       <div class="-[250px] -[250px]  flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" id="destination_1">Safari</div>
       <div class=" -[400px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2" id="destination_2">Lakes & Rivers</div>
-    <!-- </div> -->
-    <!-- <div class="w-[250px] h-[660px] flex flex-col justify-between"> -->
       <div class="-[250px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center " id="destination_4">Lakes & Rivers</div>
       <div class="-[400px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2 " id="destination_3">Safari</div>
-    <!-- </div> -->
-    <!-- <div class="w-[250px] h-[660px] flex flex-col justify-between"> -->
       <div class="-[250px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2" id="destination_5">Safari</div>
       <div class="-[400px] -[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" id="destination_6">Lakes & Rivers</div>
-    <!-- </div> -->
-  </div>
+    </div>
   <div>
-    <div class="map max-w-[770px] flex mx-auto my-4 rounded-2xl overflow-hidden">
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:770px;}</style><a href="https://embedgooglemap.2yu.co"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:770px;}</style></div></div>
+    <div class="map max-w-[1024px] flex mx-auto my-4 rounded-2xl overflow-hidden">
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="1024" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:1024px;}</style><a href="https://embedgooglemap.2yu.co"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:1024px;}</style></div></div>
   </div>
   </div>
 <div class="my-4">
   <h1 class="text-6xl text-center font-bold text-yellow-400 w-2/3 py-2 mx-auto">Contact Us</h1>
   <p class="text-xl text-center tracking-wider w-2/3 mx-auto">We are a small Team connecting the entire world to you</p>
 </div>
-<div class="flex flex-col md:flex-row max-w-[770px] justify-between mx-auto my-12 px-8 space-y-4 md:space-y-0">
+<div class="flex flex-col md:flex-row max-w-[1024px] justify-between mx-auto my-12 px-8 space-y-4 md:space-y-0">
   <div class="space-y-2">
     <h1 class="text-2xl font-light my-4"><i class="fa-solid fa-location-dot text-yellow-400"></i> Lambula</h1>
     <p class="text-xs font-semibold tracking-wider my-3">Direct Channels</p>
@@ -261,16 +264,16 @@
   <div class="flex flex-col space-y-3">
     <p class="text-sm font-semibold tracking-wider">Feel free to send us your message</p>
     <div class="grid sm:grid-cols-2 space-y-3 sm:space-y-0 sm:space-x-3">
-      <input type="text" placeholder="Your" class="bg-white bg-opacity-20 border-none rounded-md">
-      <input type="text" placeholder="Your email" class="bg-white bg-opacity-20 border-none rounded-md">
+      <input type="text" placeholder="Your" class="bg-white bg-opacity-20 border-none rounded-md active:border-none focus:ring-1 focus:ring-yellow-300">
+      <input type="text" placeholder="Your email" class="bg-white bg-opacity-20 border-none rounded-md focus:ring-1 focus:ring-yellow-300">
     </div>
-    <div><input type="text" placeholder="Subject" class="bg-white bg-opacity-20 border-none rounded-md w-full"></div>
-    <div><textarea name="" id="" cols="30" rows="5" placeholder="Message" class="w-full bg-white bg-opacity-20 border-none rounded-md p-2"></textarea></div>
-    <button class="text-black bg-yellow-400 px-20 py-1 rounded-md text-sm font-bold tracking-wider w-fit mx-auto">Submit</button>
+    <div><input type="text" placeholder="Subject" class="bg-white bg-opacity-20 border-none rounded-md w-full focus:ring-1 focus:ring-yellow-300"></div>
+    <div><textarea name="" id="" cols="30" rows="5" placeholder="Message" class="w-full bg-white bg-opacity-20 border-none rounded-md p-2 focus:ring-1 focus:ring-yellow-300"></textarea></div>
+    <button class="text-black bg-yellow-400 px-20 py-1 rounded-md text-sm font-bold tracking-wider w-fit mx-auto focus:ring-1 focus:ring-yellow-300">Submit</button>
   </div>
 </div>
 <footer class="bg-black bg-opacity-50 p-12">
-  <div class="max-w-[770px] mx-auto">
+  <div class="max-w-[1024px] mx-auto">
     <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 md:space-y-0 items-center justify-between pb-6">
       <ul class="space-y-3 text-sm tracking-wider font-light">
         <li class="pb-4 text-xl font-semibold">Destinations</li>
@@ -321,5 +324,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
 </body>
 </html>
