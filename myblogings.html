@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="/dist/main.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="jsdeliver.js"></script>
-<script src="tailwind.js"></script>
+<link rel="stylesheet" href="ttps://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.cssh" />
+<script src="assets/js/cdntailwindcss.js"></script>
+<script src="assets/js/jsdeliver.js"></script>
+<script src="assets/js/tailwind.js"></script>
 <style>
 :root{
     --pink: #FF7C7C;
@@ -89,20 +89,20 @@ tailwind.config = {
 </div>
 
 </div>
-<div class="mx-auto max-w-6xl px-12 flex justify-between items-center">
+<div class="px-12 flex justify-between items-center">
     <h1 class="text-2xl whitespace-nowrap"><i class="fa-solid fa-location-dot text-syellow"></i> Lambula</h1>
-    <nav class=" flex items-center space-x-12">
     <ul class=" flex space-x-4 text-sm ">
         <li><a href="index.html" class="active:font-bold active:text-syellow active:underline underline-offset-8 tracking-wider" aria-current="true">Discover</a></li>
         <li><a href="" class="active:font-bold active:text-syellow active:underline underline-offset-8 tracking-wider" aria-current="true">My Blogings</a></li>
         <li><a href="" class="active:font-bold active:text-syellow active:underline underline-offset-8 tracking-wider" aria-current="true">Tour Packages</a></li>
     </ul>
+    <nav class=" flex items-center space-x-12">
     <div class="hidden sm:flex items-center w-fit bg-white bg-opacity-20 px-4 rounded-full space-x-4 h-fit focus:ring-1 focus:ring-yellow-300">
         <input type="search" placeholder="Search" class="bg-transparent border-none h-8 pl-6 w-36 placeholder-gray-400 focus:ring-0"><i class="fa-solid fa-search"></i>
     </div>
     <div class="flex flex-row justify-center items-center">
         <i class="fas fa-bell text-syellow"></i>
-        <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit" type="button"><img src="images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-syellow"> <i class="fa-solid fa-chevron-down text-syellow"></i></div>
+        <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit" type="button"><img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-syellow"> <i class="fa-solid fa-chevron-down text-syellow"></i></div>
 <!-- Dropdown menu -->
 <div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
     <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
@@ -127,21 +127,21 @@ tailwind.config = {
 </div>
 </header>
 <div class="bg-dark-gray w-[100%] h-[700px] mbbg bg-cover bg-center flex flex-col justify-center">
-    <div class="text-white max-w-[800px] mx-auto flex flex-col justify-center items-center space-y-8">
-        <h1 class="text-7xl font-extrabold text-center">Our <span class="text-syellow">Travel Champions</span> Are waiting for you</h1>
-        <p class="">Find a new tour operator</p>
-        <div class="w-full max-w-[700px] flex items-center border border-syellow rounded-md overflow-hidden bg-white bg-opacity-40">
-            <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-white" placeholder="Search Categories, Packages">
-            <i class="fa-solid fa-search text-2xl px-4 py-1 bg-syellow"></i>
+    <div class="text-white max-w-6xl mx-auto flex flex-col justify-center items-center space-y-8">
+        <h1 class="text-8xl font-extrabold text-center">Our <span class="text-syellow">Travel Champions</span> Are waiting for you</h1>
+        <p class="text-xl">Find a new tour operator</p>
+        <div class="w-full max-w-5xl flex items-center border border-syellow rounded-xl overflow-hidden bg-white bg-opacity-40">
+            <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-white text-3xl placeholder:text-3xl p-4 px-8" placeholder="Search Categories, Packages">
+            <i class="fa-solid fa-search text-2xl text-black h-full px-12 bg-syellow flex items-center justify-center"></i>
         </div>
-        <div class="flex items-center text-[.6rem] space-x-3">
+        <div class="flex items-center text-[.6rem] space-x-10 whitespace-nowrap">
             <input type="radio" name="cat" id="small" class="hidden">
-            <label for="small" class="small border-2 border-syellow rounded-md px-2 py-1 bg-white text-black font-bold">Small Groups (1-8 people)</label>
+            <label for="small" class="small border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold text-base">Small Groups (1-8 people)</label>
             <input type="radio" name="cat" id="large" class="hidden">
-            <label for="large" class="large border-2 border-syellow rounded-md px-2 py-1 bg-white text-black font-bold">Large Groups (10,50-100 people)</label>
+            <label for="large" class="large border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold text-base">Large Groups (10,50-100 people)</label>
             <input type="radio" name="cat" id="cooperate" class="hidden">
-            <label for="cooperate" class="cooperate border-2 border-syellow rounded-md px-2 py-1 bg-white text-black font-bold">Cooperate Travel</label>
-            <button type="button"  class="bg-transparent py-1 px-2 border-2 border-syellow rounded-md font-semibold tracking-wider" onclick="clearRadioButtons()">Clear filters</button>
+            <label for="cooperate" class="cooperate border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold text-base">Cooperate Travel</label>
+            <button type="button"  class="bg-transparent py-1 px-4 font-semibold tracking-wider text-sm" onclick="clearRadioButtons()">Clear filters</button>
         </div>
     </div>
 </div>
@@ -159,307 +159,264 @@ tailwind.config = {
         </div>
         <div class="flex flex-row justify-between w-full space-x-3">
             <div class="min-w-[550px] w-[70%]">
-                <div class="flex flex-col max-h-[800px] space-y-2 overflow-y-scroll pr-4">
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                <div class="flex flex-col max-h-[800px] space-y-8 overflow-y-scroll pr-4">
+                    <div class=" bg-white bg-opacity-10 border border-syellow p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
+                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
                         <div class="flex space-x-4">
                             <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
+                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
                             </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
+                            <div class="flex flex-col justify-center space-y-1">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
+                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
                                 <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
                                 <i class="fa-solid fa-heart text-xl"></i>
                             </div>
                             <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
+                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
-                            </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <i class="fa-solid fa-heart text-xl"></i>
-                            </div>
-                            <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-3 rounded-lg h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="images/Kampala, Uganda_1.png" alt="" class="w-28 h-28 rounded-lg">
-                            </div>
-                            <div class="space-y-1">
-                                <h1 class="text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="text-sm tracking-wider">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-light tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <p class="text-xs font-light tracking-wider">rating
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex items-center justify-center">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <i class="fa-solid fa-heart text-xl"></i>
-                            </div>
-                            <div>
-                                <button class="bg-syellow text-black font-bold py-1 px-3 rounded-lg">Starting: $1150</button>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="pr-4">
                     <div class="w-full py-2 flex justify-between">
@@ -470,72 +427,72 @@ tailwind.config = {
                         </div>
                     </div>
                     <div class="bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll">
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
-                                <i class="fa-solid fa-plus border-2 border-syellow text-syellow rounded-full"></i>
-                                <i class="fa-solid fa-heart text-syellow"></i>
+                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
-                            <div class="text-center bg-black bg-opacity-70 px-4 py-1">
+                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
                                 <h1>3 Days murchison Falls</h1>
                                 <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
-                                <i class="fa-solid fa-plus border-2 border-syellow text-syellow rounded-full"></i>
-                                <i class="fa-solid fa-heart text-syellow"></i>
+                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
-                            <div class="text-center bg-black bg-opacity-70 px-4 py-1">
+                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
                                 <h1>3 Days murchison Falls</h1>
                                 <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
-                                <i class="fa-solid fa-plus border-2 border-syellow text-syellow rounded-full"></i>
-                                <i class="fa-solid fa-heart text-syellow"></i>
+                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
-                            <div class="text-center bg-black bg-opacity-70 px-4 py-1">
+                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
                                 <h1>3 Days murchison Falls</h1>
                                 <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
-                                <i class="fa-solid fa-plus border-2 border-syellow text-syellow rounded-full"></i>
-                                <i class="fa-solid fa-heart text-syellow"></i>
+                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
-                            <div class="text-center bg-black bg-opacity-70 px-4 py-1">
+                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
                                 <h1>3 Days murchison Falls</h1>
                                 <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
-                                <i class="fa-solid fa-plus border-2 border-syellow text-syellow rounded-full"></i>
-                                <i class="fa-solid fa-heart text-syellow"></i>
+                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
-                            <div class="text-center bg-black bg-opacity-70 px-4 py-1">
+                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
                                 <h1>3 Days murchison Falls</h1>
                                 <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
-                                <i class="fa-solid fa-plus border-2 border-syellow text-syellow rounded-full"></i>
-                                <i class="fa-solid fa-heart text-syellow"></i>
+                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
-                            <div class="text-center bg-black bg-opacity-70 px-4 py-1">
+                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
                                 <h1>3 Days murchison Falls</h1>
                                 <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
+                        <div class="h-40 min-w-[200px] bg-cover bg-center flex flex-col justify-between rounded-lg overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-2 space-y-2">
-                                <i class="fa-solid fa-plus border-2 border-syellow text-syellow rounded-full"></i>
-                                <i class="fa-solid fa-heart text-syellow"></i>
+                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                <i class="fa-solid fa-heart text-syellow pr-1"></i>
                             </div>
-                            <div class="text-center bg-black bg-opacity-70 px-4 py-1">
+                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
                                 <h1>3 Days murchison Falls</h1>
                                 <p class="text-gray-500">Starting: <span class="text-syellow">$950</span></p>
                             </div>
@@ -549,9 +506,9 @@ tailwind.config = {
 
             <div class="flex flex-col min-w-[300px] w-[30%] space-y-2">
                 <div class=" rounded-lg overflow-hidden h-[50%]">
-                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-black bg-opacity-50">
+                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-white bg-opacity-10">
                         <div class="space-y-2">
-                            <img src="images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
+                            <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
                             <h1 class="text-center text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
                             <p class="text-center text-sm">Provided by <span class="font-bold tracking-widest">Paramoja Safaris</span></p>
 
@@ -583,7 +540,7 @@ tailwind.config = {
                 <div class=" rounded-lg overflow-hidden h-[50%]">
                     <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-black bg-opacity-50">
                         <div class="space-y-2">
-                            <img src="images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
+                            <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
                             <h1 class="text-center text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
                             <p class="text-center text-sm">Provided by <span class="font-bold tracking-widest">Paramoja Safaris</span></p>
 
@@ -661,8 +618,8 @@ tailwind.config = {
     <div class="space-y-4">
         <p>NOW AVAILABLE</p>
         <div class="flex space-x-4">
-        <img src="images/appstore.png" alt="" class="w-28 rounded-md">
-        <img src="images/appstore.png" alt="" class="w-28 rounded-md">
+        <img src="assets/images/appstore.png" alt="" class="w-28 rounded-md">
+        <img src="assets/images/appstore.png" alt="" class="w-28 rounded-md">
         </div>
     </div>
     </div>
@@ -675,13 +632,6 @@ tailwind.config = {
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-<script>
-function clearRadioButtons(){
-var ele = document.querySelectorAll("input[type=radio]");
-for(var i=0;i<ele.length;i++){
-    ele[i].checked = false;
-}
-}
-</script>
+<script src="assets/js/style.js"></script>
 </body>
 </html>

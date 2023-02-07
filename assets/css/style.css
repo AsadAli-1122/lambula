@@ -24,48 +24,45 @@
 
 
 #destination_1{
-    background-image: url(images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);
+    background-image: url(../images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);
     box-shadow: inset 0px -25px 50px 0px #000000;
 }
 #destination_2{
-    background-image: url(images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);
+    background-image: url(../images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);
     box-shadow: inset 0px -25px 50px 0px #000000;
 
 }
 #destination_3{
-    background-image: url(images/laura-college-K_Na5gCmh38-unsplash.jpg);
+    background-image: url(../images/laura-college-K_Na5gCmh38-unsplash.jpg);
     box-shadow: inset 0px -25px 50px 0px #000000;
 
 }
 #destination_4{
-    background-image: url(images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);
+    background-image: url(../images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);
     box-shadow: inset 0px -25px 50px 0px #000000;
 
 }
 #destination_5{
-    background-image: url(images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);
+    background-image: url(../images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);
     box-shadow: inset 0px -25px 50px 0px #000000;
 
 }
 #destination_6{
-    background-image: url(images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);
+    background-image: url(../images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);
     box-shadow: inset 0px -25px 50px 0px #000000;
 }
 .mbbg{
-    background-image: url(images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);
+    background-image: url(../images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);
 }
 
 #small:checked ~ .small{
-    background-color: yellow;
-    color: brown;
+    background-color: #FFFFFF;
 }
 #large:checked ~ .large{
-    background-color: yellow;
-    color: brown;
+    background-color: #FFFFFF;
 }
 #cooperate:checked ~ .cooperate{
-    background-color: yellow;
-    color: brown;
+    background-color: #FFFFFF;
 }
 
 
