@@ -39,7 +39,35 @@ function readMore2() {
     }
 
 
-setInterval(function load(){
+setTimeout(function load(){
         var x = document.getElementById('loader');
         x.classList.add('hidden');
     }, 2000)
+
+
+var count = 1;
+const incrementCount = document.getElementById("increment-count");
+const decrementCount = document.getElementById("decrement-count");
+const totalCount = document.getElementById("total-count");
+totalCount.innerHTML = count;
+const handleDecrement = () => {
+    if(count > 1){
+        count--;
+        totalCount.innerHTML = count;
+    }
+};
+const handleIncrement = () => {
+    if(count < 99){
+        count++;
+        totalCount.innerHTML = count;
+    } 
+};
+incrementCount.addEventListener("click", handleIncrement);
+decrementCount.addEventListener("click", handleDecrement);
+
+
+
+function get_src(element){
+    var main_img_src = document.getElementById("main-poster");
+    main_img_src.src=element.src;
+}
