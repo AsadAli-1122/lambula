@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/style.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="assets/css/googlefonts.css" />
 <link rel="stylesheet" href="assets/css/jsdeliver.css" />
+<link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/tailwindcss.com"></script>
 <script src="assets/js/tailwind.js"></script>
 <style>
@@ -63,60 +63,57 @@ tailwind.config = {
     
 <header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
 <div class="text-white">
-<div class="w-full bg-transparent flex flex-row justify-center items-center">
-    <p>
+<div class="w-full bg-transparent flex flex-wrap justify-center items-center white">
+    <p class="whitespace-nowrap">
     <i class="fa-solid fa-phone text-syellow"></i>
     Call us: +256 020 100 100
     </p>
     
-<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">USD <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
-<!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden rounded-lg bg-black bg-opacity-50 shadow w-44 dark:bg-gray-700 border-2 border-syellow">
-    <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Dashboard</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Settings</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Earnings</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Sign out</a>
-    </li>
-    </ul>
+<div>
+    <select name="" id="" class="payment-box focus:ring-0 focus:outline-none border-none rounded-lg text-sm bg-transparent text-white px-4 cursor-pointer">
+        <option value="" class="bg-black ">USD</option>
+        <option value="" class="bg-black">EUR</option>
+        <option value="" class="bg-black">JPY</option>
+        <option value="" class="bg-black">AUD</option>
+        <option value="" class="bg-black">CAD</option>
+    </select>
 </div>
 
-<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
+<button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
 <!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700 border-2 border-syellow">
-    <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Dashboard</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Settings</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Earnings</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Sign out</a>
-    </li>
+<div id="dropdownDefaultRadio" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700 border-2 border-syellow">
+    <ul class="py-4 px-4 bg-black bg-opacity-60 text-white text-sm space-y-3" aria-labelledby="dropdownDefaultButton">
+        <li>
+            <div class="flex items-center">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="hidden">
+                <label for="default-radio-1" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">English</label>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="hidden">
+                <label for="default-radio-2" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">Swedish</label>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <input id="default-radio-3" type="radio" value="" name="default-radio" class="hidden">
+                <label for="default-radio-3" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">Italian</label>
+            </div>
+        </li>
     </ul>
 </div>
 
 </div>
 <div class="px-12 flex justify-between items-center">
-    <h1 class="text-2xl whitespace-nowrap"><i class="fa-solid fa-location-dot text-syellow"></i> Lambula</h1>
-    <ul class=" flex text-sm ml-44 whitespace-nowrap space-x-2">
+    <div class="text-2xl whitespace-nowrap flex">
+        <div class="-ml-8 lg:hidden"><i class="fa-solid fa-bars text-syellow"></i></div>
+        <div class="flex items-center space-x-2 ml-5">
+            <i class="fa-solid fa-location-dot text-syellow"></i>
+            <h1>Lambula</h1>
+        </div>
+    </div>
+    <ul class="hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
         <li><a href="index.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Discover</a></li>
         <li><a href="myblogings.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">My Blogings</a></li>
         <li><a href="tour.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 px-2 tracking-wide">Tour Packages</a></li>
@@ -129,24 +126,47 @@ tailwind.config = {
     </div>
     <div class="flex flex-row justify-center items-center">
         <i class="fas fa-bell text-syellow"></i>
-        <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit" type="button"><img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-syellow"> <i class="fa-solid fa-chevron-down text-syellow"></i></div>
-<!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-    <li>
-        <a href="#" class="block px-4 py-2 ">Dashboard</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Settings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Earnings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Sign out</a>
-    </li>
-    </ul>
-</div>
+
+        <div id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit min-w-fit" type="button"><img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-syellow"> <i class="hidden fa-solid fa-chevron-down text-syellow"></i></div>
+        <!-- Dropdown menu -->
+        <div  id="dropdownInformation"  class="z-10 hidden rounded-lg bg-black bg-opacity-70 text-white shadow min-w-[200px] max-w-[250px] dark:bg-gray-700 border-2 border-syellow px-4 py-6 text-xs font-normal tracking-wide">
+            <ul class="space-y-3" >
+                <div class="flex justify-start items-center space-x-2">
+                    <div class="w-10 h-10 rounded-full border border-syellow overflow-hidden">
+                        <img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" class="w-full h-full">
+                    </div>
+                    <div>
+                        <p class="text-sm ">Andrew Mukuye</p>
+                        <p class="text-xs text-gray-500">Registered 2017</p>
+                    </div>
+                </div>
+            <li>
+                <p class="block ease-in-out duration-500">Manage Profile</p>
+            </li>
+            <hr class="">
+            <div class="space-y-1">
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Edit Profile & Payments</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Favourites</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">FAQ's</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Notification</a>
+                </li>
+            </div>
+            <hr class="">
+            <li>
+                <a href="#" class="block text-syellow hover:text-yellow-800 ease-in-out duration-500">Sign out of Lambula</a>
+            </li>
+            </ul>
+        </div>
     </div>
     </nav>
 
@@ -157,21 +177,21 @@ tailwind.config = {
 
 
 
-<div class="bg-dark-gray w-[100%] h-[700px] mbbg bg-cover bg-center flex flex-col justify-center">
-    <div class="text-white max-w-6xl mx-auto flex flex-col justify-center items-center space-y-8">
-        <h1 class="text-8xl font-extrabold text-center">Our <span class="text-syellow">Travel Champions</span> Are waiting for you</h1>
-        <p class="text-xl">Find a new tour operator</p>
-        <div class="w-full max-w-5xl flex items-center border border-syellow rounded-xl overflow-hidden bg-white bg-opacity-40">
-            <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-gray-300 placeholder:text-opacity-50 text-3xl placeholder:text-3xl p-4 px-8" placeholder="Search Categories, Packages">
-            <i class="fa-solid fa-search text-2xl text-black h-full px-12 bg-syellow flex items-center justify-center"></i>
+<div class="bg-dark-gray w-[100%] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] xl:h-[700px] mbbg bg-cover bg-center flex flex-col justify-center">
+    <div class="text-white w-[90%] max-w-6xl mx-auto flex flex-col justify-center items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 ">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-center">Our <span class="text-syellow">Travel Champions</span><br> Are waiting for you</h1>
+        <p class="text-md md:text-xl">Find a new tour operator</p>
+        <div class="w-full xl:max-w-5xl xl: lg:max-w-4xl md:max-w-3xl sm:max-w-2xl max-w-xl flex items-center border border-syellow rounded-xl overflow-hidden bg-white bg-opacity-40">
+            <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-gray-300 placeholder:text-opacity-50 text-sm sm:text-lg md:text-xl xl:text-2xl placeholder:text-sm sm:placeholder:text-lg md:placeholder:text-xl xl:placeholder:text-2xl sm:py-1 md:py-2 lg:py-3 px-8" placeholder="Search Categories, Packages">
+            <i class="fa-solid fa-search text-sm sm:text-lg md:text-xl lg:text-2xl  text-black h-full px-8 md:px-10 lg:px-12 bg-syellow flex items-center justify-center"></i>
         </div>
-        <div class="flex items-center text-[.6rem] space-x-10 whitespace-nowrap">
+        <div class="flex flex-wrap items-center space-x-2 space-y-3 justify-start text-[8px] sm:text-xs md:text-sm md:flex-nowrap whitespace-nowrap">
             <input type="radio" name="cat" id="small" class="hidden">
-            <label for="small" class="small border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold text-base">Small Groups (1-8 people)</label>
+            <label for="small" class="small border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Small Groups (1-8 people)</label>
             <input type="radio" name="cat" id="large" class="hidden">
-            <label for="large" class="large border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold text-base">Large Groups (10,50-100 people)</label>
+            <label for="large" class="large border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Large Groups (10,50-100 people)</label>
             <input type="radio" name="cat" id="cooperate" class="hidden">
-            <label for="cooperate" class="cooperate border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold text-base">Cooperate Travel</label>
+            <label for="cooperate" class="cooperate border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Cooperate Travel</label>
             <button type="button"  class="bg-transparent py-1 px-4 font-semibold tracking-wider text-sm" onclick="clearRadioButtons()">Clear filters</button>
         </div>
     </div>
@@ -186,7 +206,6 @@ tailwind.config = {
             <div class="flex items-center space-x-4 text-lg">
                 <p>Sort: </p>
                 <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="border border-syellow text-syellow rounded-md py-1 px-2 focus:ring-1 focus:ring-yellow-300 text-sm text-center inline-flex items-center" type="button">Recommended <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
-<!-- Dropdown menu -->
 <div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
     <ul class="py-2 text-sm bg-black bg-opacity-90 rounded-xl" aria-labelledby="dropdownDefaultButton">
     <li class=" hover:bg-gray-700 text-syellow">
@@ -205,15 +224,15 @@ tailwind.config = {
 </div>
             </div>
         </div>
-        <div class="flex flex-row justify-between w-full space-x-3">
-            <div class="min-w-[550px] w-[70%]">
-                <div class="flex flex-col max-h-[800px] space-y-8 overflow-y-scroll pr-4">
-                    <div class=" bg-white bg-opacity-10 border border-syellow p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+        <div class="flex flex-col items-center lg:flex-row lg:items-stretch w-full lg:space-x-3">
+            <div class="lg:min-w-[630px] w-[100%] lg:w-[60%] max-w-[650px] lg:max-w-[750px]">
+                <div class="all-events flex flex-col max-h-[800px] space-y-8 overflow-y-scroll pr-4">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -228,24 +247,26 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                    <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -260,24 +281,26 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -292,24 +315,26 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -324,24 +349,26 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -356,24 +383,26 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -388,24 +417,26 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -420,24 +451,26 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white bg-opacity-10 p-5 rounded-[1.25rem] h-fit flex space-x-4 justify-between">
-                        <div class="flex space-x-4">
-                            <div>
-                                <img src="assets/images/Kampala, Uganda_1.png" alt="" class="w-32 h-32 rounded-2xl">
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
                             </div>
-                            <div class="flex flex-col justify-center space-y-1">
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
                                 <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
                                 <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
                                 <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
@@ -452,15 +485,85 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between">
-                            <div class="flex justify-end items-center space-x-2 text-syellow pt-2 pr-3">
-                                <div class=" border border-syellow rounded-full w-5 h-5 flex justify-center items-center pt-[2px]">
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
                                     <i class="fa-solid fa-plus text-sm"></i>
                                 </div>
-                                <i class="fa-regular fa-heart text-xl"></i>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow text-lg text-black font-extrabold py-2 px-2 rounded-xl whitespace-nowrap">Starting: $1150</button>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                            </div>
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                    <i class="fa-solid fa-plus text-sm"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                        <div class="flex flex-col sm:flex-row space-x-4">
+                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                            </div>
+                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                    <p>Rating</p> 
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                    <p>(4.9)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                    <i class="fa-solid fa-plus text-sm"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
                             </div>
                         </div>
                     </div>
@@ -469,12 +572,16 @@ tailwind.config = {
                 <div class="pr-4">
                     <div class="w-full py-2 flex justify-between">
                         <h1 class="text-lg font-bold tracking-wider">Budget Safaris</h1>
-                        <div class="space-x-4 text-xl text-syellow">
-                            <i class="fa-solid fa-caret-left"></i>
-                            <i class="fa-solid fa-caret-right"></i>
+                        <div class="flex space-x-4 text-xl text-syellow">
+                            <div class="cursor-pointer" onclick="scrolLeft()">
+                                <i class="fa-solid fa-caret-left"></i>
+                            </div>
+                            <div class="cursor-pointer" onclick="scrolRight()">
+                                <i class="fa-solid fa-caret-right"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll">
+                    <div class="budget-safari-event bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll scroll-smooth" id="budget_safari_event">
                         <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash_result.jpg);">
                             <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                 <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
@@ -552,9 +659,9 @@ tailwind.config = {
 
             </div>
 
-            <div class="flex flex-col p-4 rounded-xl bg-opacity-0 min-w-[400px] w-[40%] space-y-6 bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash_result.jpg);">
-                <div class=" rounded-lg overflow-hidden h-[50%]">
-                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-black bg-opacity-50">
+            <div class="flex flex-col p-4 rounded-xl bg-opacity-0 min-w-[400px] w-[100%] max-w-[650px] lg:w-[40%] lg:max-w-[750px] space-y-6 bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash_result.jpg);">
+                <div class="overflow-hidden h-[50%]">
+                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-gray-400 bg-opacity-20 mx-auto max-w-[380px] rounded-lg ">
                         <div class="space-y-2">
                             <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash_result.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
                             <h1 class="text-center text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
@@ -566,10 +673,10 @@ tailwind.config = {
                             <h2 class="font-semibold tracking-wider">About Trip</h2>
                             <p class="text-xs w-full max-h-40 overflow-y-scroll">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel
-                                <span id="dots1">...</span>
-                                <span id="more1" class="hidden">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                                <span id="dots">...</span>
+                                <span id="more" class="hidden">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
                             </p>
-                            <button class="text-syellow" id="myBtn1" onclick="readMore()">Read more <i class="fa-solid fa-caret-down"></i></button>
+                            <button class="text-syellow" id="myBtn" onclick="readMore()">Read more <i class="fa-solid fa-caret-down"></i></button>
                         </div>
                         <div class="flex list-none">
                             <li class="w-3/12 border-b-4 px-1 border-syellow border-syellow pb-4">
@@ -587,8 +694,8 @@ tailwind.config = {
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-lg overflow-hidden h-[50%]">
-                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-white text-gray-700 text-xs tracking-wide font-semibold">
+                <div class=" h-[50%]">
+                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full max-w-[380px] bg-white text-gray-700 text-xs tracking-wide font-semibold mx-auto rounded-lg">
                         <div class="border border-gray-300 w-full p-2 h-32 rounded-md">
 
                         </div>
@@ -630,7 +737,7 @@ tailwind.config = {
                                     <span class="cursor-pointer px-1" id="increment-count" >
                                         <i class="fa-solid fa-plus"></i>
                                     </span>
-                                    <span class="text-base"  id="total-count"></span>
+                                    <span class="text-base"  id="total-count1"></span>
                                     <span class="cursor-pointer px-1" id="decrement-count">
                                         <i class="fa-solid fa-minus"></i>
                                     </span>
@@ -649,101 +756,24 @@ tailwind.config = {
 </div>
 
 <div class="w-full h-min bg-dark-gray py-12 pb-8">
-    <div class="mx-auto bg-dark-gray min-h-[600px] max-w-7xl flex justify-between space-x-4 ">
-        <div class="flex flex-col justify-between text-white bg-opacity-20 rounded-3xl w-[47%] px-6 py-5">
-            <div class="flex flex-row justify-between text-sm font-semibold tracking-wide">
-                <h1 class="font-bold">3 Days chimp Trekking (x1)</h1>
-                <h1>USD 1100</h1>
-            </div>
-            <div class="w-full h-[350px] rounded-2xl overflow-hidden my-2 flex justify-center items-center">
-                <div>
-                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash_result.jpg" alt="kar-ming-moo-Q_3WmguWgYg-unsplash" width="100%" class="object-cover" id="main-poster">
-                </div>
-            </div>
-            <div class="w-full flex justify-between items-center py-2">
-                <div class="w-[32%] h-[110px] rounded-xl overflow-hidden flex justify-center items-center cursor-pointer">
-                    <div>
-                        <img src="assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg" alt="" id="image_1" onclick="get_src(this)">
+    <!-- <div class="">
+        <div class="bg-black bg-opacity-60 text-white border border-syellow px-3 py-12 max-w-[400px] rounded-2xl">
+            <div class=" max-h-[400px] overflow-y-scroll px-3">
+                <div class="flex space-x-2 mb-10 justify-between px-4">
+                    <div class="bg-green-900 rounded-full w-6 h-6 flex justify-between items-center">
+                        <div class="bg-gray-600 w-4 h-4 rounded-full"></div>
                     </div>
-                </div>
-                <div class="w-[32%] h-[110px] rounded-xl overflow-hidden flex justify-center items-center cursor-pointer">
-                    <div>
-                        <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" onclick="get_src(this)">
+                    <div class="space-y-2">
+                        <h1 class="">3 Day Trip to murchison Falls</h1>
+                        <p class="textaaaa text-xs text-gray-500 max-w-[200px] max-h-[50px] truncate">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Asperiores,Lorem ipsum dolor</p>
                     </div>
-                </div>
-                <div class="w-[32%] h-[110px] rounded-xl overflow-hidden flex justify-center items-center cursor-pointer">
                     <div>
-                        <img src="assets/images/laura-college-K_Na5gCmh38-unsplash.jpg" alt="" onclick="get_src(this)">
+                        <button class="bg-syellow text-black py-[2px] px-3 rounded-3xl">18min.</button>
                     </div>
-                </div>
-            </div>
-            <div class="text-sm font-light text-justify">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo itaque est eos eaque dolorem voluptatum, debitis eligendi natus aperiam voluptatem mollitia, maiores aspernatur recusandae a repellendus ducimus ipsum soluta dolores ullam architecto perspiciatis tempore.</p>
-            </div>
-            <div class="flex flex-row justify-between my-3">
-                <div class="flex flex-row items-center space-x-4">
-                    <img src="assets/images/person_add_black_24dp.svg" alt="person_add_black_24dp" width="30px">
-                    <span><i class="fa-solid fa-minus"></i></span>
-                    <span class="text-xl font-bold">1</span>
-                    <span><i class="fa-solid fa-plus"></i></span>
-                </div>
-                <div class="font-semibold tracking-wider text-syellow ">
-                    <h1>Sub Total:$1100</h1>
                 </div>
             </div>
         </div>
-    
-    
-        <div class="flex flex-col justify-between bg-white text-white bg-opacity-20 rounded-3xl w-[47%] px-6 py-5 tracking-wider font-normal">
-            <div>
-                <h1 class="text-lg font-bold">Payment Details</h1>
-                <p>Complete your purchase by providing your payment details</p>
-            </div>
-            <div class="py-4">
-                <p class="py-4 font-bold">Chose your payment method</p>
-                <div class="flex justify-between items-center">
-                    <img src="assets/images/Group 2326.svg" alt="mastercard" class="w-52">
-                    <p class="text-syellow">Or Mobile Money (MTN/Airtel)</p>
-                </div>
-            </div>
-            <div class="font-semibold space-y-3 my-4">
-                <p>Card Details</p>
-                <input type="number" class="w-full border border-syellow placeholder:text-xs placeholder:tracking-wider placeholder:text-gray-400 bg-black bg-opacity-20 rounded-lg focus:outline-none focus:ring-0 focus:border-syellow" placeholder="Enter 14 digit card number">
-                <input type="text" class="w-full border border-syellow placeholder:text-xs placeholder:tracking-wider placeholder:text-gray-300 bg-black bg-opacity-20 rounded-lg focus:outline-none focus:ring-0 focus:border-syellow" placeholder="Card holder name">
-            </div>
-            <div class="font-semibold space-y-3 my-4">
-                <p>Billing address</p>
-                <select name="" id="" class="w-full border border-syellow bg-black bg-opacity-20 rounded-lg focus:outline-none focus:ring-0 focus:border-syellow text-xs tracking-wider text-gray-400 py-3 px-3">
-                    <option value="" class="bg-black text-white">Select Country</option>
-                    <option value="" class="bg-black text-white">Pakistan</option>
-                    <option value="" class="bg-black text-white">India</option>
-                    <option value="" class="bg-black text-white">Uganda</option>
-                    <option value="" class="bg-black text-white">Africa</option>
-                </select>
-                <div class="w-full border border-syellow bg-black bg-opacity-20 rounded-lg focus:outline-none focus:ring-0 focus:border-syellow text-xs tracking-wider text-gray-400 overflow-hidden flex">
-                    <input type="number" class="w-[50%] bg-transparent placeholder:text-xs placeholder:tracking-wider border-none placeholder:text-gray-300 focus:outline-none focus:ring-0" placeholder="ZIP">
-                    <input type="text" class="w-[50%] bg-transparent placeholder:text-xs placeholder:tracking-wider border-r-0 border-t-0 border-b-0 border-l-2 border-syellow placeholder:text-gray-300 focus:outline-none focus:ring-0 focus:border-syellow" placeholder="City / Sate"> 
-                </div>
-            </div>
-            <div class="my-4 space-y-4">
-                <div class="flex flex-row justify-between items-center text-lg tracking-wider">
-                    <h1>Sub Total</h1>
-                    <h1>$1100.00</h1>
-                </div>
-                <div class="flex flex-row justify-between items-center text-lg tracking-wider">
-                    <h1>Processing Fee (10%)</h1>
-                    <h1>$110.00</h1>
-                </div>
-                <div class="flex flex-row justify-between items-center text-lg tracking-wider font-bold">
-                    <h1>Total</h1>
-                    <h1>$1,210.00</h1>
-                </div>
-            </div>
-            <div class="text-center">
-                <button class="w-[90%] bg-syellow hover:bg-yellow-500 text-black py-3 px-4 font-semibold rounded-lg">Pay <span>$1,210.00</span></button>
-            </div>
-        </div>
-    </div>
+    </div> -->
 </div>
 
 
@@ -756,7 +786,7 @@ tailwind.config = {
 
 <footer class="bg-black text-gray-500 p-12">
     <div class="max-w-7xl mx-auto">
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 md:space-y-0 items-start justify-between pb-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 sm:space-y-0 items-start justify-between pb-6">
         <ul class="space-y-3 text-sm tracking-wider font-light">
             <li class="pb-4 text-xl font-semibold uppercase">Destinations</li>
             <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Game Drive</li>

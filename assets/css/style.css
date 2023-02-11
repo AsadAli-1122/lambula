@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 
-input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
     -webkit-appearance: none;
 }
 
 
 
-
 ::-webkit-scrollbar{
     color: transparent;
+    width: 12px;
+    height: 12px;
 }
 ::-webkit-scrollbar-track{
     background:transparent;
@@ -29,18 +31,27 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
 .overflow-x-scroll::-webkit-scrollbar{
     height: 5px;
 }
+.budget-safari-event::-webkit-scrollbar{
+    display: none;
+}
     
-.overflow-y-scroll::-webkit-scrollbar-track,.overflow-x-scroll::-webkit-scrollbar-track {
+.overflow-y-scroll::-webkit-scrollbar-track,
+.overflow-x-scroll::-webkit-scrollbar-track {
     background: transparent; 
     }
     
-.overflow-y-scroll::-webkit-scrollbar-thumb,.overflow-x-scroll::-webkit-scrollbar-thumb {
+.overflow-y-scroll::-webkit-scrollbar-thumb,
+.overflow-x-scroll::-webkit-scrollbar-thumb {
     background: #F7DD0A; 
     }
     
-.overflow-y-scroll::-webkit-scrollbar-thumb:hover,.overflow-x-scroll::-webkit-scrollbar-thumb:hover {
+.overflow-y-scroll::-webkit-scrollbar-thumb:hover,
+.overflow-x-scroll::-webkit-scrollbar-thumb:hover {
     background: #555; 
-    }
+}
+
+
+
 
 
 #destination_1{
@@ -85,7 +96,20 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
     background-color: #FFFFFF;
 }
 
+#img1:checked ~ label[for="img1"]>div{
+    border: 1px solid #F7DD0A;
+}
+#img2:checked ~ label[for="img2"]>div{
+    border: 1px solid #F7DD0A;
+}
+#img3:checked ~ label[for="img3"]>div{
+    border: 1px solid #F7DD0A;
+}
 
+
+
+
+/* ------------------------loader css start------------------ */
 .loader {
     background: #000;
     background: radial-gradient(#222, #000);
@@ -97,7 +121,6 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
     top: 0;
     z-index: 99999;
 }
-
 .loader-inner {
     bottom: 0;
     height: 60px;
@@ -108,11 +131,9 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
     top: 0;
     width: 100px;
 }
-
 .loader-line-wrap {
     animation: 
-    spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
-  ;
+    spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
     box-sizing: border-box;
     height: 50px;
     left: 0;
@@ -170,15 +191,16 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
     width: 34px;
     top: 35px;
 }
-
 @keyframes spin {
     0%, 15% {
     transform: rotate(0);
-  }
-  100% {
+    }
+    100% {
     transform: rotate(360deg);
-  }
+    }
 }
+/* ------------------------loader css end------------------ */
+
 
 
 

@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/style.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="assets/css/googlefonts.css" />
 <link rel="stylesheet" href="assets/css/jsdeliver.css" />
+<link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/tailwindcss.com"></script>
 <script src="assets/js/tailwind.js"></script>
 <style>
@@ -58,63 +58,64 @@ tailwind.config = {
         <div class="loader-line"></div>
         </div>
     </div>
-    </div>
-
+</div>
+    
     
 <header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
 <div class="text-white">
-<div class="w-full bg-transparent flex flex-row justify-center items-center">
-    <p>
+<div class="w-full bg-transparent flex flex-wrap justify-center items-center white">
+    <p class="whitespace-nowrap">
     <i class="fa-solid fa-phone text-syellow"></i>
     Call us: +256 020 100 100
     </p>
     
-<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">USD <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
-<!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden rounded-lg bg-black bg-opacity-50 shadow w-44 dark:bg-gray-700 border-2 border-syellow">
-    <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Dashboard</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Settings</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Earnings</a>
-    </li>
-    <hr class="mx-6">
-    <li>
-        <a href="#" class="block px-8 py-2 hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Sign out</a>
-    </li>
-    </ul>
+<div>
+    <select name="" id="" class="payment-box focus:ring-0 focus:outline-none border-none rounded-lg text-sm bg-transparent text-white px-4 cursor-pointer">
+        <option value="" class="bg-black ">USD</option>
+        <option value="" class="bg-black">EUR</option>
+        <option value="" class="bg-black">JPY</option>
+        <option value="" class="bg-black">AUD</option>
+        <option value="" class="bg-black">CAD</option>
+    </select>
 </div>
-<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
+
+<button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
 <!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-    <li>
-        <a href="#" class="block px-4 py-2 ">Dashboard</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Settings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Earnings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Sign out</a>
-    </li>
+<div id="dropdownDefaultRadio" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700 border-2 border-syellow">
+    <ul class="py-4 px-4 bg-black bg-opacity-60 text-white text-sm space-y-3" aria-labelledby="dropdownDefaultButton">
+        <li>
+            <div class="flex items-center">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="hidden">
+                <label for="default-radio-1" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">English</label>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="hidden">
+                <label for="default-radio-2" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">Swedish</label>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <input id="default-radio-3" type="radio" value="" name="default-radio" class="hidden">
+                <label for="default-radio-3" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">Italian</label>
+            </div>
+        </li>
     </ul>
 </div>
 
 </div>
 <div class="px-12 flex justify-between items-center">
-    <h1 class="text-2xl whitespace-nowrap"><i class="fa-solid fa-location-dot text-syellow"></i> Lambula</h1>
-    <ul class=" flex text-sm ml-44 whitespace-nowrap space-x-2">
+    <div class="text-2xl whitespace-nowrap flex">
+        <div class="-ml-8 lg:hidden"><i class="fa-solid fa-bars text-syellow"></i></div>
+        <div class="flex items-center space-x-2 ml-5">
+            <i class="fa-solid fa-location-dot text-syellow"></i>
+            <h1>Lambula</h1>
+        </div>
+    </div>
+    <ul class="hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
         <li><a href="index.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Discover</a></li>
-        <li><a href="myblogings.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 px-2 tracking-wider">My Blogings</a></li>
+        <li><a href="myblogings.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 px-2 tracking-wide">My Blogings</a></li>
         <li><a href="tour.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Tour Packages</a></li>
     </ul>
 
@@ -125,24 +126,47 @@ tailwind.config = {
     </div>
     <div class="flex flex-row justify-center items-center">
         <i class="fas fa-bell text-syellow"></i>
-        <div id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit" type="button"><img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-syellow"> <i class="fa-solid fa-chevron-down text-syellow"></i></div>
-<!-- Dropdown menu -->
-<div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-    <li>
-        <a href="#" class="block px-4 py-2 ">Dashboard</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Settings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Earnings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Sign out</a>
-    </li>
-    </ul>
-</div>
+
+        <div id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit min-w-fit" type="button"><img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-syellow"> <i class="hidden fa-solid fa-chevron-down text-syellow"></i></div>
+        <!-- Dropdown menu -->
+        <div  id="dropdownInformation"  class="z-10 hidden rounded-lg bg-black bg-opacity-70 text-white shadow min-w-[200px] max-w-[250px] dark:bg-gray-700 border-2 border-syellow px-4 py-6 text-xs font-normal tracking-wide">
+            <ul class="space-y-3" >
+                <div class="flex justify-start items-center space-x-2">
+                    <div class="w-10 h-10 rounded-full border border-syellow overflow-hidden">
+                        <img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" class="w-full h-full">
+                    </div>
+                    <div>
+                        <p class="text-sm ">Andrew Mukuye</p>
+                        <p class="text-xs text-gray-500">Registered 2017</p>
+                    </div>
+                </div>
+            <li>
+                <p class="block ease-in-out duration-500">Manage Profile</p>
+            </li>
+            <hr class="">
+            <div class="space-y-1">
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Edit Profile & Payments</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Favourites</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">FAQ's</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Notification</a>
+                </li>
+            </div>
+            <hr class="">
+            <li>
+                <a href="#" class="block text-syellow hover:text-yellow-800 ease-in-out duration-500">Sign out of Lambula</a>
+            </li>
+            </ul>
+        </div>
     </div>
     </nav>
 
@@ -152,10 +176,10 @@ tailwind.config = {
 
 
 
-<div class="w-full h-[100vh] min-h-[800px] bg-dark-gray pt-36 pb-8">
-    <div class="mx-auto h-full min-h-[500px] max-w-7xl flex space-x-10 ">
-        <div class="bg-white text-white bg-opacity-20 rounded-3xl w-[53%] px-6 py-5">
-            <div class="w-full list-none flex justify-between px-4">
+<div class="w-full bg-dark-gray pt-36 pb-8">
+    <div class=" flex flex-col items-center lg:items-start lg:flex-row w-[90%] lg:w-full mx-auto h-full max-w-7xl lg:space-x-10 space-y-8 lg:space-y-0">
+        <div class="flex flex-col justify-between bg-white text-white bg-opacity-20 rounded-3xl lg:w-[53%] px-6 py-5 min-h-[600px] max-w-[600px]">
+            <div class="w-full list-none flex justify-between px-4 pb-2 border-b-2">
                 <div class="flex space-x-8">
                     <li>Status</li>
                     <li>Payment ID</li>
@@ -164,8 +188,7 @@ tailwind.config = {
                     <li>More Details</li>
                 </div>
             </div>
-            <hr class="my-2">
-            <div class="w-full h-full flex flex-col justify-evenly items-center text-center">
+            <div class="w-full h-full flex flex-col justify-center items-center text-center">
                 <h1 class="uppercase font-semibold text-2xl tracking-wide">Previous bookings</h1>
                 <div>
                     <img src="assets/images/Group 10122.svg" alt="Group" class="">
@@ -175,10 +198,11 @@ tailwind.config = {
                     <p class="mx-auto w-[70%] text-gray-400">If you seeing this by mistake please contact customer support <span class="text-syellow underline underline-offset-4 cursor-pointer">here</span></p>
                 </div>
             </div>
+            <div></div>
         </div>
 
 
-        <div class="bg-white text-white bg-opacity-20 rounded-3xl w-[46%] px-6 py-5">
+        <div class="flex flex-col justify-evenly bg-white text-white bg-opacity-20 rounded-3xl lg:w-[46%] px-6 py-5 min-h-[600px] max-w-[600px]">
             <div class="w-full h-full flex flex-col justify-evenly items-center text-center">
                 <div>
                     <h1 class="uppercase font-semibold text-2xl tracking-wide text-syellow">No data to show</h1>
@@ -196,7 +220,7 @@ tailwind.config = {
 
 <footer class="bg-black text-gray-500 p-12">
 <div class="max-w-7xl mx-auto">
-    <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 md:space-y-0 items-start justify-between pb-6">
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 sm:space-y-0 items-start justify-between pb-6">
     <ul class="space-y-3 text-sm tracking-wider font-light">
         <li class="pb-4 text-xl font-semibold uppercase">Destinations</li>
         <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Game Drive</li>
