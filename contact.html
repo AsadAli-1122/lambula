@@ -110,10 +110,10 @@ tailwind.config = {
                 <img src="assets/images/locationdot.svg" alt="locationdot">
             </div>
         </div>
-        <ul class="hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
-            <li><a href="index.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Discover</a></li>
-            <li><a href="myblogings.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">My Blogings</a></li>
-            <li><a href="tour.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 px-2 tracking-wide">Tour Packages</a></li>
+        <ul class="menu-item hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
+            <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
+            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
+            <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
         </ul>
     
     
@@ -169,60 +169,57 @@ tailwind.config = {
     
     </div>
     </div>
-</header>
+    </header>
 
 
-
-
-<div class="bg-dark-gray text-white pt-32 px-2 py-12">
-    <div class="max-w-5xl mx-auto bg-white bg-opacity-10 rounded-xl space-y-4 px-6 py-4">
-        <div class="border-b border-gray-400 py-2 space-y-2">
-            <h1 class="text-lg font-extrabold tracking-wide text-syellow">Customer Support</h1>
-            <p class="text-xs font-semibold">Do you need help?</p>
+    <div class="bg-dark-gray text-white pt-32 px-2 py-12">
+        <div class="max-w-5xl mx-auto bg-white bg-opacity-10 rounded-xl space-y-4 px-6 py-4">
+            <div class="border-b border-gray-400 py-2 space-y-2">
+                <h1 class="text-lg font-extrabold tracking-wide text-syellow">Customer Support</h1>
+                <p class="text-xs font-semibold">Do you need help?</p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <p>Hello there, Are experiencing trouble using our service, kindly choose how you would love to contact us</p>
+                <p><i class="fa-solid fa-phone-volume mr-4"></i> +256 700 100 100</p>
+                <p><i class="fa-solid fa-paper-plane mr-4"></i> support@lamubla.co.uk</p>
+                <p><i class="fa-solid fa-comment-dots mr-4"></i> Click to start a live Chat</p>
+                <h1 class="text-lg font-extrabold tracking-wide text-syellow">Write to us here</h1>
+                <div class="flex flex-col p-2 space-y-1 rounded-xl">
+                    <label for="name" class="text-base font-semibold">Name</label>
+                    <input type="text" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10 placeholder:text-gray-400" placeholder="Andrew Mukuye">
+                </div>
+                <div class="flex flex-col p-2 space-y-1 rounded-xl">
+                    <label for="email" class="text-base font-semibold">Email Address</label>
+                    <input type="email" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10 placeholder:text-gray-400" placeholder="Andrew@lumbula.co.uk">
+                </div>
+                <div class="flex flex-col p-2 space-y-1 rounded-xl">
+                    <label for="message" class="text-base font-semibold">Type your Messgae here</label>
+                    <textarea cols="" rows="4" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10"></textarea>
+                </div>
+                <button class="py-2 px-6 w-full max-w-[50%] mx-auto text-black font-bold tracking-wider rounded-md bg-syellow hover:shadow-lg hover:shadow-yellow-500 hover:bg-yellow-400 hover:scale-105 ease-in-out duration-300">Send</button>
+    
+            </div>
         </div>
-        <div class="flex flex-col space-y-4">
-            <p>Hello there, Are experiencing trouble using our service, kindly choose how you would love to contact us</p>
-            <p><i class="fa-solid fa-phone-volume mr-4"></i> +256 700 100 100</p>
-            <p><i class="fa-solid fa-paper-plane mr-4"></i> support@lamubla.co.uk</p>
-            <p><i class="fa-solid fa-comment-dots mr-4"></i> Click to start a live Chat</p>
-            <h1 class="text-lg font-extrabold tracking-wide text-syellow">Write to us here</h1>
-            <div class="flex flex-col p-2 space-y-1 rounded-xl">
-                <label for="name" class="text-base font-semibold">Name</label>
-                <input type="text" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10 placeholder:text-gray-400" placeholder="Andrew Mukuye">
+        
+        
+        
+    </div>
+    
+    <div class="bg-syellow text-dark-gray tracking-wide font-semibold">
+        <div class="max-w-5xl mx-auto px-4 py-12 text-center">
+            <h1 class="text-4xl font-bold tracking-wider">Stay in the know</h1>
+            <p class="w-[70%] mx-auto text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, consequuntur et earum, ipsum quos necessitatibus perspiciatis.</p>
+            <div class="mx-auto max-w-[60%] bg-dark-gray p-2 rounded-md flex justify-between items-center my-2">
+                <input type="email" name="email" id="email" class="focus:outline-none focus:ring-0 rounded-lg border-none placeholder:text-gray-600 text-gray-600 bg-transparent" placeholder="Enter Your email address">
+                <button class="py-2 w-[30%] uppercase border border-black rounded-md bg-syellow hover:bg-yellow-400">Subscribe</button>
             </div>
-            <div class="flex flex-col p-2 space-y-1 rounded-xl">
-                <label for="email" class="text-base font-semibold">Email Address</label>
-                <input type="email" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10 placeholder:text-gray-400" placeholder="Andrew@lumbula.co.uk">
-            </div>
-            <div class="flex flex-col p-2 space-y-1 rounded-xl">
-                <label for="message" class="text-base font-semibold">Type your Messgae here</label>
-                <textarea cols="" rows="4" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10"></textarea>
-            </div>
-            <button class="py-2 px-6 w-full max-w-[50%] mx-auto text-black font-bold tracking-wider rounded-md bg-syellow hover:shadow-lg hover:shadow-yellow-500 hover:bg-yellow-400 hover:scale-105 ease-in-out duration-300">Send</button>
-
+    
         </div>
     </div>
     
     
     
-</div>
-
-<div class="bg-syellow text-dark-gray tracking-wide font-semibold">
-    <div class="max-w-5xl mx-auto px-4 py-12 text-center">
-        <h1 class="text-4xl font-bold tracking-wider">Stay in the know</h1>
-        <p class="w-[70%] mx-auto text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, consequuntur et earum, ipsum quos necessitatibus perspiciatis.</p>
-        <div class="mx-auto max-w-[60%] bg-dark-gray p-2 rounded-md flex justify-between items-center my-2">
-            <input type="email" name="email" id="email" class="focus:outline-none focus:ring-0 rounded-lg border-none placeholder:text-gray-600 text-gray-600 bg-transparent" placeholder="Enter Your email address">
-            <button class="py-2 w-[30%] uppercase border border-black rounded-md bg-syellow hover:bg-yellow-400">Subscribe</button>
-        </div>
-
-    </div>
-</div>
-
-
-
-
-
+    
 
 
 
@@ -276,11 +273,15 @@ tailwind.config = {
         <p>Copyright &copy; 2021 lambola ALL RIGHT RESERVED</p>
         </div>
     </div>
-</footer>
+  </footer>
+  
 
-
-<script src="assets/js/cloudflair.js"></script>
-<script src="assets/js/jsdeliver.js"></script>
-<script src="assets/js/style.js"></script>
+  <script src="assets/js/cloudflair.js"></script>
+  <script src="assets/js/jsdeliver.js"></script>
+  <script src="assets/js/style.js"></script>
+  <script src="assets//js/includeoffer.js"></script>
+  <script src="assets/js/pagination.js"></script>
+  <!-- top nav links active js -->
+  <script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
 </body>
 </html>

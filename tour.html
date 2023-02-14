@@ -39,7 +39,6 @@ tailwind.config = {
 </script>
 </head>
 <body>
-
 <div class="loader" id="loader">
     <div class="loader-inner">
         <div class="loader-line-wrap">
@@ -59,8 +58,7 @@ tailwind.config = {
         </div>
     </div>
 </div>
-    
-    
+
 <header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
     <div class="text-white">
     <div class="w-full bg-transparent flex flex-wrap justify-center items-center white">
@@ -112,10 +110,10 @@ tailwind.config = {
                 <img src="assets/images/locationdot.svg" alt="locationdot">
             </div>
         </div>
-        <ul class="hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
-            <li><a href="index.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Discover</a></li>
-            <li><a href="myblogings.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">My Blogings</a></li>
-            <li><a href="tour.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 px-2 tracking-wide">Tour Packages</a></li>
+        <ul class="menu-item hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
+            <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
+            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
+            <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
         </ul>
     
     
@@ -175,613 +173,607 @@ tailwind.config = {
 
 
 
-
-<div class="bg-dark-gray w-[100%] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] xl:h-[700px] mbbg bg-cover bg-center flex flex-col justify-center">
-    <div class="text-white w-[90%] max-w-6xl mx-auto flex flex-col justify-center items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 ">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-center">Our <span class="text-syellow">Travel Champions</span><br> Are waiting for you</h1>
-        <p class="text-md md:text-xl">Find a new tour operator</p>
-        <div class="w-full xl:max-w-5xl xl: lg:max-w-4xl md:max-w-3xl sm:max-w-2xl max-w-xl flex items-center border border-syellow rounded-xl overflow-hidden bg-white bg-opacity-40">
-            <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-gray-300 placeholder:text-opacity-50 text-sm sm:text-lg md:text-xl xl:text-2xl placeholder:text-sm sm:placeholder:text-lg md:placeholder:text-xl xl:placeholder:text-2xl sm:py-1 md:py-2 lg:py-3 px-8" placeholder="Search Categories, Packages">
-            <i class="fa-solid fa-search text-sm sm:text-lg md:text-xl lg:text-2xl  text-black h-full px-8 md:px-10 lg:px-12 bg-syellow flex items-center justify-center"></i>
-        </div>
-        <div class="flex flex-wrap items-center space-x-2 space-y-3 justify-start text-[8px] sm:text-xs md:text-sm md:flex-nowrap whitespace-nowrap">
-            <input type="radio" name="cat" id="small" class="hidden">
-            <label for="small" class="small border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Small Groups (1-8 people)</label>
-            <input type="radio" name="cat" id="large" class="hidden">
-            <label for="large" class="large border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Large Groups (10,50-100 people)</label>
-            <input type="radio" name="cat" id="cooperate" class="hidden">
-            <label for="cooperate" class="cooperate border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Cooperate Travel</label>
-            <button type="button"  class="bg-transparent py-1 px-4 font-semibold tracking-wider text-sm" onclick="clearRadioButtons()">Clear filters</button>
+    <div class="bg-dark-gray w-[100%] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] xl:h-[700px] mbbg bg-cover bg-center flex flex-col justify-center">
+        <div class="text-white w-[90%] max-w-6xl mx-auto flex flex-col justify-center items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 ">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-center">Our <span class="text-syellow">Travel Champions</span><br> Are waiting for you</h1>
+            <p class="text-md md:text-xl">Find a new tour operator</p>
+            <div class="w-full xl:max-w-5xl xl: lg:max-w-4xl md:max-w-3xl sm:max-w-2xl max-w-xl flex items-center border border-syellow rounded-xl overflow-hidden bg-white bg-opacity-40">
+                <input type="search" name="" id="" class="w-[100%] bg-transparent border-none placeholder:text-gray-300 placeholder:text-opacity-50 text-sm sm:text-lg md:text-xl xl:text-2xl placeholder:text-sm sm:placeholder:text-lg md:placeholder:text-xl xl:placeholder:text-2xl sm:py-1 md:py-2 lg:py-3 px-8" placeholder="Search Categories, Packages">
+                <i class="fa-solid fa-search text-sm sm:text-lg md:text-xl lg:text-2xl  text-black h-full px-8 md:px-10 lg:px-12 bg-syellow flex items-center justify-center"></i>
+            </div>
+            <div class="flex flex-wrap items-center space-x-2 space-y-3 justify-start text-[8px] sm:text-xs md:text-sm md:flex-nowrap whitespace-nowrap">
+                <input type="radio" name="cat" id="small" class="hidden">
+                <label for="small" class="small border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Small Groups (1-8 people)</label>
+                <input type="radio" name="cat" id="large" class="hidden">
+                <label for="large" class="large border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Large Groups (10,50-100 people)</label>
+                <input type="radio" name="cat" id="cooperate" class="hidden">
+                <label for="cooperate" class="cooperate border-2 border-syellow rounded-xl px-4 py-1 bg-[#FCF5BB] text-black font-bold cursor-pointer">Cooperate Travel</label>
+                <button type="button"  class="bg-transparent py-1 px-4 font-semibold tracking-wider text-sm" onclick="clearRadioButtons()">Clear filters</button>
+            </div>
         </div>
     </div>
-</div>
-<div class="w-full py-4 bg-dark-gray text-white px-2">
-    <div class="max-w-7xl mx-auto text-sm">
-        <div class=" flex justify-between items-center mb-4">
-            <div class="flex space-x-4 text-xl">
-                <p>Tour operator for you</p>
-                <p class="text-syellow">Popular</p>
-            </div>
-            <div class="flex items-center space-x-4 text-lg">
-                <p>Sort: </p>
-                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="border border-syellow text-syellow rounded-md py-1 px-2 focus:ring-1 focus:ring-yellow-300 text-sm text-center inline-flex items-center" type="button">Recommended <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
-<div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm bg-black bg-opacity-90 rounded-xl" aria-labelledby="dropdownDefaultButton">
-    <li class=" hover:bg-gray-700 text-syellow">
-        <a href="#" class="block px-4 py-2">Dashboard</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Settings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Earnings</a>
-    </li>
-    <li>
-        <a href="#" class="block px-4 py-2 ">Sign out</a>
-    </li>
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="flex flex-col items-center lg:flex-row lg:items-stretch w-full lg:space-x-3">
-            <div class="lg:min-w-[630px] w-[100%] lg:w-[60%] max-w-[650px] lg:max-w-[750px]">
-                <div class="all-events flex flex-col max-h-[800px] space-y-8 overflow-y-scroll pr-4">
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
-                        <div class="flex flex-col sm:flex-row space-x-4">
-                            <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
-                                <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
-                            </div>
-                            <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
-                                <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
-                                <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
-                                <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
-                                <div class="text-xs font-extralight tracking-wider flex space-x-2">
-                                    <p>Rating</p> 
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
-                                    <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
-                                    <p>(4.9)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
-                            <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
-                                <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
-                                    <i class="fa-solid fa-plus text-sm"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
-                            </div>
-                        </div>
-                    </div>
-
+    <div class="w-full py-4 bg-dark-gray text-white px-2">
+        <div class="max-w-7xl mx-auto text-sm">
+            <div class=" flex justify-between items-center mb-4">
+                <div class="flex space-x-4 text-xl">
+                    <p>Tour operator for you</p>
+                    <p class="text-syellow">Popular</p>
                 </div>
-                <div class="pr-4">
-                    <div class="w-full py-2 flex justify-between">
-                        <h1 class="text-lg font-bold tracking-wider">Budget Safaris</h1>
-                        <div class="flex space-x-4 text-xl text-syellow">
-                            <div class="cursor-pointer" onclick="scrolLeft()">
-                                <i class="fa-solid fa-caret-left"></i>
+                <div class="flex items-center space-x-4 text-lg">
+                    <p>Sort: </p>
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="border border-syellow text-syellow rounded-md py-1 px-2 focus:ring-1 focus:ring-yellow-300 text-sm text-center inline-flex items-center" type="button">Recommended <i class="fa-solid fa-sort-down pl-2 pb-2 text-syellow"></i></button>
+    <div id="dropdown" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm bg-black bg-opacity-90 rounded-xl" aria-labelledby="dropdownDefaultButton">
+        <li class=" hover:bg-gray-700 text-syellow">
+            <a href="#" class="block px-4 py-2">Dashboard</a>
+        </li>
+        <li>
+            <a href="#" class="block px-4 py-2 ">Settings</a>
+        </li>
+        <li>
+            <a href="#" class="block px-4 py-2 ">Earnings</a>
+        </li>
+        <li>
+            <a href="#" class="block px-4 py-2 ">Sign out</a>
+        </li>
+        </ul>
+    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center lg:flex-row lg:items-stretch w-full lg:space-x-3">
+                <div class="lg:min-w-[630px] w-[100%] lg:w-[60%] max-w-[650px] lg:max-w-[750px]">
+                    <div class="all-events flex flex-col max-h-[800px] space-y-8 overflow-y-scroll pr-4">
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="cursor-pointer" onclick="scrolRight()">
-                                <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="budget-safari-event bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll scroll-smooth" id="budget_safari_event">
-                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
-                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
-                                <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
-                            </div>
-                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
-                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
-                            </div>
-                        </div>
-                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
-                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
-                                <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
-                            </div>
-                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
-                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
-                            </div>
-                        </div>
-                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
-                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
-                                <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
-                            </div>
-                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
-                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
-                            </div>
-                        </div>
-                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
-                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
-                                <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
-                            </div>
-                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
-                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
-                            </div>
-                        </div>
-                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
-                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
-                                <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
-                            </div>
-                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
-                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
-                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
-                                <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
-                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                            <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
-                                <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
-                                <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-center bg-black bg-opacity-90 px-4 py-1">
-                                <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
-                                <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gorilla-trek bg-white bg-opacity-10 border border-syellow p-4 rounded-[1.25rem] h-fit flex flex-col sm:flex-row space-x-4 justify-between">
+                            <div class="flex flex-col sm:flex-row space-x-4">
+                                <div class="flex justify-center items-center rounded-xl overflow-hidden w-full h-64 sm:w-32 sm:h-32">
+                                    <img src="assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg" alt="" class="">
+                                </div>
+                                <div class="flex flex-col justify-center space-y-1 whitespace-nowrap">
+                                    <h1 class="font-bold text-2xl tracking-widest">3 Days Gorilla Trek</h1>
+                                    <p class="tracking-widest text-base font-light">Safari/Adventure/Game Driver</p>
+                                    <p class="text-xs font-extralight tracking-wider"><span><i class="fa-solid fa-location-dot"></i></span> Westren-lambula <span class="ml-2"><i class="fas fa-eye"></i> 356 views</span></p>
+                                    <div class="text-xs font-extralight tracking-wider flex space-x-2">
+                                        <p>Rating</p> 
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_fill.svg" alt="noun_Star_fill">
+                                        <img src="assets/images/noun_Star_empty.svg" alt="noun_Star_empty">
+                                        <p>(4.9)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row-reverse sm:flex-col justify-between pt-4 sm:pt-0">
+                                <div class="flex justify-end items-center space-x-2 text-syellow py-2 px-3">
+                                    <div class="border border-syellow rounded-full w-5 h-5 flex justify-center items-center hover:border-yellow-600 hover:text-yellow-600 cursor-pointer">
+                                        <i class="fa-solid fa-plus text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart cursor-pointer hover:text-yellow-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a href="chaimpTrekking.html" class="bg-syellow hover:bg-yellow-500 text-base text-black font-bold py-2 px-4 rounded-md whitespace-nowrap">Starting: $1150</a>
+                                </div>
                             </div>
                         </div>
     
-                        
                     </div>
-                </div>
-
-            </div>
-
-            <div class="flex flex-col p-4 rounded-xl bg-opacity-0 min-w-[400px] w-[100%] max-w-[650px] lg:w-[40%] lg:max-w-[750px] space-y-6 bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);">
-                <div class="overflow-hidden h-[50%]">
-                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-gray-400 bg-opacity-20 mx-auto max-w-[380px] rounded-lg ">
-                        <div class="space-y-2">
-                            <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
-                            <h1 class="text-center text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
-                            <p class="text-center text-sm">Provided by <span class="font-bold tracking-widest">Paramoja Safaris</span></p>
-
-                        </div>
-                        <hr>
-                        <div class="space-y-2">
-                            <h2 class="font-semibold tracking-wider">About Trip</h2>
-                            <p class="text-xs w-full max-h-40 overflow-y-scroll">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel
-                                <span id="dots">...</span>
-                                <span id="more" class="hidden">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
-                            </p>
-                            <button class="text-syellow" id="myBtn" onclick="readMore()">Read more <i class="fa-solid fa-caret-down"></i></button>
-                        </div>
-                        <div class="flex list-none">
-                            <li class="w-3/12 border-b-4 px-1 border-syellow border-syellow pb-4">
-                                <a href="#" class="bg-syellow text-black px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </li>
-                            <li class="w-3/12 border-b-2 border-white pb-4 px-1">
-                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </li>
-                            <li class="w-3/12 border-b-2 border-white pb-4  px-1">
-                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </li>
-                            <li class="w-3/12 border-b-2 border-white pb-4  px-1">
-                                <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-                <div class=" h-[50%]">
-                    <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full max-w-[380px] bg-white text-gray-700 text-xs tracking-wide font-semibold mx-auto rounded-lg">
-                        <div class="border border-gray-300 w-full p-2 h-32 rounded-md">
-
-                        </div>
-                        <h1 class="text-sm font-bold tracking-wide">What is included in this offer</h1>
-                        <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
-                            <i class="fa-solid fa-car w-7"></i>
-                            <p>All tranport during the Safari</p>
-                        </div>
-                        <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
-                            <i class="fa-solid fa-city w-7"></i>
-                            <p>Accommodation</p>
-                        </div>
-                        <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
-                            <i class="fa-solid fa-utensils w-7"></i>
-                            <p>Meals, en-route lunches as per itinerary</p>
-                        </div>
-                        <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
-                            <i class="fa-solid fa-hill-avalanche w-7"></i>
-                            <p>Park entrance free as per itinerary</p>
-                        </div>
-                        <div class="flex flex-row items-center hover:text-red-600 cursor-pointer ease-in duration-200">
-                            <i class="fa-solid fa-passport w-7"></i>
-                            <p><strike>Visa Personal / travel insurance</strike></p>
-                        </div>
-                        <div class="flex flex-row items-center hover:text-red-600 cursor-pointer ease-in duration-200">
-                            <i class="fa-solid fa-plane-departure w-7"></i>
-                            <p><strike>Air fare</strike></p>
-                        </div>
-                        <div class="flex flex-row items-center hover:text-red-600 cursor-pointer ease-in duration-200">
-                            <i class="fa-solid fa-bag-shopping w-7"></i>
-                            <p><strike>Personal expenses, laundry, telephone charges</strike></p>
-                        </div>
-                        <div class="text-center"><button href="#" class="border border-gray-700 whitespace-nowrap w-[90%] py-2 pb-3 px-4 rounded-lg font-bold tracking-wide hover:bg-syellow ease-in duration-200">Show all other Anemities</button></div>
-                        <hr class="border-gray-500">
-                        <div class="flex flex-row justify-between items-center">
-                            <div class="flex items-center font-bold space-x-4">
-                                <p class="pb-1">Persons</p>
-                                <div class="border border-gray-700 rounded-md px-2 space-x-2 pb-[4px] pt-[2px]">
-                                    <span class="cursor-pointer px-1" id="increment-count" >
-                                        <i class="fa-solid fa-plus"></i>
-                                    </span>
-                                    <span class="text-base"  id="total-count1"></span>
-                                    <span class="cursor-pointer px-1" id="decrement-count">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </span>
+                    <div class="pr-4">
+                        <div class="w-full py-2 flex justify-between">
+                            <h1 class="text-lg font-bold tracking-wider">Budget Safaris</h1>
+                            <div class="flex space-x-4 text-xl text-syellow">
+                                <div class="cursor-pointer" onclick="scrolLeft()">
+                                    <i class="fa-solid fa-caret-left"></i>
+                                </div>
+                                <div class="cursor-pointer" onclick="scrolRight()">
+                                    <i class="fa-solid fa-caret-right"></i>
                                 </div>
                             </div>
-                            <div>
-                                <button class="bg-syellow hover:bg-yellow-500 text-black px-6 py-2 text-xs font-bold tracking-wide rounded-md uppercase">Book now</button>
+                        </div>
+                        <div class="budget-safari-event bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll scroll-smooth" id="budget_safari_event">
+                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+        
+                            
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="flex flex-col p-4 rounded-xl bg-opacity-0 min-w-[400px] w-[100%] max-w-[650px] lg:w-[40%] lg:max-w-[750px] space-y-6 bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);">
+                    <div class="overflow-hidden h-[50%]">
+                        <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full bg-gray-400 bg-opacity-20 mx-auto max-w-[380px] rounded-lg ">
+                            <div class="space-y-2">
+                                <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="w-28 h-28 rounded-lg mx-auto">
+                                <h1 class="text-center text-md font-bold tracking-widest">3 Days Gorilla Trek</h1>
+                                <p class="text-center text-sm">Provided by <span class="font-bold tracking-widest">Paramoja Safaris</span></p>
+    
+                            </div>
+                            <hr>
+                            <div class="space-y-2">
+                                <h2 class="font-semibold tracking-wider">About Trip</h2>
+                                <p class="text-xs w-full max-h-40 overflow-y-scroll">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel nulla et dictum interdum, nisi lorem egestas vitae scel
+                                    <span id="dots">...</span>
+                                    <span id="more" class="hidden">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                                </p>
+                                <button class="text-syellow" id="myBtn" onclick="readMore()">Read more <i class="fa-solid fa-caret-down"></i></button>
+                            </div>
+                            <div class="flex list-none">
+                                <li class="w-3/12 border-b-4 px-1 border-syellow border-syellow pb-4">
+                                    <a href="#" class="bg-syellow text-black px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                                </li>
+                                <li class="w-3/12 border-b-2 border-white pb-4 px-1">
+                                    <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                                </li>
+                                <li class="w-3/12 border-b-2 border-white pb-4  px-1">
+                                    <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                                </li>
+                                <li class="w-3/12 border-b-2 border-white pb-4  px-1">
+                                    <a href="#" class=" px-3 py-1 rounded-lg font-semibold tracking-wider">Detail</a>
+                                </li>
                             </div>
                         </div>
-
+                    </div>
+                    <div class=" h-[50%]">
+                        <div class="p-3 space-y-2 bg-cover bg-no-repeat flex flex-col justify-between h-full max-w-[380px] bg-white text-gray-700 text-xs tracking-wide font-semibold mx-auto rounded-lg">
+                            <div class="border border-gray-300 w-full p-2 h-32 rounded-md">
+    
+                            </div>
+                            <h1 class="text-sm font-bold tracking-wide">What is included in this offer</h1>
+                            <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
+                                <i class="fa-solid fa-car w-7"></i>
+                                <p>All tranport during the Safari</p>
+                            </div>
+                            <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
+                                <i class="fa-solid fa-city w-7"></i>
+                                <p>Accommodation</p>
+                            </div>
+                            <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
+                                <i class="fa-solid fa-utensils w-7"></i>
+                                <p>Meals, en-route lunches as per itinerary</p>
+                            </div>
+                            <div class="flex flex-row items-center hover:text-yellow-700 cursor-pointer ease-in duration-200 hover:translate-x-3">
+                                <i class="fa-solid fa-hill-avalanche w-7"></i>
+                                <p>Park entrance free as per itinerary</p>
+                            </div>
+                            <div class="flex flex-row items-center hover:text-red-600 cursor-pointer ease-in duration-200">
+                                <i class="fa-solid fa-passport w-7"></i>
+                                <p><strike>Visa Personal / travel insurance</strike></p>
+                            </div>
+                            <div class="flex flex-row items-center hover:text-red-600 cursor-pointer ease-in duration-200">
+                                <i class="fa-solid fa-plane-departure w-7"></i>
+                                <p><strike>Air fare</strike></p>
+                            </div>
+                            <div class="flex flex-row items-center hover:text-red-600 cursor-pointer ease-in duration-200">
+                                <i class="fa-solid fa-bag-shopping w-7"></i>
+                                <p><strike>Personal expenses, laundry, telephone charges</strike></p>
+                            </div>
+                            <div class="text-center"><button href="#" class="border border-gray-700 whitespace-nowrap w-[90%] py-2 pb-3 px-4 rounded-lg font-bold tracking-wide hover:bg-syellow ease-in duration-200">Show all other Anemities</button></div>
+                            <hr class="border-gray-500">
+                            <div class="flex flex-row justify-between items-center">
+                                <div class="flex items-center font-bold space-x-4">
+                                    <p class="pb-1">Persons</p>
+                                    <div class="border border-gray-700 rounded-md px-2 space-x-2 pb-[4px] pt-[2px]">
+                                        <span class="cursor-pointer px-1" id="increment-count" >
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        <span class="text-base"  id="total-count1"></span>
+                                        <span class="cursor-pointer px-1" id="decrement-count">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="bg-syellow hover:bg-yellow-500 text-black px-6 py-2 text-xs font-bold tracking-wide rounded-md uppercase">Book now</button>
+                                </div>
+                            </div>
+    
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="w-full h-min bg-dark-gray py-12 pb-8">
-    <div class="">
-        <!-- <div class="bg-black bg-opacity-60 text-white border border-syellow px-3 py-12 max-w-[400px] rounded-2xl">
-            <div class=" max-h-[400px] overflow-y-scroll px-3">
-                <div class="flex space-x-2 mb-10 justify-between px-4">
-                    <div class="bg-green-900 rounded-full w-6 h-6 flex justify-between items-center">
-                        <div class="bg-gray-600 w-4 h-4 rounded-full"></div>
-                    </div>
-                    <div class="space-y-2">
-                        <h1 class="">3 Day Trip to murchison Falls</h1>
-                        <p class="textaaaa text-xs text-gray-500 max-w-[200px] max-h-[50px] truncate">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Asperiores,Lorem ipsum dolor</p>
-                    </div>
-                    <div>
-                        <button class="bg-syellow text-black py-[2px] px-3 rounded-3xl">18min.</button>
+    
+    <div class="w-full h-min bg-dark-gray py-12 pb-8">
+        <div class="">
+            <!-- <div class="bg-black bg-opacity-60 text-white border border-syellow px-3 py-12 max-w-[400px] rounded-2xl">
+                <div class=" max-h-[400px] overflow-y-scroll px-3">
+                    <div class="flex space-x-2 mb-10 justify-between px-4">
+                        <div class="bg-green-900 rounded-full w-6 h-6 flex justify-between items-center">
+                            <div class="bg-gray-600 w-4 h-4 rounded-full"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="">3 Day Trip to murchison Falls</h1>
+                            <p class="textaaaa text-xs text-gray-500 max-w-[200px] max-h-[50px] truncate">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Asperiores,Lorem ipsum dolor</p>
+                        </div>
+                        <div>
+                            <button class="bg-syellow text-black py-[2px] px-3 rounded-3xl">18min.</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
     </div>
-</div>
-
-
-
-
-
-
-
-
+    
+    
+    
 
 <footer class="bg-black text-gray-500 p-12">
     <div class="max-w-7xl mx-auto">
@@ -828,12 +820,15 @@ tailwind.config = {
         <p>Copyright &copy; 2021 lambola ALL RIGHT RESERVED</p>
         </div>
     </div>
-</footer>
+  </footer>
+  
 
-
-<script src="assets/js/cloudflair.js"></script>
-<script src="assets/js/jsdeliver.js"></script>
-<script src="assets//js/includeoffer.js"></script>
-<script src="assets/js/style.js"></script>
+  <script src="assets/js/cloudflair.js"></script>
+  <script src="assets/js/jsdeliver.js"></script>
+  <script src="assets/js/style.js"></script>
+  <script src="assets//js/includeoffer.js"></script>
+  <script src="assets/js/pagination.js"></script>
+  <!-- top nav links active js -->
+  <script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
 </body>
 </html>

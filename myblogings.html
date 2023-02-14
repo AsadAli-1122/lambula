@@ -39,7 +39,6 @@ tailwind.config = {
 </script>
 </head>
 <body>
-
 <div class="loader" id="loader">
     <div class="loader-inner">
         <div class="loader-line-wrap">
@@ -59,8 +58,7 @@ tailwind.config = {
         </div>
     </div>
 </div>
-    
-    
+
 <header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
     <div class="text-white">
     <div class="w-full bg-transparent flex flex-wrap justify-center items-center white">
@@ -112,10 +110,10 @@ tailwind.config = {
                 <img src="assets/images/locationdot.svg" alt="locationdot">
             </div>
         </div>
-        <ul class="hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
-            <li><a href="index.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Discover</a></li>
-            <li><a href="myblogings.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">My Blogings</a></li>
-            <li><a href="tour.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 px-2 tracking-wide">Tour Packages</a></li>
+        <ul class="menu-item hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
+            <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
+            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
+            <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
         </ul>
     
     
@@ -175,46 +173,51 @@ tailwind.config = {
 
 
 
-<div class="w-full bg-dark-gray pt-36 pb-8">
-    <div class=" flex flex-col items-center lg:items-start lg:flex-row w-[90%] lg:w-full mx-auto h-full max-w-7xl lg:space-x-10 space-y-8 lg:space-y-0">
-        <div class="flex flex-col justify-between bg-white text-white bg-opacity-20 rounded-3xl lg:w-[53%] px-6 py-5 min-h-[600px] max-w-[600px]">
-            <div class="w-full list-none flex justify-between px-4 pb-2 border-b-2">
-                <div class="flex space-x-8">
-                    <li>Status</li>
-                    <li>Payment ID</li>
-                </div>
-                <div>
-                    <li>More Details</li>
-                </div>
-            </div>
-            <div class="w-full h-full flex flex-col justify-center items-center text-center">
-                <h1 class="uppercase font-semibold text-2xl tracking-wide">Previous bookings</h1>
-                <div>
-                    <img src="assets/images/Group 10122.svg" alt="Group" class="">
-                </div>
-                <div>
-                    <h1 class="uppercase font-semibold text-2xl tracking-wide text-syellow">No data to show</h1>
-                    <p class="mx-auto w-[70%] text-gray-400">If you seeing this by mistake please contact customer support <span class="text-syellow underline underline-offset-4 cursor-pointer">here</span></p>
-                </div>
-            </div>
-            <div></div>
-        </div>
 
 
-        <div class="flex flex-col justify-evenly bg-white text-white bg-opacity-20 rounded-3xl lg:w-[46%] px-6 py-5 min-h-[600px] max-w-[600px]">
-            <div class="w-full h-full flex flex-col justify-evenly items-center text-center">
-                <div>
-                    <h1 class="uppercase font-semibold text-2xl tracking-wide text-syellow">No data to show</h1>
-                    <p class="mx-auto w-[70%] text-gray-400">If you seeing this by mistake please contact customer support <span class="text-syellow underline underline-offset-4 cursor-pointer">here</span></p>
+
+    <div class="w-full bg-dark-gray pt-36 pb-8">
+        <div class=" flex flex-col items-center lg:items-start lg:flex-row w-[90%] lg:w-full mx-auto h-full max-w-7xl lg:space-x-10 space-y-8 lg:space-y-0">
+            <div class="flex flex-col justify-between bg-white text-white bg-opacity-20 rounded-3xl lg:w-[53%] px-6 py-5 min-h-[600px] max-w-[600px]">
+                <div class="w-full list-none flex justify-between px-4 pb-2 border-b-2">
+                    <div class="flex space-x-8">
+                        <li>Status</li>
+                        <li>Payment ID</li>
+                    </div>
+                    <div>
+                        <li>More Details</li>
+                    </div>
+                </div>
+                <div class="w-full h-full flex flex-col justify-center items-center text-center">
+                    <h1 class="uppercase font-semibold text-2xl tracking-wide">Previous bookings</h1>
+                    <div>
+                        <img src="assets/images/Group 10122.svg" alt="Group" class="">
+                    </div>
+                    <div>
+                        <h1 class="uppercase font-semibold text-2xl tracking-wide text-syellow">No data to show</h1>
+                        <p class="mx-auto w-[70%] text-gray-400">If you seeing this by mistake please contact customer support <span class="text-syellow underline underline-offset-4 cursor-pointer">here</span></p>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+    
+    
+            <div class="flex flex-col justify-evenly bg-white text-white bg-opacity-20 rounded-3xl lg:w-[46%] px-6 py-5 min-h-[600px] max-w-[600px]">
+                <div class="w-full h-full flex flex-col justify-evenly items-center text-center">
+                    <div>
+                        <h1 class="uppercase font-semibold text-2xl tracking-wide text-syellow">No data to show</h1>
+                        <p class="mx-auto w-[70%] text-gray-400">If you seeing this by mistake please contact customer support <span class="text-syellow underline underline-offset-4 cursor-pointer">here</span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
-
+    
+    
+    
+    
+    
+    
 
 
 
@@ -263,11 +266,15 @@ tailwind.config = {
         <p>Copyright &copy; 2021 lambola ALL RIGHT RESERVED</p>
         </div>
     </div>
-</footer>
+  </footer>
+  
 
-
-<script src="assets/js/cloudflair.js"></script>
-<script src="assets/js/jsdeliver.js"></script>
-<script src="assets/js/style.js"></script>
+  <script src="assets/js/cloudflair.js"></script>
+  <script src="assets/js/jsdeliver.js"></script>
+  <script src="assets/js/style.js"></script>
+  <script src="assets//js/includeoffer.js"></script>
+  <script src="assets/js/pagination.js"></script>
+  <!-- top nav links active js -->
+  <script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
 </body>
 </html>

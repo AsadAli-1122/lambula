@@ -110,10 +110,10 @@ tailwind.config = {
                 <img src="assets/images/locationdot.svg" alt="locationdot">
             </div>
         </div>
-        <ul class="hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
-            <li><a class="li" href="index.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">Discover</a></li>
-            <li><a class="li" href="myblogings.html" class="tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3">My Blogings</a></li>
-            <li><a class="li" href="tour.html" class="font-bold text-syellow border-b-4 border-syellow pb-3 px-2 tracking-wide">Tour Packages</a></li>
+        <ul class="menu-item hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
+            <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
+            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
+            <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
         </ul>
     
     
@@ -143,24 +143,24 @@ tailwind.config = {
                 <hr class="">
                 <div class="space-y-1">
                     <li>
-                        <a class="li" href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Edit Profile & Payments</a>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Edit Profile & Payments</a>
                     </li>
                     <li>
-                        <a class="li" href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Favourites</a>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Favourites</a>
                     </li>
                     <li>
-                        <a class="li" href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">FAQ's</a>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">FAQ's</a>
                     </li>
                     <li>
-                        <a class="li" href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Support</a>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Support</a>
                     </li>
                     <li>
-                        <a class="li" href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Notification</a>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Notification</a>
                     </li>
                 </div>
                 <hr class="">
                 <li>
-                    <a class="li" href="#" class="block text-syellow hover:text-yellow-800 ease-in-out duration-500">Sign out of Lambula</a>
+                    <a href="#" class="block text-syellow hover:text-yellow-800 ease-in-out duration-500">Sign out of Lambula</a>
                 </li>
                 </ul>
             </div>
@@ -169,18 +169,78 @@ tailwind.config = {
     
     </div>
     </div>
-</header>
+    </header>
 
 
-<div class="bg-dark-gray">
-    <div class="mx-auto max-w-5xl text-white py-28 px-2">
-        <div class="space-y-4 px-4">
-            <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow py-4 mx-auto">Latest Blog</h1>
-            <p class="text-sm mx-auto md:text-base text-center tracking-wide w-[65%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cumque iure placeat repellendus saepe, iusto libero odio pariatur culpa vel magnam..</p>
-        </div>
-        <main class="px-1 relative pb-16">
-            <ul id="paginated-list" data-current-page="1" aria-live="polite" class="cards grid sm:grid-cols-2 md:grid-cols-3 jus">
-                <a class="li" href="blog-details.html">
+    <div class="bg-dark-gray">
+        <div class="mx-auto max-w-5xl text-white py-28 px-2">
+            <div class="space-y-4 px-4">
+                <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow py-4 mx-auto">Latest Blog</h1>
+                <p class="text-sm mx-auto md:text-base text-center tracking-wide w-[65%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cumque iure placeat repellendus saepe, iusto libero odio pariatur culpa vel magnam..</p>
+            </div>
+            <main class="px-1 relative pb-16">
+                <ul id="paginated-list" data-current-page="1" aria-live="polite" class="cards grid sm:grid-cols-2 md:grid-cols-3 jus">
+                    <a class="li" href="blog-details.html">
+                            <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                                <div class="h-full flex items-end">
+                                    <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                        <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                        <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/motu.webp);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="li" href="blog-details.html">
                         <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
                             <div class="h-full flex items-end">
                                 <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
@@ -189,388 +249,328 @@ tailwind.config = {
                                 </div>
                             </div>
                         </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/motu.webp);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/motu.webp);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/motu.webp);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                    </a>
+                    <a class="li" href="blog-details.html">
+                        <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="h-full flex items-end">
+                                <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
+                                    <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
+                                    <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
+                                </div>
                             </div>
                         </div>
+                    </a>
+    
+                </ul>
+                <nav class="w-full pagination-container flex items-center absolute bottom-0 px-4 justify-center">
+                    <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+                        <i class="fa-solid fa-angles-left text-syellow hover:text-black"></i>
+                    </button>
+                
+                    <div id="pagination-numbers">
+                
                     </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="li" href="blog-details.html">
-                    <div class="card my-4 mx-1 sm:mx-4 sm:max-w-[300px] h-[400px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
-                        <div class="h-full flex items-end">
-                            <div class="bg-white text-black space-y-6 px-4 py-3 w-full text-center">
-                                <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                                <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-            </ul>
-            <nav class="w-full pagination-container flex items-center absolute bottom-0 px-4 justify-center">
-                <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
-                    <i class="fa-solid fa-angles-left text-syellow hover:text-black"></i>
-                </button>
-            
-                <div id="pagination-numbers">
-            
-                </div>
-            
-                <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
-                    <i class="fa-solid fa-angles-right text-syellow hover:text-black"></i>
-                </button>
-            </nav>
-        </main>
+                
+                    <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+                        <i class="fa-solid fa-angles-right text-syellow hover:text-black"></i>
+                    </button>
+                </nav>
+            </main>
+        </div>
     </div>
-</div>
-
-
-
+    
+    
+    
 
 
 
@@ -599,15 +599,15 @@ tailwind.config = {
         </ul>
         <ul class="space-y-3 text-sm tracking-wider font-light">
             <li class="pb-4 text-xl font-semibold uppercase">Home</li>
-            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a class="li" href="aboutus.html">About Us</a></li>
-            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a class="li" href="contact.html">Contact Us</a></li>
-            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a class="li" href="Blog.html">Blog</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="aboutus.html">About Us</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="contact.html">Contact Us</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="Blog.html">Blog</a></li>
         </ul>
         <ul class="space-y-3 text-sm tracking-wider font-light">
             <li class="pb-4 text-xl font-semibold uppercase">Help Center</li>
-            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a class="li" href="refund policy.html">FAQs</a></li>
-            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a class="li" href="termsandconditions.html">Terms of Use</a></li>
-            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a class="li" href="privacyandpolicy.html">Privacy Policy</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="refund policy.html">FAQs</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="termsandconditions.html">Terms of Use</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="privacyandpolicy.html">Privacy Policy</a></li>
         </ul>
         </div>
         <div class="flex flex-col items-end">
@@ -625,11 +625,15 @@ tailwind.config = {
         <p>Copyright &copy; 2021 lambola ALL RIGHT RESERVED</p>
         </div>
     </div>
-</footer>
+  </footer>
+  
 
-<script src="assets/js/cloudflair.js"></script>
-<script src="assets/js/jsdeliver.js"></script>
-<script src="assets/js/style.js"></script>
-<script src="assets/js/pagination.js"></script>
+  <script src="assets/js/cloudflair.js"></script>
+  <script src="assets/js/jsdeliver.js"></script>
+  <script src="assets/js/style.js"></script>
+  <script src="assets//js/includeoffer.js"></script>
+  <script src="assets/js/pagination.js"></script>
+  <!-- top nav links active js -->
+  <script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
 </body>
 </html>
