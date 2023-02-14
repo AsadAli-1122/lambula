@@ -8,7 +8,9 @@ input[type="number"]::-webkit-outer-spin-button{
     -webkit-appearance: none;
 }
 
-
+#side-nav-btn:checked ~ .side-nav{
+    transform: translateX(-400px);
+  }
 
 ::-webkit-scrollbar{
     color: transparent;

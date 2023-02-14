@@ -58,6 +58,27 @@ tailwind.config = {
         </div>
     </div>
 </div>
+<input type="checkbox" name="side-nav-btn" id="side-nav-btn" class="hidden">
+<div class="side-nav z-30 bg-black max-w-[400px] w-full fixed top-0 bottom-0 -right-[400px] ease-in-out duration-500">
+  <div class="text-2xl flex px-4 py-8 justify-between items-center">
+    <div class="lg:hidden">
+      <label for="side-nav-btn" class="cursor-pointer">
+        <i class="fa-solid fa-xmark text-syellow"></i>
+      </label>
+    </div>
+    <div class="flex items-center space-x-2 ml-5">
+      <a href="index.html">
+        <img src="assets/images/locationdot.svg" alt="locationdot">
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col text-white list-none">
+    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="index.html">Dicover</a></li>
+    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="myblogings.html">My Blogings</a></li>
+    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="tour.html">Tour Packages</a></li>
+  </div>
+
+</div>
 
 <header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
     <div class="text-white">
@@ -105,7 +126,9 @@ tailwind.config = {
     </div>
     <div class="px-2 lg:px-10 flex justify-between items-center">
         <div class="text-2xl whitespace-nowrap flex">
-            <div class="lg:hidden"><i class="fa-solid fa-bars text-syellow"></i></div>
+            <div class="lg:hidden"><label for="side-nav-btn" class="cursor-pointer">
+                <i class="fa-solid fa-bars text-syellow"></i>
+              </label></div>
             <div class="flex items-center space-x-2 ml-5">
                 <img src="assets/images/locationdot.svg" alt="locationdot">
             </div>
