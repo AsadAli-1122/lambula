@@ -103,17 +103,23 @@ tailwind.config = {
     </div>
     
     </div>
-    <div class="px-12 flex justify-between items-center">
+    
+    <div class="px-2 lg:px-10 flex justify-between items-center">
         <div class="text-2xl whitespace-nowrap flex">
-            <div class="-ml-8 lg:hidden"><i class="fa-solid fa-bars text-syellow"></i></div>
+            <div class="lg:hidden">
+              <input type="checkbox" name="nav-bar" id="nav-bar" class="en">
+                <i class="fa-solid fa-bars text-syellow"></i>
+            </div>
             <div class="flex items-center space-x-2 ml-5">
+              <a href="index.html">
                 <img src="assets/images/locationdot.svg" alt="locationdot">
+              </a>
             </div>
         </div>
         <ul class="menu-item hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
-            <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
-            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
-            <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
+            <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
+            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
+            <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
         </ul>
     
     
@@ -309,7 +315,7 @@ tailwind.config = {
       </div>
       <div class="flex flex-col md:flex-row max-w-7xl justify-between mx-auto py-12 px-8 space-y-4 md:space-y-0">
         <div class="space-y-2 mx-8 tracking-wide">
-          <h1 class="text-4xl font-light my-4"><img src="assets/images/locationdot.svg" alt=""></h1>
+          <h1 class="text-4xl font-light my-4"><a href="index.html"><img src="assets/images/locationdot.svg" alt=""></a></h1>
           <p class="text-base font-semibold tracking-wider my-3">Direct Channels</p>
           <p class="text-base font-light"><i class="fa-solid fa-phone text-syellow"></i> +256 1234 5678</p>
           <p class="text-base font-light"><i class="fa-solid fa-envelope text-syellow"></i> support@lambula.net</p>
