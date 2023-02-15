@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="assets/css/googlefonts.css" />
+<link rel="stylesheet" href="assets/css/jsdeliver.css" />
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/tailwindcss.com"></script>
+<script src="assets/js/tailwind.js"></script>
+<style>
+:root{
+    --pink: #FF7C7C;
+    --dark-pink: #FF4A4A;
+    --nyellow: #ffe933;
+    --cream: #FCF5BB;
+    --dark-gray: #222222;
+    --syellow: #F7DD0A;
+    }
+
+</style>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {
+        colors:{
+            "pink": "var(--pink)",
+            "dark-pink": "var(--dark-pink)",
+            "nyellow": "var(--nyellow)",
+            "cream": "var(--cream)",
+            "dark-gray": "var(--dark-gray)",
+            "syellow": "var(--syellow)"
+        }
+    }
+    }
+}
+</script>
+
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+    </div>
+</div>
+
+<div class="px-2 sm:px-12 md:px-20 py-20 w-[100%] min-h-[100vh] bg-cover bg-center flex justify-center items-center bg-fixed" style="background-image: url(assets/images/queen@2x.png);">
+<div class="lg:flex flex-row-reverse bg-dark-gray justify-between text-white rounded-lg overflow-hidden w-[900px] max-w-[400px] lg:max-w-5xl">
+    <div class="hidden lg:block w-[50%] bg-cover bg-center" style="background-image: url(assets/images/Card\ Base@2x.png);">
+
+    </div>
+    <div class="w-[100%] lg:w-[50%] px-4 sm:px-12 py-20 space-y-4">
+        <div class="w-full  flex justify-center items-center">
+            <a href="index.html"><img src="assets/images/locationdot.svg" alt="locationdot"></a>
+        </div>
+        <form class="w-full space-y-3">
+            <h1 class="text-syellow font-bold text-2xl tracking-wider">Sign In</h1>
+            <div>
+                <label class="text-sm font-light" for="name">Username</label>
+                <input class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2" type="text" name="name" id="name" autocomplete="off">
+            </div>
+            <div>
+                <label class="text-sm font-light" for="password">Password</label>
+                <input class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2" type="password" name="password" id="password">
+            </div>
+            <div class="text-center space-y-2">
+                <p class="text-center"><a href="" class="text-xs">Forgot Password?</a></p>
+                <button type="submit" class="w-fit px-12 py-2 font-bold bg-syellow text-black rounded-md hover:bg-yellow-500">Login</button>
+                <p class="text-center text-xs">Don,t Have An Account? <a href="createaccount.html" class="border-b border-gray-500 text-syellow hover:border-syellow">Create Account</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<script src="assets/js/cloudflair.js"></script>
+<script src="assets/js/jsdeliver.js"></script>
+<script src="assets/js/style.js"></script>
+<script src="assets//js/includeoffer.js"></script>
+<script src="assets/js/pagination.js"></script>
+<!-- top nav links active js -->
+<script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

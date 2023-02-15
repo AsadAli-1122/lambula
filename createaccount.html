@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="assets/css/googlefonts.css" />
+<link rel="stylesheet" href="assets/css/jsdeliver.css" />
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/tailwindcss.com"></script>
+<script src="assets/js/tailwind.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<style>
+:root{
+    --pink: #FF7C7C;
+    --dark-pink: #FF4A4A;
+    --nyellow: #ffe933;
+    --cream: #FCF5BB;
+    --dark-gray: #222222;
+    --syellow: #F7DD0A;
+    }
+
+.iti--container{
+    /* position: relative; */
+    max-width: 320px;
+}
+.iti__country-list{
+    max-width: 320px;
+    max-height: 150px;
+    background-color: black;
+} 
+.iti__country-list{
+    color:white
+}
+input[type="radio"]{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+</style>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {
+        colors:{
+            "pink": "var(--pink)",
+            "dark-pink": "var(--dark-pink)",
+            "nyellow": "var(--nyellow)",
+            "cream": "var(--cream)",
+            "dark-gray": "var(--dark-gray)",
+            "syellow": "var(--syellow)"
+        }
+    }
+    }
+}
+</script>
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+    </div>
+</div>
+
+<div class="px-2 sm:px-12 md:px-20 py-20 w-[100%] min-h-[100vh] bg-cover bg-center flex justify-center items-center bg-fixed" style="background-image: url(assets/images/queen@2x.png);">
+<div class="lg:flex flex-row-reverse bg-dark-gray justify-between text-white rounded-lg overflow-hidden w-[900px] max-w-[400px] lg:max-w-5xl">
+    <div class="hidden lg:block w-[50%] bg-cover bg-center" style="background-image: url(assets/images/Card\ Base@2x.png);">
+
+    </div>
+    <div class="w-[100%] lg:w-[50%] px-4 sm:px-12 py-20 space-y-4">
+        <div class="w-full  flex justify-center items-center">
+            <a href="index.html"><img src="assets/images/locationdot.svg" alt="locationdot"></a>
+        </div>
+        <form class="w-full space-y-3">
+            <h1 class="font-bold text-xl tracking-wider">Create Account</h1>
+            <div class="personal-info">
+                <div class="flex space-x-2 py-4">
+                    <div class="tracking-wide border-b-2 border-syellow w-full text-syellow">Personal Info</div>
+                    <div class="tracking-wide border-b-2 w-full">Verification</div>
+                </div>
+                <div class="flex space-x-2">
+                    <div class="flex justify-center items-center text-center text-xs w-full bg-white bg-opacity-20 py-3 px-2 rounded-lg border border-white hover:bg-opacity-100 hover:text-black hover:border-black tracking-tighter cursor-pointer"><i class="fa-brands fa-google mr-2 text-base"></i> Create with Google</div>
+                    <div class="flex justify-center items-center text-center text-xs w-full bg-white bg-opacity-20 py-3 px-2 rounded-lg border border-white hover:bg-opacity-100 hover:text-black hover:border-black tracking-tighter cursor-pointer"><i class="fa-brands fa-apple mr-2 text-base"></i>Create with Apple</div>
+                </div>
+                <p class="text-center text-syellow text-base py-6"><a href="" class="border-b border-gray-600 hover:border-syellow py-1">Or Create Using Email</a></p>
+                <div class="flex space-x-2">
+                    <div class="w-full">
+                        <label class="text-xs font-light" for="fname">First Name</label>
+                        <input class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2 h-4 text-xs" type="text" name="fname" id="fname" autocomplete="off">
+                    </div>
+                    <div class="w-full">
+                        <label class="text-xs font-light" for="lname">Last Name</label>
+                        <input class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2 h-4 text-xs" type="text" name="lname" id="lname" autocomplete="off">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-xs font-light" for="email">Email</label>
+                    <input class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2 h-4 text-xs" type="email" name="email" id="email" autocomplete="off">
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-xs font-light" for="m-number">Mobile Number</label>
+                    <input id="phone" type="number" name="phone" class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2 h-4 text-xs" />
+                </div>
+                <div class="flex flex-col py-2 space-y-2">
+                    <div class="flex">
+                        <input type="radio" name="vaccinated" id="vaccinated" class="mr-4 focus:ring-1 focus:ring-syellow focus:border-none bg-black border-syellow cursor-pointer appearance-none checked:bg-syellow">
+                        <label for="vaccinated" class="text-xs font-light cursor-pointer">I am Vaccinated</label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" name="vaccinated" id="not-vaccinated" class="mr-4 focus:ring-1 focus:ring-syellow focus:border-none bg-black border-syellow cursor-pointer appearance-none checked:bg-syellow">
+                        <label for="not-vaccinated" class="text-xs font-light cursor-pointer">I am Not Vaccinated</label>
+                    </div>
+                </div>
+            </div>
+            <div class="veification hidden">
+                <div class="verification-1 hidden">
+                    <div class="flex space-x-2 py-4">
+                        <div class="tracking-wide border-b-2 w-full">Personal Info</div>
+                        <div class="tracking-wide border-b-2 w-full border-syellow text-syellow">Verification</div>
+                    </div>
+                    <div class="py-4">
+                        <h1 class="text-3xl font-bold tracking-wider text-syellow py-4">OTP Vevify!</h1>
+                        <p class="text-xs">Enter 4-digit code we have send to <a href="" class="text-syellow border-b border-syellow">+256 752 369 156</a><span class="text-syellow ml-2"><i class="fa-solid fa-pen cursor-pointer border-b border-dark-gray hover:border-syellow py-1"></i></span></p>
+                        <div class="otp-num-div flex items-center justify-center py-4">
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1" autofocus>
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1">
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1">
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1">
+                        </div>
+                        <p class="text-xs">This season will end in 60 seconds. Didn't receive code? <br>
+                            <a href="" class="py-1 border-b border-syellow text-syellow">Resend code</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="verification-2 ">
+                    <div class="py-4">
+                        <div class="flex space-x-2 py-4">
+                            <div class="tracking-wide border-b-2 w-full">Personal Info</div>
+                            <div class="tracking-wide border-b-2 w-full border-syellow text-syellow">Verification</div>
+                        </div>
+                        <h1 class="text-3xl font-semibold tracking-wider text-syellow py-4">Create Password</h1>
+                        <p class="text-xs">Enter a strong Password</p>
+                        <div class="py-4 space-y-4">
+                            <div class="password">
+                                <label class="text-sm font-light" for="password">Password</label>
+                                <input class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2" type="password" name="password" id="password">
+                            </div>
+                            <div class="confirm-password">
+                                <label class="text-sm font-light" for="password">Password</label>
+                                <input class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2" type="password" name="password" id="password">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="space-x-2 flex">
+                <a href="verification.html" class="text-center text-sm px-4 py-2 font-bold border-2 border-syellow bg-syellow text-black rounded-md hover:bg-yellow-500 uppercase w-[60%]" onclick="verification()">Continue</a>
+                <a href="index.html" class="text-center text-sm px-4 py-2 font-bold border-2 border-white bg-white bg-opacity-20 text-white rounded-md hover:bg-opacity-100 hover:text-black uppercase w-[40%]">Cancel</a>
+            </div>
+            <p class="text-center text-xs">Already Have An Account? <a href="signin.html" class="border-b border-gray-500 text-syellow hover:border-syellow">Sign In</a></p>
+
+        </form>
+    </div>
+</div>
+</div>
+
+<script src="assets/js/cloudflair.js"></script>
+<script src="assets/js/jsdeliver.js"></script>
+<script src="assets/js/style.js"></script>
+<script src="assets//js/includeoffer.js"></script>
+<script src="assets/js/pagination.js"></script>
+<!-- top nav links active js -->
+<script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
+<script>
+	const phoneInputField = document.querySelector("#phone");
+	const phoneInput = window.intlTelInput(phoneInputField, {
+	utilsScript:
+		"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+	});
+</script>
+<script>
+    const inputs = document.querySelectorAll('.opt-digit');
+
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', (event) => {
+            if (event.target.value.length === 1) {
+                if (index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

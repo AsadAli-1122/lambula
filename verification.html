@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="assets/css/googlefonts.css" />
+<link rel="stylesheet" href="assets/css/jsdeliver.css" />
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/tailwindcss.com"></script>
+<script src="assets/js/tailwind.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<style>
+:root{
+    --pink: #FF7C7C;
+    --dark-pink: #FF4A4A;
+    --nyellow: #ffe933;
+    --cream: #FCF5BB;
+    --dark-gray: #222222;
+    --syellow: #F7DD0A;
+    }
+
+.iti--container{
+    /* position: relative; */
+    max-width: 320px;
+}
+.iti__country-list{
+    max-width: 320px;
+    max-height: 150px;
+    background-color: black;
+} 
+.iti__country-list{
+    color:white
+}
+input[type="radio"]{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+</style>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {
+        colors:{
+            "pink": "var(--pink)",
+            "dark-pink": "var(--dark-pink)",
+            "nyellow": "var(--nyellow)",
+            "cream": "var(--cream)",
+            "dark-gray": "var(--dark-gray)",
+            "syellow": "var(--syellow)"
+        }
+    }
+    }
+}
+</script>
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+    </div>
+</div>
+
+<div class="px-2 sm:px-12 md:px-20 py-20 w-[100%] min-h-[100vh] bg-cover bg-center flex justify-center items-center bg-fixed" style="background-image: url(assets/images/queen@2x.png);">
+<div class="lg:flex flex-row-reverse bg-dark-gray justify-between text-white rounded-lg overflow-hidden w-[900px] max-w-[400px] lg:max-w-5xl">
+    <div class="hidden lg:block w-[50%] bg-cover bg-center" style="background-image: url(assets/images/Card\ Base@2x.png);">
+
+    </div>
+    <div class="w-[100%] lg:w-[50%] px-4 sm:px-12 py-20 space-y-4">
+        <div class="w-full  flex justify-center items-center">
+            <a href="index.html"><img src="assets/images/locationdot.svg" alt="locationdot"></a>
+        </div>
+        <form class="w-full space-y-3">
+            <h1 class="font-bold text-xl tracking-wider">Create Account</h1>
+            <div class="flex space-x-2 py-4">
+                <div class="tracking-wide border-b-2 w-full">Personal Info</div>
+                <div class="tracking-wide border-b-2 w-full border-syellow text-syellow">Verification</div>
+            </div>
+            
+            <div class="veification ">
+                <div class="verification-1">
+                    <div class="py-4">
+                        <h1 class="text-3xl font-bold tracking-wider text-syellow py-4">OTP Vevify!</h1>
+                        <p class="text-xs">Enter 4-digit code we have send to <a href="" class="text-syellow border-b border-syellow">+256 752 369 156</a><span class="text-syellow ml-2"><i class="fa-solid fa-pen cursor-pointer border-b border-dark-gray hover:border-syellow py-1"></i></span></p>
+                        <div class="otp-num-div flex items-center justify-center py-4">
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1" autofocus>
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1">
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1">
+                            <input class="opt-digit bg-transparent w-10 h-10 border-2 border-gray-600 text-2xl rounded-lg text-center m-1 outline-none focus:border-black focus:ring-0 focus:bg-yellow-200 focus:border-syellow focus:text-black" type="text" maxlength="1">
+                        </div>
+                        <p class="text-xs">This season will end in 60 seconds. Didn't receive code? <br>
+                            <a href="" class="py-1 border-b border-syellow text-syellow">Resend code</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-x-2 flex">
+                <a href="verification-2.html" class="text-center text-sm px-4 py-2 font-bold border-2 border-syellow bg-syellow text-black rounded-md hover:bg-yellow-500 uppercase w-[60%]">Continue</a>
+                <a href="createaccount.html" class="text-center text-sm px-4 py-2 font-bold border-2 border-white bg-white bg-opacity-20 text-white rounded-md hover:bg-opacity-100 hover:text-black uppercase w-[40%]">Back</a>
+            </div>
+            <p class="text-center text-xs">Already Have An Account? <a href="signin.html" class="border-b border-gray-500 text-syellow hover:border-syellow">Sign In</a></p>
+
+        </form>
+    </div>
+</div>
+</div>
+
+<script src="assets/js/cloudflair.js"></script>
+<script src="assets/js/jsdeliver.js"></script>
+<script src="assets/js/style.js"></script>
+<script src="assets//js/includeoffer.js"></script>
+<script src="assets/js/pagination.js"></script>
+<!-- top nav links active js -->
+<script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
+<script>
+	const phoneInputField = document.querySelector("#phone");
+	const phoneInput = window.intlTelInput(phoneInputField, {
+	utilsScript:
+		"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+	});
+</script>
+<script>
+    const inputs = document.querySelectorAll('.opt-digit');
+
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', (event) => {
+            if (event.target.value.length === 1) {
+                if (index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

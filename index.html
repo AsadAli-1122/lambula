@@ -40,6 +40,7 @@ tailwind.config = {
 
 </head>
 <body>
+
 <div class="loader" id="loader">
     <div class="loader-inner">
         <div class="loader-line-wrap">
@@ -193,7 +194,7 @@ tailwind.config = {
                 </div>
                 <hr class="">
                 <li>
-                    <a href="#" class="block text-syellow hover:text-yellow-800 ease-in-out duration-500">Sign out of Lambula</a>
+                    <a href="signin.html" class="block text-syellow hover:text-yellow-800 ease-in-out duration-500">Sign In</a>
                 </li>
                 </ul>
             </div>
@@ -202,181 +203,181 @@ tailwind.config = {
     
     </div>
     </div>
-    </header>
+</header>
 
 
 
-    <div class="carousel">
+<div class="carousel">
+
+    <div
+    id="carouselDarkVariant"
+    class="carousel slide carousel-fade carousel-dark relative"
+    data-bs-ride="carousel"
+    >
+    <!-- Indicators -->
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide-to="1"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide-to="2"
+        aria-label="Slide 1"
+      ></button>
+    </div>
   
-        <div
-        id="carouselDarkVariant"
-        class="carousel slide carousel-fade carousel-dark relative"
-        data-bs-ride="carousel"
-        >
-        <!-- Indicators -->
-        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-          <button
-            data-bs-target="#carouselDarkVariant"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            data-bs-target="#carouselDarkVariant"
-            data-bs-slide-to="1"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            data-bs-target="#carouselDarkVariant"
-            data-bs-slide-to="2"
-            aria-label="Slide 1"
-          ></button>
+    <!-- Inner -->
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <!-- Single item -->
+      <div class="carousel-item active relative float-left w-full">
+        <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/queen@2x.png);">
         </div>
-      
-        <!-- Inner -->
-        <div class="carousel-inner relative w-full overflow-hidden">
-          <!-- Single item -->
-          <div class="carousel-item active relative float-left w-full">
-            <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);">
-            </div>
-            <div class="carousel-caption absolute text-center">
-              
-            </div>
-          </div>
-      
-          <!-- Single item -->
-          <div class="carousel-item relative float-left w-full">
-            <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
-            </div>
-            <div class="carousel-caption absolute text-center">
-              
-            </div>
-          </div>
-      
-          <!-- Single item -->
-          <div class="carousel-item relative float-left w-full">
-            <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
-            </div>
-            <div class="carousel-caption absolute text-center">
-              
-            </div>
-          </div>
+        <div class="carousel-caption absolute text-center">
+          
         </div>
-        <!-- Inner -->
-      
-        <!-- Controls -->
-        <button
-          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0 invisible"
-          type="button"
-          data-bs-target="#carouselDarkVariant"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 invisible"
-          type="button"
-          data-bs-target="#carouselDarkVariant"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        </div>
-      
       </div>
-      
-      
-      <div class="w-full bg-dark-gray text-white">
-        <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow w-2/3 py-8 mx-auto">Why Choose us</h1>
-        <p class="text-base xl:text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
-        <div class="max-w-7xl mx-auto my-8 flex flex-col lg:flex-row justify-center items-center px-8">
-          <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] max-w-sm lg:w-[32%] m-4">
-            <div class="flex justify-between items-center text-2xl xl:text-3xl space-x-4">
-              <h1 class="font-semibold tracking-wider">Discover</h1>
-              <img src="assets/images/luggage.svg" alt="luggage">
-            </div>
-            <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.
-            </p>
-            <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
-          </div>
-          <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] max-w-sm lg:w-[32%] m-4">
-            <div class="flex justify-between items-center text-2xl xl:text-3xl space-x-4">
-              <h1 class="font-semibold tracking-wider">Select Tour Package</h1>
-              <img src="assets/images/add-group.svg" alt="add-group">
-            </div>
-            <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
-            <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
-          </div>
-          <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] max-w-sm lg:w-[32%] m-4">
-            <div class="flex justify-between items-center text-2xl xl:text-3xl space-x-4">
-              <h1 class="font-semibold tracking-wider">Quick Payment</h1>
-              <img src="assets/images/credit-card.svg" alt="">
-            </div>
-            <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
-            <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
-          </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item relative float-left w-full">
+        <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
         </div>
-        <div>
-          <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow w-2/3 py-8 mx-auto">Our Top Destination</h1>
-        <p class="text-base xl:text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
+        <div class="carousel-caption absolute text-center">
+          
         </div>
-        <div class="max-w-7xl min-h-[600px] grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-3 grid-flow-row mx-auto justify-center  my-4 gap-y-3 gap-x-3">
-            <div class=" min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" id="destination_1">Safari</div>
-            <div class=" min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2" id="destination_2">Lakes & Rivers</div>
-            <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2 lg:row-span-1" id="destination_4">Lakes & Rivers</div>
-            <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2 " id="destination_3">Safari</div>
-            <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2" id="destination_5">Safari</div>
-            <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center col-span-1" id="destination_6">Lakes & Rivers</div>
-          </div>
-        <div>
-          <div class="map max-w-7xl flex mx-auto my-8 h-[420px] rounded-2xl overflow-hidden">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=victoria falls waterfall&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
-        </div>
-        </div>
-      <div class="my-4">
-        <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow w-2/3 py-2 mx-auto">Contact Us</h1>
-        <p class="text-base xl:text-xl text-center tracking-wider w-2/3 mx-auto">We are a small Team connecting the entire world to you</p>
       </div>
-      <div class="flex flex-col md:flex-row max-w-7xl justify-between mx-auto py-12 px-8 space-y-4 md:space-y-0">
-        <div class="space-y-2 mx-8 tracking-wide">
-          <h1 class="text-4xl font-light my-4"><a href="index.html"><img src="assets/images/locationdot.svg" alt=""></a></h1>
-          <p class="text-base font-semibold tracking-wider my-3">Direct Channels</p>
-          <p class="text-base font-light"><i class="fa-solid fa-phone text-syellow"></i> +256 1234 5678</p>
-          <p class="text-base font-light"><i class="fa-solid fa-envelope text-syellow"></i> support@lambula.net</p>
-          <p class="text-base font-light">Select Media</p>
-          <p class="text-lg font-light space-x-4">
-            <i class="fa-brands fa-facebook-f text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
-            <i class="fa-brands fa-instagram text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
-            <i class="fa-brands fa-twitter text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
-          </p>
+  
+      <!-- Single item -->
+      <div class="carousel-item relative float-left w-full">
+        <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
         </div>
-        <form class="flex flex-col space-y-3 md:w-[50%] md:min-w-[500px]">
-          <p class="text-base font-semibold tracking-wider">Feel free to send us your message</p>
-          <div class="grid sm:grid-cols-2 space-y-3 sm:space-y-0 sm:space-x-3">
-            <div class="">
-              <input type="text" id="name" name="name" placeholder="Your name" class="bg-white bg-opacity-20 border-none rounded-md active:border-none focus:ring-1 focus:ring-syellow w-full" autocomplete="off" oninput="checkName()" required>
-              <small></small>
-            </div>
-            <div class="">
-              <input type="email" id="email" name="email" placeholder="Your email" class="bg-white bg-opacity-20 border-none rounded-md focus:ring-1 focus:ring-syellow w-full" autocomplete="off" required>
-              <small></small>
-            </div>
-          </div>
-          <div>
-            <input type="text" id="subject" name="subject" placeholder="Subject" class="bg-white bg-opacity-20 border-none rounded-md w-full focus:ring-1 focus:ring-syellow">
-            <small></small>
-          </div>
-          <div>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" class="w-full bg-white bg-opacity-20 border-none rounded-md p-2 focus:ring-1 focus:ring-syellow"></textarea>
-            <small></small>
-          </div>
-          <button type="submit" class="text-black bg-syellow px-20 py-1 rounded-md text-base font-bold tracking-wider w-fit mx-auto focus:ring-1 focus:ring-syellow hover:bg-yellow-400 cursor-pointer">Submit</button>
-        </form>
+        <div class="carousel-caption absolute text-center">
+          
+        </div>
       </div>
+    </div>
+    <!-- Inner -->
+  
+    <!-- Controls -->
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0 invisible"
+      type="button"
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 invisible"
+      type="button"
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  
+</div>
+
+
+<div class="w-full bg-dark-gray text-white">
+  <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow w-2/3 py-8 mx-auto">Why Choose us</h1>
+  <p class="text-base xl:text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
+  <div class="max-w-7xl mx-auto my-8 flex flex-col lg:flex-row justify-center items-center px-8">
+    <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] max-w-sm lg:w-[32%] m-4">
+      <div class="flex justify-between items-center text-2xl xl:text-3xl space-x-4">
+        <h1 class="font-semibold tracking-wider">Discover</h1>
+        <img src="assets/images/luggage.svg" alt="luggage">
       </div>
+      <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.
+      </p>
+      <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
+    </div>
+    <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] max-w-sm lg:w-[32%] m-4">
+      <div class="flex justify-between items-center text-2xl xl:text-3xl space-x-4">
+        <h1 class="font-semibold tracking-wider">Select Tour Package</h1>
+        <img src="assets/images/add-group.svg" alt="add-group">
+      </div>
+      <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
+      <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
+    </div>
+    <div class="flex flex-col justify-between card p-4 bg-white bg-opacity-20 rounded-2xl min-h-[200px] max-w-sm lg:w-[32%] m-4">
+      <div class="flex justify-between items-center text-2xl xl:text-3xl space-x-4">
+        <h1 class="font-semibold tracking-wider">Quick Payment</h1>
+        <img src="assets/images/credit-card.svg" alt="">
+      </div>
+      <p class="text-sm my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consequatur vitae quae.</p>
+      <p class="text-sm font-bold text-syellow pb-1 border-b-4 border-syellow w-fit px-1">Select Destination</p>
+    </div>
+  </div>
+  <div>
+    <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow w-2/3 py-8 mx-auto">Our Top Destination</h1>
+  <p class="text-base xl:text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
+  </div>
+  <div class="max-w-7xl min-h-[600px] grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-3 grid-flow-row mx-auto justify-center  my-4 gap-y-3 gap-x-3">
+      <div class=" min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" id="destination_1">Safari</div>
+      <div class=" min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2" id="destination_2">Lakes & Rivers</div>
+      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2 lg:row-span-1" id="destination_4">Lakes & Rivers</div>
+      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2 " id="destination_3">Safari</div>
+      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2" id="destination_5">Safari</div>
+      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center col-span-1" id="destination_6">Lakes & Rivers</div>
+    </div>
+  <div>
+    <div class="map max-w-7xl flex mx-auto my-8 h-[420px] rounded-2xl overflow-hidden">
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=victoria falls waterfall&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+  </div>
+  </div>
+<div class="my-4">
+  <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow w-2/3 py-2 mx-auto">Contact Us</h1>
+  <p class="text-base xl:text-xl text-center tracking-wider w-2/3 mx-auto">We are a small Team connecting the entire world to you</p>
+</div>
+<div class="flex flex-col md:flex-row max-w-7xl justify-between mx-auto py-12 px-8 space-y-4 md:space-y-0">
+  <div class="space-y-2 mx-8 tracking-wide">
+    <h1 class="text-4xl font-light my-4"><a href="index.html"><img src="assets/images/locationdot.svg" alt=""></a></h1>
+    <p class="text-base font-semibold tracking-wider my-3">Direct Channels</p>
+    <p class="text-base font-light"><i class="fa-solid fa-phone text-syellow"></i> +256 1234 5678</p>
+    <p class="text-base font-light"><i class="fa-solid fa-envelope text-syellow"></i> support@lambula.net</p>
+    <p class="text-base font-light">Select Media</p>
+    <p class="text-lg font-light space-x-4">
+      <i class="fa-brands fa-facebook-f text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
+      <i class="fa-brands fa-instagram text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
+      <i class="fa-brands fa-twitter text-gray-500 cursor-pointer hover:text-syellow ease-in duration-200 hover:translate-x-1 hover:scale-105"></i>
+    </p>
+  </div>
+  <form class="flex flex-col space-y-3 md:w-[50%] md:min-w-[500px]">
+    <p class="text-base font-semibold tracking-wider">Feel free to send us your message</p>
+    <div class="grid sm:grid-cols-2 space-y-3 sm:space-y-0 sm:space-x-3">
+      <div class="">
+        <input type="text" id="name" name="name" placeholder="Your name" class="bg-white bg-opacity-20 border-none rounded-md active:border-none focus:ring-1 focus:ring-syellow w-full" autocomplete="off" oninput="checkName()" required>
+        <small></small>
+      </div>
+      <div class="">
+        <input type="email" id="email" name="email" placeholder="Your email" class="bg-white bg-opacity-20 border-none rounded-md focus:ring-1 focus:ring-syellow w-full" autocomplete="off" required>
+        <small></small>
+      </div>
+    </div>
+    <div>
+      <input type="text" id="subject" name="subject" placeholder="Subject" class="bg-white bg-opacity-20 border-none rounded-md w-full focus:ring-1 focus:ring-syellow">
+      <small></small>
+    </div>
+    <div>
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" class="w-full bg-white bg-opacity-20 border-none rounded-md p-2 focus:ring-1 focus:ring-syellow"></textarea>
+      <small></small>
+    </div>
+    <button type="submit" class="text-black bg-syellow px-20 py-1 rounded-md text-base font-bold tracking-wider w-fit mx-auto focus:ring-1 focus:ring-syellow hover:bg-yellow-400 cursor-pointer">Submit</button>
+  </form>
+</div>
+</div>
 
 
 <footer class="bg-black text-gray-500 p-12">
