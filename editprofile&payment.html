@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/tailwindcss.com"></script>
 <script src="assets/js/tailwind.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <style>
 :root{
     --pink: #FF7C7C;
@@ -19,6 +21,23 @@
     --dark-gray: #222222;
     --syellow: #F7DD0A;
     }
+
+.iti--container{
+    /* position: relative; */
+    max-width: 320px;
+}
+.iti__country-list{
+    max-width: 320px;
+    max-height: 150px;
+    background-color: black;
+} 
+.iti__country-list{
+    color:white
+}
+input[type="radio"]{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
 
 </style>
 <script>
@@ -192,54 +211,169 @@ tailwind.config = {
     
     </div>
     </div>
-    </header>
+</header>
 
 
-    <div class="bg-dark-gray text-white pt-32 px-2 py-12">
-        <div class="max-w-5xl mx-auto bg-white bg-opacity-10 rounded-xl space-y-4 px-6 py-4">
-            <div class="border-b border-gray-400 py-2 space-y-2">
-                <h1 class="text-lg font-extrabold tracking-wide text-syellow">Customer Support</h1>
-                <p class="text-xs font-semibold">Do you need help?</p>
+
+
+
+    <div class="w-full h-min bg-dark-gray pt-32 py-12 pb-8">
+        <div class="mx-auto bg-dark-gray max-w-7xl flex flex-col lg:flex-row justify-between lg:space-x-4 space-y-8 lg:space-y-0">
+            <div class="flex flex-col justify-between bg-white text-white bg-opacity-20 rounded-3xl mx-auto w-[90%] lg:w-[47%] px-6 py-12 font-normal">
+                <div class="flex justify-between tracking-wider">
+                    <h1 class="text-xl text-syellow">Edit Profile</h1>
+                    <div class="flex items-center space-x-4">
+                        <p class="text-xs font-extralight">
+                            <span>Change</span>/<span class="text-red-600">Remove</span>
+                        </p>
+                        <img src="assets/images/motu.webp" alt="" class="w-8 h-8 rounded-full bg-syellow">
+                    </div>
+                </div>
+                <h1 class="text-base my-4">Your Name</h1>
+                <div class="grid sm:grid-cols-2 space-y-3 sm:space-y-0 sm:space-x-8">
+                    <div class="">
+                        <input type="text" id="fname" name="fname" placeholder="Andrew" class="bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:ring-0 focus:outline-none focus:border-syellow w-full text-xs">
+                        <small></small>
+                    </div>
+                    <div class="">
+                        <input type="text" id="lname" name="lname" placeholder="Holand" class="bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:ring-0 focus:outline-none focus:border-syellow w-full text-xs">
+                        <small></small>
+                    </div>
+                    
+                </div>
+                <h1 class="text-base my-4">Your Email</h1>
+                <div class="">
+                    <input type="email" id="email" name="email" placeholder="AndrewHolland@gmail.com" class="bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:ring-0 focus:outline-none focus:border-syellow w-full text-xs">
+                    <small></small>
+                </div>
+                <h1 class="text-base my-4">Mobile Number</h1>
+                <div class="flex flex-col">
+                    <input id="phone1" type="number" name="phone" class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2 h-4 text-xs" />
+                </div>
+                <h1 class="text-base my-4">Location</h1>
+                <select name="" id="" class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2 text-xs text-gray-400 py-2">
+                    <option value="" class="bg-black text-white">Select Country</option>
+                    <option value="" class="bg-black text-white">Pakistan</option>
+                    <option value="" class="bg-black text-white">India</option>
+                    <option value="" class="bg-black text-white">Uganda</option>
+                    <option value="" class="bg-black text-white">Africa</option>
+                </select>
+                <h1 class="text-base my-4">Vaccination Status</h1>
+                <div class="space-y-3">
+                    <div class="flex">
+                        <input type="radio" name="vaccinated" id="vaccinated" class="mr-4 focus:ring-1 focus:ring-syellow focus:border-none bg-black border-syellow cursor-pointer appearance-none checked:bg-syellow">
+                        <label for="vaccinated" class="text-xs font-light cursor-pointer">I am Vaccinated</label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" name="vaccinated" id="not-vaccinated" class="mr-4 focus:ring-1 focus:ring-syellow focus:border-none bg-black border-syellow cursor-pointer appearance-none checked:bg-syellow">
+                        <label for="not-vaccinated" class="text-xs font-light cursor-pointer">I am Not Vaccinated</label>
+                    </div>
+                </div>
+                <h1 class="text-xl text-syellow mt-6">Edit Profile</h1>
+                <h1 class="text-base my-4">Curren Password</h1>
+                <div class="">
+                    <input type="password" id="current-password" name="current-password" placeholder="" class="py-0 bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:ring-0 focus:outline-none focus:border-syellow w-full text-3xl tracking-widest">
+                    <small></small>
+                </div>
+                <h1 class="text-base my-4">New Password</h1>
+                <div class="">
+                    <input type="password" id="new-password" name="new-password" placeholder="" class="py-0 bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:ring-0 focus:outline-none focus:border-syellow w-full text-3xl tracking-widest">
+                    <small></small>
+                </div>
+                <h1 class="text-base my-4">Confirm Password</h1>
+                <div class="">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="" class="py-0 bg-transparent border-t-0 border-l-0 border-r-0 border-b-2 focus:ring-0 focus:outline-none focus:border-syellow w-full text-3xl tracking-widest">
+                    <small></small>
+                </div>
             </div>
-            <div class="flex flex-col space-y-4">
-                <p>Hello there, Are experiencing trouble using our service, kindly choose how you would love to contact us</p>
-                <p><i class="fa-solid fa-phone-volume mr-4"></i> +256 700 100 100</p>
-                <p><i class="fa-solid fa-paper-plane mr-4"></i> support@lamubla.co.uk</p>
-                <p><i class="fa-solid fa-comment-dots mr-4"></i> Click to start a live Chat</p>
-                <h1 class="text-lg font-extrabold tracking-wide text-syellow">Write to us here</h1>
-                <div class="flex flex-col p-2 space-y-1 rounded-xl">
-                    <label for="name" class="text-base font-semibold">Name</label>
-                    <input type="text" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10 placeholder:text-gray-400" placeholder="Andrew Mukuye">
+
+            <div class="flex flex-col justify-between bg-white text-white bg-opacity-20 rounded-3xl mx-auto w-[90%] lg:w-[47%] px-6 pt-12 pb-6 font-normal">
+                <h1 class="text-xl text-syellow">Payment Methods</h1>
+                <h1 class="text-base my-4">Current Payment Methods</h1>
+                <div class="All-payment-plans max-h-40 overflow-y-scroll pr-4">
+                    <div class="Payment-plan text-xs text-gray-400 flex justify-between items-center" id="payment">
+                        <div class="flex items-center">
+                            <img src="assets/images/visa.svg" alt="" class="max-w-14 max-h-10">
+                            <p class="mx-4 border-b-2 border-gray-500 px-1"><span>Andrew holand</span> &nbsp; ending - <span>9560</span></p>
+                            <!-- <img src="assets/images/mastercard-2.svg" alt="" class="w-14"> -->
+                        </div>
+                        <div>
+                            <p class="cursor-pointer text-red-500 hover:text-red-800" onclick="remove(this)">Remove</p>
+                        </div>
+                    </div>
+                    <div class="Payment-plan text-xs text-gray-400 flex justify-between items-center" id="payment">
+                        <div class="flex items-center">
+                            <img src="assets/images/visa.svg" alt="" class="max-w-14 max-h-10">
+                            <p class="mx-4 border-b-2 border-gray-500 px-1"><span>Andrew holand</span> &nbsp; ending - <span>9560</span></p>
+                            <!-- <img src="assets/images/mastercard-2.svg" alt="" class="w-14"> -->
+                        </div>
+                        <div>
+                            <p class="cursor-pointer text-red-500 hover:text-red-800" onclick="remove(this)">Remove</p>
+                        </div>
+                    </div>
+                    <div class="Payment-plan text-xs text-gray-400 flex justify-between items-center" id="payment">
+                        <div class="flex items-center">
+                            <img src="assets/images/visa.svg" alt="" class="max-w-14 max-h-10">
+                            <p class="mx-4 border-b-2 border-gray-500 px-1"><span>Andrew holand</span> &nbsp; ending - <span>9560</span></p>
+                            <!-- <img src="assets/images/mastercard-2.svg" alt="" class="w-14"> -->
+                        </div>
+                        <div>
+                            <p class="cursor-pointer text-red-500 hover:text-red-800" onclick="remove(this)">Remove</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col p-2 space-y-1 rounded-xl">
-                    <label for="email" class="text-base font-semibold">Email Address</label>
-                    <input type="email" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10 placeholder:text-gray-400" placeholder="Andrew@lumbula.co.uk">
+                <h1 class="text-base my-4">Add New Payment Method</h1>
+                <div class="space-y-4">
+                    <input type="number" class="w-full border border-gray-500 placeholder:text-xs placeholder:tracking-wider placeholder:text-gray-400 bg-white bg-opacity-10 rounded-lg focus:outline-none focus:ring-0 focus:border-syellow" placeholder="Enter 14 digit card number">
+                    <input type="number" class="w-full border border-gray-500 placeholder:text-xs placeholder:tracking-wider placeholder:text-gray-400 bg-white bg-opacity-10 rounded-lg focus:outline-none focus:ring-0 focus:border-syellow" placeholder="Card holder name">
                 </div>
-                <div class="flex flex-col p-2 space-y-1 rounded-xl">
-                    <label for="message" class="text-base font-semibold">Type your Messgae here</label>
-                    <textarea cols="" rows="4" class="w-full px-4 py-2 border-none focus:ring-1 focus:ring-syellow focus:outline-none rounded-md bg-white bg-opacity-10"></textarea>
+                <h1 class="text-base my-4">Billing address</h1>
+                <div class="space-y-4">
+                    <select name="" id="" class="w-full border border-gray-500 bg-white bg-opacity-10 rounded-lg focus:outline-none focus:ring-0 focus:border-syellow text-xs tracking-wider text-gray-400 py-3 px-3">
+                        <option value="" class="bg-black text-white">Select Country</option>
+                        <option value="" class="bg-black text-white">Pakistan</option>
+                        <option value="" class="bg-black text-white">India</option>
+                        <option value="" class="bg-black text-white">Uganda</option>
+                        <option value="" class="bg-black text-white">Africa</option>
+                    </select>
+                    <div class="w-full border border-gray-500 bg-white bg-opacity-10 rounded-lg focus:outline-none focus:ring-0 focus-within:border-syellow text-xs tracking-wider text-gray-400 overflow-hidden flex">
+                        <input type="number" class="w-[50%] bg-transparent placeholder:text-xs placeholder:tracking-wider border-none placeholder:text-gray-300 focus:outline-none focus:ring-0" placeholder="ZIP">
+                        <input type="text" class="w-[50%] bg-transparent placeholder:text-xs placeholder:tracking-wider border-none placeholder:text-gray-300 focus:outline-none focus:ring-0" placeholder="City / Sate"> 
+                    </div>
                 </div>
-                <button class="py-2 px-6 w-full max-w-[50%] mx-auto text-black font-bold tracking-wider rounded-md bg-syellow hover:shadow-lg hover:shadow-yellow-500 hover:bg-yellow-400 hover:scale-105 ease-in-out duration-300">Send</button>
-    
+                <div class="grid grid-cols-3 justify-between items-center my-4"> 
+                    <div class="flex flex-col justify-between space-y-1">
+                        <h1 class="text-sm">Pay with Mobile Money</h1>
+                        <p class="text-[0.5rem] text-gray-400">Only available in Uganga</p>
+                    </div>
+                    <h1 class="text-syellow text-center">OR</h1>
+                    <div class="flex justify-end">
+                        <img src="assets/images/mastercard-2.svg" alt="" class="h-8">
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex space-x-4">
+                        <div class="flex items-center">
+                            <input type="radio" name="money" id="air-money" class="mr-4 focus:ring-1 focus:ring-syellow focus:border-none bg-black border-syellow cursor-pointer appearance-none checked:bg-syellow">
+                            <label for="air-money" class="flex items-center text-xs font-light cursor-pointer"><img src="assets/images/Group 12391@2x.png" alt="" class="max-h-7 mr-2"> Air Money</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" name="money" id="MTN-money" class="mr-4 focus:ring-1 focus:ring-syellow focus:border-none bg-black border-syellow cursor-pointer appearance-none checked:bg-syellow">
+                            <label for="MTN-money" class="flex items-center text-xs font-light cursor-pointer"><img src="assets/images/Group 12392@2x.png" alt="" class="max-h-7 mr-2"> MTN Money</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <input id="phone" type="number" name="phone" class="w-full bg-transparent focus:outline-none focus:ring-0 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-syellow px-2 h-4 text-xs" />
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <button class="py-3 bg-syellow text-black w-full rounded-lg font-bold tracking-wider">Save Changes</button>
+                </div>
             </div>
         </div>
-        
-        
-        
-    </div>
     
-    <div class="bg-syellow text-dark-gray tracking-wide font-semibold">
-        <div class="max-w-5xl mx-auto px-4 py-12 text-center">
-            <h1 class="text-4xl font-bold tracking-wider">Stay in the know</h1>
-            <p class="w-[70%] mx-auto text-gray-400 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, consequuntur et earum, ipsum quos necessitatibus perspiciatis.</p>
-            <div class="mx-auto md:max-w-[60%] bg-dark-gray p-2 rounded-md flex flex-col md:flex-row justify-between items-center my-2">
-                <input type="email" name="email" id="email" class="focus:outline-none focus:ring-0 rounded-lg border-none placeholder:text-gray-600 text-gray-600 bg-transparent" placeholder="Enter Your email address">
-                <button class="py-2 px-4 md:w-[30%] uppercase border border-black rounded-md bg-syellow hover:bg-yellow-400">Subscribe</button>
-            </div>
-
-        </div>
-    </div>
     
+    </div>
     
     
     
@@ -307,5 +441,39 @@ tailwind.config = {
 <script src="assets/js/pagination.js"></script>
 <!-- top nav links active js -->
 <script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+    utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
+<script>
+    const phoneInputField1 = document.querySelector("#phone1");
+    const phoneInput1 = window.intlTelInput(phoneInputField1, {
+    utilsScript1:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
+<script>
+    const inputs = document.querySelectorAll('.opt-digit');
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', (event) => {
+            if (event.target.value.length === 1) {
+                if (index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            }
+        });
+    });
+</script>
+<script>
+    function remove(element){
+        const remove = document.getElementById(element);
+        const parent = element.parentElement.parentElement;
+        parent.classList.add('hidden');
+    }
+</script>
 </body>
 </html>
+  

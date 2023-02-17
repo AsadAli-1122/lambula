@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="assets/css/googlefonts.css" />
+<link rel="stylesheet" href="assets/css/jsdeliver.css" />
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/tailwindcss.com"></script>
+<script src="assets/js/tailwind.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<style>
+:root{
+    --pink: #FF7C7C;
+    --dark-pink: #FF4A4A;
+    --nyellow: #ffe933;
+    --cream: #FCF5BB;
+    --dark-gray: #222222;
+    --syellow: #F7DD0A;
+    }
+</style>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {
+        colors:{
+            "pink": "var(--pink)",
+            "dark-pink": "var(--dark-pink)",
+            "nyellow": "var(--nyellow)",
+            "cream": "var(--cream)",
+            "dark-gray": "var(--dark-gray)",
+            "syellow": "var(--syellow)"
+        }
+    }
+    }
+}
+</script>
+<style>
+div.p{
+    max-height:0px;
+    overflow: hidden;
+    transition:max-height 0.5s;
+}
+input:checked ~ h1 label::before{
+    border-left:15px solid transparent;
+    border-top:20px solid white;
+    margin-top:12px;
+    margin-right:10px;
+}
+input:checked + h1 i{
+    transform: rotate(180deg);
+}
+input:checked ~ h1 ~ div.p{
+    max-height: 200px;
+}
+</style>
+</head>
+<body>
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+        </div>
+    </div>
+</div>
+<input type="checkbox" name="side-nav-btn" id="side-nav-btn" class="hidden">
+<div class="side-nav z-30 bg-black max-w-[400px] w-full fixed top-0 bottom-0 -right-[400px] ease-in-out duration-500">
+  <div class="text-2xl flex px-4 py-8 justify-between items-center">
+    <div class="lg:hidden">
+      <label for="side-nav-btn" class="cursor-pointer">
+        <i class="fa-solid fa-xmark text-syellow"></i>
+      </label>
+    </div>
+    <div class="flex items-center space-x-2 ml-5">
+      <a href="index.html">
+        <img src="assets/images/locationdot.svg" alt="locationdot">
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col text-white list-none">
+    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="index.html">Dicover</a></li>
+    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="myblogings.html">My Blogings</a></li>
+    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="tour.html">Tour Packages</a></li>
+  </div>
+
+</div>
+
+<header class="absolute top-0 left-0 right-0 z-10 bg-black bg-opacity-60">
+    <div class="text-white">
+    <div class="w-full bg-transparent flex flex-wrap justify-center items-center white">
+        <p class="whitespace-nowrap">
+        <i class="fa-solid fa-phone text-syellow"></i>
+        Call us: +256 020 100 100
+        </p>
+        
+    <div>
+        <select name="" id="" class="payment-box focus:ring-0 focus:outline-none border-none rounded-lg text-sm bg-transparent text-white px-4 cursor-pointer">
+            <option value="" class="bg-black ">USD</option>
+            <option value="" class="bg-black">EUR</option>
+            <option value="" class="bg-black">JPY</option>
+            <option value="" class="bg-black">AUD</option>
+            <option value="" class="bg-black">CAD</option>
+        </select>
+    </div>
+    
+    <button id="dropdownRadioButton" data-dropdown-toggle="dropdownDefaultRadio" class=" focus:ring-1 focus:ring-yellow-300 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Languages <i class="fa-solid fa-chevron-down text-syellow pl-1"></i></button>
+    <!-- Dropdown menu -->
+    <div id="dropdownDefaultRadio" class="z-10 hidden rounded-lg shadow w-44 dark:bg-gray-700 border-2 border-syellow">
+        <ul class="py-4 px-4 bg-black bg-opacity-60 text-white text-sm space-y-3" aria-labelledby="dropdownDefaultButton">
+            <li>
+                <div class="flex items-center">
+                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="hidden">
+                    <label for="default-radio-1" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">English</label>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="hidden">
+                    <label for="default-radio-2" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">Swedish</label>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <input id="default-radio-3" type="radio" value="" name="default-radio" class="hidden">
+                    <label for="default-radio-3" class="ml-2 text-sm font-medium text-white cursor-pointer" onclick="getlang(this)">Italian</label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    </div>
+    <div class="px-2 lg:px-10 flex justify-between items-center">
+        <div class="text-2xl whitespace-nowrap flex">
+            <div class="lg:hidden"><label for="side-nav-btn" class="cursor-pointer">
+                <i class="fa-solid fa-bars text-syellow"></i>
+              </label></div>
+            <div class="flex items-center space-x-2 ml-5">
+                <img src="assets/images/locationdot.svg" alt="locationdot">
+            </div>
+        </div>
+        <ul class="menu-item hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
+            <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
+            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
+            <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:font-semibold hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
+        </ul>
+    
+    
+        <nav class=" flex items-center space-x-12">
+        <div class="hidden sm:flex items-center w-fit bg-white bg-opacity-20 px-4 rounded-full space-x-4 h-fit focus:ring-1 focus:ring-yellow-300">
+            <input type="search" placeholder="Search" class="bg-transparent border-none h-8 pl-6 w-36 placeholder-gray-400 focus:ring-0"><i class="fa-solid fa-search"></i>
+        </div>
+        <div class="flex flex-row justify-center items-center">
+            <i class="fas fa-bell text-syellow"></i>
+    
+            <div id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class=" focus:ring-0 focus:outline-none rounded-lg text-sm px-4 py-2.5 text-center items-center cursor-pointer flex flex-col justify-center w-fit min-w-fit" type="button"><img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" alt="" class="w-8 h-8 rounded-full border border-syellow"> <i class="fa-solid fa-chevron-down text-syellow"></i></div>
+            <!-- Dropdown menu -->
+            <div  id="dropdownInformation"  class="z-10 hidden rounded-lg bg-black bg-opacity-70 text-white shadow min-w-[200px] max-w-[250px] dark:bg-gray-700 border-2 border-syellow px-4 py-6 text-xs font-normal tracking-wide">
+                <ul class="space-y-3" >
+                    <div class="flex justify-start items-center space-x-2">
+                        <div class="w-10 h-10 rounded-full border border-syellow overflow-hidden">
+                            <img src="assets/images/michelle-mcewen-THI4cJ-HGvw-unsplash.jpg" class="w-full h-full">
+                        </div>
+                        <div>
+                            <p class="text-sm ">Andrew Mukuye</p>
+                            <p class="text-xs text-gray-500">Registered 2017</p>
+                        </div>
+                    </div>
+                <li>
+                    <p class="block ease-in-out duration-500">Manage Profile</p>
+                </li>
+                <hr class="">
+                <div class="space-y-1">
+                    <li>
+                        <a href="editprofile&payment.html" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Edit Profile & Payments</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Favourites</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">FAQ's</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block  hover:text-syellow hover:translate-x-4 ease-in-out duration-500">Notification</a>
+                    </li>
+                </div>
+                <hr class="">
+                <li>
+                    <a href="signin.html" class="block text-syellow hover:text-yellow-800 ease-in-out duration-500">Sign In</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    
+    </div>
+    </div>
+</header>
+
+
+
+
+
+<div class="w-full min-h-[100vh] bg-dark-gray pt-32 py-12 pb-8 px-2">
+    <div class="mx-auto bg-white bg-opacity-10 text-white max-w-5xl py-4 px-2 sm:px-4 md:px-6 rounded-2xl">
+        <div class="border-b-2 border-gray-600 pb-4 space-y-3">
+            <h1 class="text-syellow text-xl">FAQ'S</h1>
+            <p class="text-sm text-gray-400">Frequently Asked Questions</p>
+        </div>
+        <div class="pr-4 my-4 max-h-[700px] overflow-y-scroll"> 
+            
+            <div class="space-y-4">
+                <div class="according relative">
+                    <input type="checkbox" id="faq-1" class="hidden">
+                    <h1><label for="faq-1" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>What is Lambula?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-2" class="hidden">
+                    <h1><label for="faq-2" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>What service can i acquire through Lambula?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-3" class="hidden">
+                    <h1><label for="faq-3" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>Do you do arranged globally?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-4" class="hidden">
+                    <h1><label for="faq-4" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>What happens it my payment declines</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-5" class="hidden">
+                    <h1><label for="faq-5" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>What is Lambula?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-6" class="hidden">
+                    <h1><label for="faq-6" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>What service can i acquire through Lambula?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-7" class="hidden">
+                    <h1><label for="faq-7" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>What is Lambula?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-8" class="hidden">
+                    <h1><label for="faq-8" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>Do you do arranged globally?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-9" class="hidden">
+                    <h1><label for="faq-9" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>What is Lambula?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+                <div class="according relative">
+                    <input type="checkbox" id="faq-10" class="hidden">
+                    <h1><label for="faq-10" class="flex justify-between bg-[#FFF7B5] text-black px-4 py-2 rounded-lg cursor-pointer">
+                        <div>Do you do arranged globally?</div>
+                        <div><i class="fa-solid fa-chevron-down angle ease-in-out duration-300"></i></div>
+                    </label></h1>
+                    <div class="p mx-4 px-4 text-xs text-gray-400">
+                        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur assumenda, eveniet tempore vel corrupti hic! Quos placeat alias quo! Ipsam exercitationem magnam neque non natus incidunt atque doloribus fuga veritatis, voluptate rerum pariatur consequatur? Non facilis cupiditate numquam ex, asperiores, vel ad praesentium neque incidunt fugit minus sit recusandae dolorem sequi ratione culpa molestiae dolor consectetur debitis illo et necessitatibus tempore. Earum adipisci eveniet excepturi libero praesentium voluptatem corrupti quasi expedita voluptatibus dolorem repudiandae modi, velit est ex sunt omnis minus eligendi eum eos. Dolorum, rerum illum fugit, qui quas fuga magni modi maxime tempore voluptatem accusamus, odio laboriosam!</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<footer class="bg-black text-gray-500 p-12">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 sm:space-y-0 items-start justify-between pb-6">
+        <ul class="space-y-3 text-sm tracking-wider font-light">
+            <li class="pb-4 text-xl font-semibold uppercase">Destinations</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Game Drive</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Gorilla Tracking</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Lakes and Rivers</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Mountains</li>
+        </ul>
+        <ul class="space-y-3 text-sm tracking-wider font-light">
+            <li class="pb-4 text-xl font-semibold uppercase">Parents</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Discover Africa</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Uganda Today</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">WWF</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4">Vision Tours</li>
+        </ul>
+        <ul class="space-y-3 text-sm tracking-wider font-light">
+            <li class="pb-4 text-xl font-semibold uppercase">Home</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="aboutus.html">About Us</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="contact.html">Contact Us</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="Blog.html">Blog</a></li>
+        </ul>
+        <ul class="space-y-3 text-sm tracking-wider font-light">
+            <li class="pb-4 text-xl font-semibold uppercase">Help Center</li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="refund policy.html">Refund Policy</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="frequentlyaskquestions.html">FAQ's</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="termsandconditions.html">Terms of Use</a></li>
+            <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="privacyandpolicy.html">Privacy Policy</a></li>
+        </ul>
+        </div>
+        <div class="flex flex-col items-end">
+        <div class="space-y-4">
+            <p>NOW AVAILABLE</p>
+            <div class="flex space-x-4">
+            <img src="assets/images/appstore.png" alt="" class="w-32">
+            <img src="assets/images/playstore.svg" alt="" class="w-32">
+            </div>
+        </div>
+        </div>
+        <div class="my-6 border-b border-gray-400">
+        </div>
+        <div class="text-center text-xs font-light tracking-wider">
+        <p>Copyright &copy; 2021 lambola ALL RIGHT RESERVED</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="assets/js/cloudflair.js"></script>
+<script src="assets/js/jsdeliver.js"></script>
+<script src="assets/js/style.js"></script>
+<!-- top nav links active js -->
+<script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
+</body>
+</html>
