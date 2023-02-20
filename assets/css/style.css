@@ -314,3 +314,52 @@ input[type="number"]::-webkit-outer-spin-button{
     background: var(--syellow);
 }
 
+/* tour.html filter css start*/
+
+
+input.price-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 7px;
+    height: 7px;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #F7DD0A;
+    cursor: pointer;
+  }
+  
+  input.price-range::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #C6C6C6;
+    cursor: pointer;  
+  }
+  
+  input.price-range {
+    -webkit-appearance: none; 
+    appearance: none;
+    height: 3px;
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    background-color: #C6C6C6;
+    pointer-events: none;
+  }
+  
+  #PriceFromSlider {
+    margin-top: 2px;
+    height: 0;
+    z-index: 1;
+  }
+  
+  #daysFromSlider {
+    margin-top: 2px;
+    height: 0;
+    z-index: 1;
+  }
+
+/* tour.html filter css end*/

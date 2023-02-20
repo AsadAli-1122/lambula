@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/tailwindcss.com"></script>
 <script src="assets/js/tailwind.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <style>
 :root{
     --pink: #FF7C7C;
@@ -19,7 +21,6 @@
     --dark-gray: #222222;
     --syellow: #F7DD0A;
     }
-
 </style>
 <script>
 tailwind.config = {
@@ -37,6 +38,35 @@ tailwind.config = {
     }
 }
 </script>
+<style>
+.toggle-rect-color input[type="checkbox"] + label {
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.toggle-rect-color input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background: #50565a;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0.2em;
+  top: 0.2em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.toggle-rect-color input[type="checkbox"]:checked + label {
+  background: #F7DD0A;
+}
+.toggle-rect-color input[type="checkbox"]:checked + label:before {
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  left: 1.6em;
+}
+</style>
 </head>
 <body>
 <div class="loader" id="loader">
@@ -128,7 +158,7 @@ tailwind.config = {
         <div class="text-2xl whitespace-nowrap flex">
             <div class="lg:hidden"><label for="side-nav-btn" class="cursor-pointer">
                 <i class="fa-solid fa-bars text-syellow"></i>
-              </label></div>
+                </label></div>
             <div class="flex items-center space-x-2 ml-5">
                 <img src="assets/images/locationdot.svg" alt="locationdot">
             </div>
@@ -281,135 +311,232 @@ tailwind.config = {
     
     </div>
     </div>
-    </header>
+</header>
 
 
 
 
 
-    <div class="bg-dark-gray">
-        <div class="mx-auto max-w-5xl text-white py-28 px-2">
-            <div class="space-y-4 px-4">
-                <h1 class="text-4xl md:text-5xl xl:text-6xl text-center font-bold text-syellow py-4 mx-auto">Blog Post</h1>
-                <p class="text-sm mx-auto md:text-base text-center tracking-wide w-[65%]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cumque iure placeat repellendus saepe, iusto libero odio pariatur culpa vel magnam..</p>
-            </div>
-            <div class="space-y-3 px-4 py-12">
-                <h1 class="text-2xl md:text-3xl xl:text-4xl font-semibold text-syellow">6 things to do during March in Uganda</h1>
-                <div class="text-xs md:text-sm font-light">
-                    <ul class="list-none flex space-x-12">
-                        <li><i class="fa-regular fa-calendar-days w-6"></i> 12 June </li>
-                        <li><i class="fa-regular fa-user w-6"></i> By Admin </li>
-                        <li><i class="fa-regular fa-comment-dots w-6"></i> 12 </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="px-1">
-                <div class="w-full max-h-96 flex justify-center items-center rounded-2xl overflow-hidden mx-auto">
-                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="jackboat" class="">
-                </div>
-            </div>
-            <div class="px-4">
-            <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, optio natus explicabo, sit praesentium accusamus, libero ullam impedit dolore quidem rem quasi nulla nostrum magni eligendi tempora quis dolorem. Aut.</p>
-            <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, optio natus explicabo, sit praesentium accusamus, libero ullam impedit dolore quidem rem quasi nulla nostrum magni eligendi tempora quis dolorem. Aut. amet consectetur adipisicing elit. Nobis, optio natus explicabo, sit praesentium accusamus, libero ullam impedit dolore quidem rem quasi nulla nostrum magni eligendi tempora quis dolorem. Aut.</p>
-            </div>
-            <div class="px-1">
-                <p class="text-sm py-6 bg-syellow text-black px-6 rounded-md"><span class="font-extrabold">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, optio natus explicabo, sit praesentium accusamus, libero ullam impedit dolore quidem rem quasi nulla nostrum magni eligendi tempora quis dolorem. Aut.<span class="font-extrabold">"</span> <br> <span class="font-extrabold tracking-wider">-Sam Alabama</span></p>
-            </div>
-            <div class="px-4">
-                <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, optio natus explicabo, sit praesentium accusamus, libero ullam impedit dolore quidem rem quasi nulla nostrum magni eligendi tempora quis dolorem. Aut.</p>
-                <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, optio natus explicabo, sit praesentium accusamus, libero ullam impedit dolore quidem rem quasi nulla nostrum magni eligendi tempora quis dolorem. Aut. amet consectetur adipisicing elit. Nobis, optio natus explicabo, sit praesentium accusamus, libero ullam impedit dolore quidem rem quasi nulla nostrum magni eligendi tempora quis dolorem. Aut.</p>
-            </div>
-            <div class="px-1"> 
-                <div class="px-2 border rounded-md py-4 flex justify-between">
-                    <ul class="list-none flex space-x-3">
-                        <li class="font-semibold tracking-wider">Tags</li>
-                        <li>Tips,</li>
-                        <li>Blogs,</li>
-                    </ul>
-                    <ul class="list-none flex space-x-3">
-                        <li class="font-semibold tracking-wider">Shar</li>
-                        <li><i class="fa-brands fa-square-facebook"></i></li>
-                        <li><i class="fa-brands fa-square-twitter"></i></li>
-                        <li><i class="fa-solid fa-share-nodes"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="px-2 ">
-                <h1 class="text-syellow text-xl font-semibold">Related Post</h1>
-                <div class="flex justify-center flex-row flex-wrap">
-                    <div class="my-3 mx-1 md:mx-3 sm:w-[300px] h-[400px] flex items-end rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="bg-white text-black space-y-6 px-4 py-3">
-                            <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                            <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                        </div>
-                    </div>
-                    <div class="my-3 mx-1 md:mx-3 sm:w-[300px] h-[400px] flex items-end rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="bg-white text-black space-y-6 px-4 py-3">
-                            <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                            <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                        </div>
-                    </div>
-                    <div class="my-3 mx-1 md:mx-3 sm:w-[300px] h-[400px] flex items-end rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
-                        <div class="bg-white text-black space-y-6 px-4 py-3">
-                            <h1 class="text-base font-bold">6 things to do during March in Uganda</h1>
-                            <p class="text-sm font-medium">Admin - 12 Feb 2022</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <h1 class="text-syellow text-2xl font-bold tracking-wider py-4">Comments</h1>
-            <div class="comments px-2">
-                <div class="flex flex-col space-y-3 py-4 px-1">
-                    <div>
-                        <div class="flex items-center space-x-6">
-                            <div class="w-20 h-20 flex justify-center items-center rounded-md overflow-hidden">
-                                <img src="assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg" alt="kevin-mueller-aeNg4YA41P8-unsplash">
+<div class="w-full min-h-[100vh] bg-dark-gray pt-32 py-12 pb-8 px-2">
+    <div class="mx-auto bg-white bg-opacity-10 text-white max-w-5xl py-4 px-2 sm:px-4 md:px-6 rounded-2xl">
+        <div class="pb-4 space-y-3">
+            <h1 class="text-syellow text-xl">Favourite Trips</h1>
+        </div>
+        <div class="pr-4 my-4 max-h-[700px] overflow-y-scroll"> 
+            <div class="all-favourite-trips space-y-4">
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
                             </div>
-                            <div class="flex flex-col h-16 justify-between">
-                                <h1 class="text-lg text-syellow font-bold tracking-wider">Samanth</h1>
-                                <p class="text-base font-light">1 Month</p>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center space-x-6">
-                            <div class="w-20 h-20 flex justify-center items-center rounded-md overflow-hidden">
-                                <img src="assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg" alt="kevin-mueller-aeNg4YA41P8-unsplash">
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
                             </div>
-                            <div class="flex flex-col h-16 justify-between">
-                                <h1 class="text-lg text-syellow font-bold tracking-wider">Samanth</h1>
-                                <p class="text-base font-light">1 Month</p>
-                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
                         </div>
                     </div>
-                    <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, velit iusto at voluptatibus voluptates obcaecati culpa a quam accusamus alias quas nisi nesciunt tempora repellat iste error quaerat labore molestiae.</p>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
                 </div>
-            </div>
-            <h1 class="text-syellow text-2xl font-bold tracking-wider py-4">Leave a Comment</h1>
-            <div class="space-y-2 px-2">
-                <p class="text-syellow">Comment</p>
-                <textarea name="" id="" cols="" rows="4" class="w-full rounded-none border-2 border-gray-500 focus:ring-0 focus:outline-none focus:border-syellow bg-transparent p-4"></textarea>
-            </div>
-            <div class=" md:flex md:space-x-4">
-                <div class="space-y-2 px-2 md:w-[50%]">
-                    <p class="text-syellow">Name</p>
-                    <input type="text" class="w-full rounded-none border-2 border-gray-500 focus:ring-0 focus:outline-none focus:border-syellow bg-transparent px-4 py-2">
-                </div><div class="space-y-2 px-2 md:w-[50%]">
-                    <p class="text-syellow">Email</p>
-                    <input type="email" class="w-full rounded-none border-2 border-gray-500 focus:ring-0 focus:outline-none focus:border-syellow bg-transparent px-4 py-2">
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
+                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
+                        </div>
+                    </div>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
                 </div>
-            </div>
-            <div class="p-2 flex justify-end">
-                <button class="py-2 px-12 uppercase text-black font-bold tracking-wider bg-syellow hover:bg-yellow-400 w-fit ">Submit</button>
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
+                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
+                        </div>
+                    </div>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
+                </div>
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
+                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
+                        </div>
+                    </div>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
+                </div>
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
+                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
+                        </div>
+                    </div>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
+                </div>
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
+                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
+                        </div>
+                    </div>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
+                </div>
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
+                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
+                        </div>
+                    </div>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
+                </div>
+                <div class="favourite-trip flex items-center space-x-2">
+                    <div class="w-full flex flex-wrap items-center justify-between bg-white bg-opacity-5 rounded-xl overflow-hidden pr-4">
+                        <div class="flex items-center space-x-12">
+                            <div class="flex items-center space-x-2">
+                                <div class="max-w-[50px] max-h-[50px] overflow-hidden justify-center items-center">
+                                    <img src="assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg" alt="" class="">
+                                </div>
+                                <h1 class="">7 Days Queen Elizabeth</h1>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <h2 class="text-syellow font-semibold whitespace-nowrap">Starting: $ <span>1150</span></h2>
+                                <div class="flex items-center text-xs text-gray-500">
+                                    <img src="assets/images/noun_Star_fill.svg" alt="">
+                                    (<span>4.9</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 ml-auto">
+                            <div>
+                                <i class="fa-solid fa-heart text-syellow cursor-pointer hover:text-yellow-400"></i>
+                            </div>
+                            <button href="" class="py-1 px-6 h-fit rounded-md text-black bg-syellow hover:bg-yellow-400">Book Trip</button>
+                        </div>
+                    </div>
+                    <button href="" class="text-red-600 h-fit hover:text-red-700  ml-4" onclick="removeFavTrip(this)">Remove</button>
+                </div>
+
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-
-
+</div>
 
 
 
@@ -469,13 +596,16 @@ tailwind.config = {
     </div>
 </footer>
 
-
 <script src="assets/js/cloudflair.js"></script>
 <script src="assets/js/jsdeliver.js"></script>
 <script src="assets/js/style.js"></script>
-<script src="assets//js/includeoffer.js"></script>
-<script src="assets/js/pagination.js"></script>
 <!-- top nav links active js -->
 <script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
+<script>
+    function removeFavTrip(element){
+        const x = element.parentElement;
+        x.classList.add('hidden');
+    }
+</script>
 </body>
 </html>
