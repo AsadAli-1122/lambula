@@ -1,0 +1,35 @@
+input.experience:checked + label{
+    border: 1px solid black;
+    color: black;
+}
+
+.budget-safari-events .budget-safari-event {
+-webkit-animation: scroll 40s linear infinite;
+animation: scroll 40s linear infinite;
+display: flex;
+width: calc(250px * 14);
+}
+
+@-webkit-keyframes scroll {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(calc(-250px * 7));
+transform: translateX(calc(-250px * 7));
+}
+}
+@keyframes scroll {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(calc(-250px * 7));
+transform: translateX(calc(-250px * 7));
+}
+}
+.overflow-x-scroll::-webkit-scrollbar{
+    height: 0px;
+}

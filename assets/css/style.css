@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root{
+    --pink: #FF7C7C;
+    --dark-pink: #FF4A4A;
+    --nyellow: #ffe933;
+    --cream: #FCF5BB;
+    --dark-gray: #222222;
+    --syellow: #F7DD0A;
+    }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -210,25 +222,12 @@ input[type="number"]::-webkit-outer-spin-button{
 /* card slider css start */
 
 .testimonials{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	min-height: 350px;
 	perspective: 500px;
-	overflow: hidden;
 }
 .testimonials .item{
-	width: 300px;
-    height: 300px;
-	background-color: #21262d;
-	position: absolute;
-	top: 0;
 	transition: transform 0.4s;
 	box-shadow: 0 0 20px rgb(0,0,0);
 	user-select: none;
-	cursor: pointer;
-    overflow: hidden;
 }
 .testimonials .item h1{font-size: 114px; color: white;}
 .dots{display: flex; justify-content: center;align-items: center;}
@@ -246,7 +245,7 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-3:checked ~ .testimonials label[for="t-5"],
 #t-4:checked ~ .testimonials label[for="t-1"],
 #t-5:checked ~ .testimonials label[for="t-2"]{
-	transform: translate3d(680px, 0, -180px) rotateY(-0deg);
+	transform: translate3d(740px, 0, -150px);
 	z-index: 2;
 }
 
@@ -255,7 +254,7 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-3:checked ~ .testimonials label[for="t-4"],
 #t-4:checked ~ .testimonials label[for="t-5"],
 #t-5:checked ~ .testimonials label[for="t-1"]{
-	transform: translate3d(310px, 0, -90px) rotateY(-0deg);
+	transform: translate3d(330px, 0, -50px);
 	z-index: 3;
 }
 
@@ -264,7 +263,7 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-4:checked ~ .testimonials label[for="t-3"],
 #t-5:checked ~ .testimonials label[for="t-4"],
 #t-1:checked ~ .testimonials label[for="t-5"]{
-	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	transform: translate3d(-300px, 0, -90px);
 	z-index: 3;
     display: none;
 }
@@ -274,7 +273,7 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-5:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-5"],
 #t-1:checked ~ .testimonials label[for="t-4"]{
-	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+	transform: translate3d(-600px, 0, -180px);
     display: none;
 }
 
@@ -287,6 +286,8 @@ input[type="number"]::-webkit-outer-spin-button{
 	z-index: 4;
 }
 /* card slider css end */
+
+
 
 /* pagination css */
 
@@ -363,3 +364,4 @@ input.price-range::-webkit-slider-thumb {
   }
 
 /* tour.html filter css end*/
+

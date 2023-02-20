@@ -10,16 +10,6 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/tailwindcss.com"></script>
 <script src="assets/js/tailwind.js"></script>
-<style>
-:root{
-    --pink: #FF7C7C;
-    --dark-pink: #FF4A4A;
-    --nyellow: #ffe933;
-    --cream: #FCF5BB;
-    --dark-gray: #222222;
-    --syellow: #F7DD0A;
-    }
-</style>
 <script>
 tailwind.config = {
     theme: {
@@ -36,7 +26,6 @@ tailwind.config = {
     }
 }
 </script>
-
 </head>
 <body>
 
@@ -296,12 +285,6 @@ tailwind.config = {
 
 
 <div class="carousel">
-
-  <!-- <div class="h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
-
-  </div> -->
-
-
     <div
     id="carouselDarkVariant"
     class="carousel slide carousel-fade carousel-dark relative"
@@ -339,8 +322,30 @@ tailwind.config = {
           </div>
           <div class="">
             <h1 class="uppercase text-4xl lg:text-6xl xl:text-8xl font-extrabold tracking-wider text-white">Safaris</h1>
-            <p class="text-white text-[8px] sm:text-[10px] w-[90%] sm:w-[80%] md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem aliquid libero provident nostrum consectetur autem repudiandae officiis! Molestiae, odio!</p>
+            <p class="text-white text-[8px] sm:text-[10px] md:text-xs w-[90%] sm:w-[80%] md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem aliquid libero provident nostrum consectetur autem repudiandae officiis! Molestiae, odio!</p>
             <button class="my-4 sm:my-5 md:my-6 lg:my-7 xl:my-8 bg-syellow hover:bg-yellow-400 px-4 py-2 rounded-lg text-xs md:text-sm font-bold tracking-wider">Discover <i class="fa-solid fa-arrow-right-long ml-6"></i></button>
+            
+          </div>
+          <div class="w-full hidden lg:inline-block">
+            <div class="slider -ml-[550px] mt-52">
+              <input type="radio" class="hidden" name="testimonial" id="t-1">
+              <input type="radio" class="hidden" name="testimonial" id="t-2">
+              <input type="radio" class="hidden" name="testimonial" id="t-3" checked>
+              <input type="radio" class="hidden" name="testimonial" id="t-4">
+              <input type="radio" class="hidden" name="testimonial" id="t-5">
+              <div class="testimonials flex items-center justify-center relative min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] overflow-hidden">
+                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-1" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                </label>
+                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-2" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                </label>
+                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-3" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                </label>
+                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-4" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
+                </label>
+                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-5" style="background-image: url(assets/images/katie-mcbroom-7uyv6TtW04E-unsplash.jpg);">
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -356,9 +361,10 @@ tailwind.config = {
           </div>
           <div class="">
             <h1 class="uppercase text-4xl lg:text-6xl xl:text-8xl font-extrabold tracking-wider text-white">Mountains</h1>
-            <p class="text-white text-[8px] sm:text-[10px] w-[90%] sm:w-[80%] md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem aliquid libero provident nostrum consectetur autem repudiandae officiis! Molestiae, odio!</p>
+            <p class="text-white text-[8px] sm:text-[10px] md:text-xs w-[90%] sm:w-[80%] md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem aliquid libero provident nostrum consectetur autem repudiandae officiis! Molestiae, odio!</p>
             <button class="my-4 sm:my-5 md:my-6 lg:my-7 xl:my-8 bg-syellow hover:bg-yellow-400 px-4 py-2 rounded-lg text-xs md:text-sm font-bold tracking-wider">Discover <i class="fa-solid fa-arrow-right-long ml-6"></i></button>
           </div>
+          
         </div>
       </div>
   
@@ -373,7 +379,7 @@ tailwind.config = {
           </div>
           <div class="">
             <h1 class="uppercase text-4xl lg:text-6xl xl:text-8xl font-extrabold tracking-wider text-white">Tracking</h1>
-            <p class="text-white text-[8px] sm:text-[10px] w-[90%] sm:w-[80%] md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem aliquid libero provident nostrum consectetur autem repudiandae officiis! Molestiae, odio!</p>
+            <p class="text-white text-[8px] sm:text-[10px] md:text-xs w-[90%] sm:w-[80%] md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem aliquid libero provident nostrum consectetur autem repudiandae officiis! Molestiae, odio!</p>
             <button class="my-4 sm:my-5 md:my-6 lg:my-7 xl:my-8 bg-syellow hover:bg-yellow-400 px-4 py-2 rounded-lg text-xs md:text-sm font-bold tracking-wider">Discover <i class="fa-solid fa-arrow-right-long ml-6"></i></button>
           </div>
         </div>
@@ -401,6 +407,11 @@ tailwind.config = {
     </div>
   
 </div>
+
+
+
+
+
 
 
 <div class="w-full bg-dark-gray text-white">
@@ -491,6 +502,9 @@ tailwind.config = {
   </form>
 </div>
 </div>
+
+
+
 
 
 <footer class="bg-black text-gray-500 p-12">

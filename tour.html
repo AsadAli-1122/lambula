@@ -8,19 +8,10 @@
 <link rel="stylesheet" href="assets/css/googlefonts.css" />
 <link rel="stylesheet" href="assets/css/jsdeliver.css" />
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/scrolanimation.css">
 <script src="assets/js/tailwindcss.com"></script>
 <script src="assets/js/tailwind.js"></script>
-<style>
-:root{
-    --pink: #FF7C7C;
-    --dark-pink: #FF4A4A;
-    --nyellow: #ffe933;
-    --cream: #FCF5BB;
-    --dark-gray: #222222;
-    --syellow: #F7DD0A;
-    }
 
-</style>
 <script>
 tailwind.config = {
     theme: {
@@ -37,13 +28,6 @@ tailwind.config = {
     }
 }
 </script>
-<style>
-input.experience:checked + label{
-    border: 1px solid black;
-    color: black;
-}
-
-</style>
 </head>
 <body>
 <div class="loader" id="loader">
@@ -401,7 +385,7 @@ input.experience:checked + label{
     <div class="w-full py-4 bg-dark-gray text-white px-2">
         <div class="max-w-7xl mx-auto text-sm">
             <div class=" flex justify-between items-center mb-4">
-                <div class="flex space-x-4 text-xl">
+                <div class="flex space-x-4 text-xs sm:text-sm md:text-xl">
                     <p>Tour operator for you</p>
                     <p class="text-syellow">Popular</p>
                 </div>
@@ -783,8 +767,9 @@ input.experience:checked + label{
                                 </div>
                             </div>
                         </div>
-                        <div class="budget-safari-event bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll scroll-smooth" id="budget_safari_event">
-                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                        <div class="budget-safari-events bg-dark-gray py-2 bg-dark-gray flex space-x-4 overflow-x-scroll scroll-smooth" id="budget_safari_event">
+                            
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
                                 <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                     <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                     <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
@@ -794,7 +779,7 @@ input.experience:checked + label{
                                     <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                                 </div>
                             </div>
-                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
                                 <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                     <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                     <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
@@ -804,7 +789,7 @@ input.experience:checked + label{
                                     <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                                 </div>
                             </div>
-                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
                                 <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                     <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                     <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
@@ -814,7 +799,7 @@ input.experience:checked + label{
                                     <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                                 </div>
                             </div>
-                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
                                 <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                     <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                     <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
@@ -824,7 +809,7 @@ input.experience:checked + label{
                                     <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                                 </div>
                             </div>
-                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
                                 <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                     <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                     <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
@@ -834,7 +819,7 @@ input.experience:checked + label{
                                     <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                                 </div>
                             </div>
-                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
                                 <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                     <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                     <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
@@ -844,7 +829,7 @@ input.experience:checked + label{
                                     <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                                 </div>
                             </div>
-                            <div class="h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
                                 <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
                                     <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
                                     <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
@@ -854,7 +839,136 @@ input.experience:checked + label{
                                     <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
                                 </div>
                             </div>
-        
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
+                            <div class="budget-safari-event h-40 min-w-[200px] bg-cover flex flex-col justify-between rounded-xl overflow-hidden whitespace-nowrap" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                                <div class="w-full h-[70%] flex flex-col items-end p-4 space-y-2">
+                                    <i class="fa-solid fa-plus bg-black w-5 h-5 flex justify-center items-center rounded-full"></i>
+                                    <i class="fa-regular fa-heart text-base text-syellow pr-1"></i>
+                                </div>
+                                <div class="text-center bg-black bg-opacity-90 px-4 py-1">
+                                    <h1 class="font-semibold tracking-wider">3 Days murchison Falls</h1>
+                                    <p class="text-gray-400">Starting: <span class="text-syellow">$950</span></p>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
