@@ -25,6 +25,7 @@ tailwind.config = {
     }
     }
 }
+
 </script>
 </head>
 <body>
@@ -65,7 +66,7 @@ tailwind.config = {
   </div>
   <div class="flex flex-col text-white list-none">
     <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="index.html">Dicover</a></li>
-    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="myblogings.html">My Blogings</a></li>
+    <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="myblogings.html">My Bookings</a></li>
     <li class="px-8 py-4 text-xl hover:text-syellow hover:translate-x-4 duration-300 ease-in-out"><a href="tour.html">Tour Packages</a></li>
   </div>
 
@@ -134,7 +135,7 @@ tailwind.config = {
         </div>
         <ul class="menu-item hidden lg:flex text-sm ml-44 whitespace-nowrap space-x-2">
             <li><a href="index.html" class="top-nav-link tracking-wider px-2 hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Discover</a></li>
-            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Blogings</a></li>
+            <li><a href="myblogings.html" class="top-nav-link tracking-wider px-2 hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">My Bookings</a></li>
             <li><a href="tour.html" class="top-nav-link tracking-wider px-2 hover:text-syellow hover:border-b-4 hover:border-syellow pb-3 font-bold">Tour Packages</a></li>
         </ul>
     
@@ -326,32 +327,32 @@ tailwind.config = {
             <button class="my-4 sm:my-5 md:my-6 lg:my-7 xl:my-8 bg-syellow hover:bg-yellow-400 px-4 py-2 rounded-lg text-xs md:text-sm font-bold tracking-wider">Discover <i class="fa-solid fa-arrow-right-long ml-6"></i></button>
             
           </div>
-          <div class="w-full hidden lg:inline-block">
-            <div class="slider -ml-[550px] mt-52">
-              <input type="radio" class="hidden" name="testimonial" id="t-1">
-              <input type="radio" class="hidden" name="testimonial" id="t-2">
-              <input type="radio" class="hidden" name="testimonial" id="t-3" checked>
-              <input type="radio" class="hidden" name="testimonial" id="t-4">
-              <input type="radio" class="hidden" name="testimonial" id="t-5">
-              <div class="testimonials flex items-center justify-center relative min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] overflow-hidden">
-                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-1" style="background-image: url(assets/images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);">
+          <div class="w-full hidden lg:block">
+            <div class="slider mt-52">
+              <input type="radio" class="hidden" name="testimonial" value="1" id="t-1" checked>
+              <input type="radio" class="hidden" name="testimonial" value="2" id="t-2">
+              <input type="radio" class="hidden" name="testimonial" value="3" id="t-3">
+              <input type="radio" class="hidden" name="testimonial" value="4" id="t-4">
+              <input type="radio" class="hidden" name="testimonial" value="5" id="t-5">
+              <div class="testimonials flex items-center justify-center relative min-h-[300px] lg:min-h-[420px]">
+                <label class="-ml-96 item bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-1" style="background-image: url(assets/images/Group\ 10173\(7\).png);">
                 </label>
-                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-2" style="background-image: url(assets/images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);">
+                <label class="-ml-96 item bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-2" style="background-image: url(assets/images/Group\ 10173\(1\).png);">
                 </label>
-                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-3" style="background-image: url(assets/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);">
+                <label class="-ml-96 item bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-3" style="background-image: url(assets/images/Group\ 10173.png);">
                 </label>
-                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-4" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
+                <label class="-ml-96 item bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-4" style="background-image: url(assets/images/Group\ 10173\(7\).png);">
                 </label>
-                <label class="item bg-cover bg-center min-h-[300px] lg:min-h-[400px] xl:min-h-[500px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-5" style="background-image: url(assets/images/katie-mcbroom-7uyv6TtW04E-unsplash.jpg);">
+                <label class="-ml-96 item bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-5" style="background-image: url(assets/images/Group\ 10173\(1\).png);">
                 </label>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
   
       <div class="carousel-item relative float-left w-full">
-        <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/laura-college-K_Na5gCmh38-unsplash.jpg);">
+        <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/getting-to-bwindi.jpg);">
         </div>
         <div class="carousel-caption absolute w-full h-full left-0 bottom-0 flex items-center bg-black bg-opacity-60">
           <div class="border-l mx-8 h-[70%] flex flex-col justify-around">
@@ -365,11 +366,32 @@ tailwind.config = {
             <button class="my-4 sm:my-5 md:my-6 lg:my-7 xl:my-8 bg-syellow hover:bg-yellow-400 px-4 py-2 rounded-lg text-xs md:text-sm font-bold tracking-wider">Discover <i class="fa-solid fa-arrow-right-long ml-6"></i></button>
           </div>
           
+          <div class="w-full hidden lg:block">
+            <div class="slider mt-52">
+              <input type="radio" class="hidden" name="testimonial2" value="1" id="t-11">
+              <input type="radio" class="hidden" name="testimonial2" value="2" id="t-22">
+              <input type="radio" class="hidden" name="testimonial2" value="3" id="t-33" checked>
+              <input type="radio" class="hidden" name="testimonial2" value="4" id="t-44">
+              <input type="radio" class="hidden" name="testimonial2" value="5" id="t-55">
+              <div class="testimonials2 flex items-center justify-center relative min-h-[300px] lg:min-h-[420px]">
+                <label class="-ml-96 item2 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-11" style="background-image: url(assets/images/Group\ 10173\(2\).png);">
+                </label>
+                <label class="-ml-96 item2 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-22" style="background-image: url(assets/images/Group\ 10173\(1\).png);">
+                </label>
+                <label class="-ml-96 item2 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-33" style="background-image: url(assets/images/Group\ 10191.png);">
+                </label>
+                <label class="-ml-96 item2 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-44" style="background-image: url(assets/images/Group\ 10173\(1\).png);">
+                </label>
+                <label class="-ml-96 item2 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-55" style="background-image: url(assets/images/Group\ 10191.png);">
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
   
       <div class="carousel-item relative float-left w-full">
-        <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);">
+        <div class="slider1 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] bg-cover bg-center" style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">
         </div>
         <div class="carousel-caption absolute w-full h-full left-0 bottom-0 flex items-center bg-black bg-opacity-60">
           <div class="border-l mx-8 h-[70%] flex flex-col justify-around">
@@ -378,9 +400,31 @@ tailwind.config = {
             <div class="w-4 h-4 bg-white text-black rounded-full flex justify-center items-center text-xs font-semibold -ml-2 hover:scale-150 cursor-pointer ease-in-out duration-200">3</div>
           </div>
           <div class="">
-            <h1 class="uppercase text-4xl lg:text-6xl xl:text-8xl font-extrabold tracking-wider text-white">Tracking</h1>
+            <h1 class="uppercase text-4xl lg:text-6xl xl:text-8xl font-extrabold tracking-wider text-white whitespace-nowrap">People <br>& culture</h1>
             <p class="text-white text-[8px] sm:text-[10px] md:text-xs w-[90%] sm:w-[80%] md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem aliquid libero provident nostrum consectetur autem repudiandae officiis! Molestiae, odio!</p>
             <button class="my-4 sm:my-5 md:my-6 lg:my-7 xl:my-8 bg-syellow hover:bg-yellow-400 px-4 py-2 rounded-lg text-xs md:text-sm font-bold tracking-wider">Discover <i class="fa-solid fa-arrow-right-long ml-6"></i></button>
+          </div>
+          
+          <div class="w-full hidden lg:block">
+            <div class="slider mt-52">
+              <input type="radio" class="hidden" name="testimonial3" value="1" id="t-111">
+              <input type="radio" class="hidden" name="testimonial3" value="2" id="t-222">
+              <input type="radio" class="hidden" name="testimonial3" value="3" id="t-333">
+              <input type="radio" class="hidden" name="testimonial3" value="4" id="t-444" checked>
+              <input type="radio" class="hidden" name="testimonial3" value="5" id="t-555">
+              <div class="testimonials3 flex items-center justify-center relative min-h-[300px] lg:min-h-[420px]">
+                <label class="-ml-96 item3 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-111" style="background-image: url(assets/images/Group\ 10173\(3\).png);">
+                </label>
+                <label class="-ml-96 item3 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-222" style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">
+                </label>
+                <label class="-ml-96 item3 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-333" style="background-image: url(assets/images/Group\ 10173\(4\).png);">
+                </label>
+                <label class="-ml-96 item3 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-444" style="background-image: url(assets/images/Group\ 10173\(3\).png);">
+                </label>
+                <label class="-ml-96 item3 bg-cover bg-center min-h-[300px] lg:min-h-[420px] w-[300px] absolute top-0 cursor-pointer overflow-hidden rounded-xl brightness-75" for="t-555" style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -449,12 +493,12 @@ tailwind.config = {
   <p class="text-base xl:text-xl text-center tracking-wider w-2/3 mx-auto">Discovering Africa, choose the best Tour destination, Tour Operator and budget friendly trips</p>
   </div>
   <div class="max-w-7xl min-h-[600px] grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-3 grid-flow-row mx-auto justify-center  my-4 gap-y-3 gap-x-3">
-      <div class=" min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" id="destination_1">Safari</div>
-      <div class=" min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2" id="destination_2">Lakes & Rivers</div>
-      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2 lg:row-span-1" id="destination_4">Lakes & Rivers</div>
-      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2 " id="destination_3">Safari</div>
-      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2" id="destination_5">Safari</div>
-      <div class="min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center col-span-1" id="destination_6">Lakes & Rivers</div>
+      <div class=" inset-shadow min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center" style="background-image: url(assets/images/Group\ 10190.png);">Safari</div>
+      <div class=" inset-shadow min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2"  style="background-image: url(assets/images/Ethnic-Groups-in-Uganda@2x.png);">People & Cluture</div>
+      <div class="inset-shadow min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center row-span-2 lg:row-span-1"  style="background-image: url(assets/images/getting-to-bwindi.png);">Mountains</div>
+      <div class="inset-shadow min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2 "  style="background-image: url(assets/images/Group\ 10191.png);">Lakes & Rivers</div>
+      <div class="inset-shadow min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center lg:row-span-2"  style="background-image: url(assets/images/Group\ 10192.png);">Road Trips</div>
+      <div class="inset-shadow min-h-[250px] flex items-end overflow-hidden p-4 rounded-2xl text-xl font-semibold tracking-wider bg-cover bg-center col-span-1"  style="background-image: url(assets/images/Group\ 10193.png);">Night Life</div>
     </div>
   <div>
     <div class="map max-w-7xl flex mx-auto my-8 h-[420px] rounded-2xl overflow-hidden">
@@ -506,36 +550,35 @@ tailwind.config = {
 
 
 
-
 <footer class="bg-black text-gray-500 p-12">
   <div class="max-w-7xl mx-auto">
-      <div class="grid sm:grid-cols-2 md:grid-cols-4 space-y-8 sm:space-y-0 items-start justify-between pb-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 items-start justify-between pb-6">
       <ul class="space-y-3 text-sm tracking-wider font-light">
-          <li class="pb-4 text-xl font-semibold uppercase">Destinations</li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="index.html">Game Drive</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="chaimpTrekking.html">Gorilla Tracking</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="myblogings.html">Lakes and Rivers</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="Favouritetrips.html">Favourite Trips</a></li>
+          <li class="my-4 text-base sm:text-lg md:text-xl font-semibold uppercase">Destinations</li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="index.html">Game Drive</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="chaimpTrekking.html">Gorilla Tracking</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="myblogings.html">Lakes and Rivers</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="Favouritetrips.html">Favourite Trips</a></li>
       </ul>
       <ul class="space-y-3 text-sm tracking-wider font-light">
-          <li class="pb-4 text-xl font-semibold uppercase"><a href="tour.html">Parents</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="tour.html">Discover Africa</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="index.html">Uganda Today</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="tour.html">WWF</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="blog-details.html">Vision Tours</a></li>
+          <li class="my-4 text-base sm:text-lg md:text-xl font-semibold uppercase"><a href="tour.html">Parents</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="tour.html">Discover Africa</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="index.html">Uganda Today</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="tour.html">WWF</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="blog-details.html">Vision Tours</a></li>
       </ul>
       <ul class="space-y-3 text-sm tracking-wider font-light">
-          <li class="pb-4 text-xl font-semibold uppercase">Home</li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="aboutus.html">About Us</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="contact.html">Contact Us</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="Blog.html">Blog</a></li>
+          <li class="my-4 text-base sm:text-lg md:text-xl font-semibold uppercase">Home</li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="aboutus.html">About Us</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="contact.html">Contact Us</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="Blog.html">Blog</a></li>
       </ul>
       <ul class="space-y-3 text-sm tracking-wider font-light">
-          <li class="pb-4 text-xl font-semibold uppercase">Help Center</li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="refund policy.html">Refund Policy</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="frequentlyaskquestions.html">FAQ's</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="termsandconditions.html">Terms of Use</a></li>
-          <li class="hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="privacyandpolicy.html">Privacy Policy</a></li>
+          <li class="my-4 text-base sm:text-lg md:text-xl font-semibold uppercase">Help Center</li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="refund policy.html">Refund Policy</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="frequentlyaskquestions.html">FAQ's</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="termsandconditions.html">Terms of Use</a></li>
+          <li class="text-xs hover:text-syellow hover:cursor-pointer ease-in duration-300 hover:scale-105 hover:translate-x-4"><a href="privacyandpolicy.html">Privacy Policy</a></li>
       </ul>
       </div>
       <div class="flex flex-col items-end">
@@ -565,7 +608,9 @@ tailwind.config = {
 <script src="assets/js/style.js"></script>
 <script src="assets//js/includeoffer.js"></script>
 <script src="assets/js/pagination.js"></script>
+<script src="assets/js/cardslider.js"></script>
 <!-- top nav links active js -->
 <script>const currentUrl = window.location.href;const links = document.querySelectorAll('.top-nav-link');let classToAdd = ['text-syellow','border-syellow','border-b-2'];links.forEach(link => {if (link.href === currentUrl) {link.classList.add(...classToAdd);} else {link.classList.remove(...classToAdd);}});</script>
+
 </body>
 </html>

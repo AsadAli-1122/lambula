@@ -72,32 +72,7 @@ input[type="number"]::-webkit-outer-spin-button{
 
 
 
-#destination_1{
-    background-image: url(../images/kar-ming-moo-Q_3WmguWgYg-unsplash.jpg);
-    box-shadow: inset 0px -25px 50px 0px #000000;
-}
-#destination_2{
-    background-image: url(../images/kevin-mueller-aeNg4YA41P8-unsplash.jpg);
-    box-shadow: inset 0px -25px 50px 0px #000000;
-
-}
-#destination_3{
-    background-image: url(../images/laura-college-K_Na5gCmh38-unsplash.jpg);
-    box-shadow: inset 0px -25px 50px 0px #000000;
-
-}
-#destination_4{
-    background-image: url(../images/philipp-pilz-iQRKBNKyRpo-unsplash.jpg);
-    box-shadow: inset 0px -25px 50px 0px #000000;
-
-}
-#destination_5{
-    background-image: url(../images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);
-    box-shadow: inset 0px -25px 50px 0px #000000;
-
-}
-#destination_6{
-    background-image: url(../images/wexor-tmg-L-2p8fapOA8-unsplash.jpg);
+.inset-shadow{
     box-shadow: inset 0px -25px 50px 0px #000000;
 }
 .mbbg{
@@ -221,31 +196,20 @@ input[type="number"]::-webkit-outer-spin-button{
 
 /* card slider css start */
 
-.testimonials{
+.testimonials,.testimonials2,.testimonials3{
 	perspective: 500px;
 }
-.testimonials .item{
-	transition: transform 0.4s;
+.testimonials .item,.testimonials2 .item2,.testimonials3 .item3{
+	transition: transform 1s;
 	box-shadow: 0 0 20px rgb(0,0,0);
 	user-select: none;
-}
-.testimonials .item h1{font-size: 114px; color: white;}
-.dots{display: flex; justify-content: center;align-items: center;}
-.dots label{
-	height: 5px;
-	width: 5px;
-	border-radius: 50%;
-	cursor: pointer;
-	background-color: #413B52;
-	margin: 7px;
-	transition-duration: 0.2s;
 }
 #t-1:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-4"],
 #t-3:checked ~ .testimonials label[for="t-5"],
 #t-4:checked ~ .testimonials label[for="t-1"],
 #t-5:checked ~ .testimonials label[for="t-2"]{
-	transform: translate3d(740px, 0, -150px);
+	transform: translate3d(600px, 0, -80px);
 	z-index: 2;
 }
 
@@ -254,7 +218,7 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-3:checked ~ .testimonials label[for="t-4"],
 #t-4:checked ~ .testimonials label[for="t-5"],
 #t-5:checked ~ .testimonials label[for="t-1"]{
-	transform: translate3d(330px, 0, -50px);
+	transform: translate3d(290px, 0, -40px);
 	z-index: 3;
 }
 
@@ -263,9 +227,9 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-4:checked ~ .testimonials label[for="t-3"],
 #t-5:checked ~ .testimonials label[for="t-4"],
 #t-1:checked ~ .testimonials label[for="t-5"]{
-	transform: translate3d(-300px, 0, -90px);
+	transform: translate3d(0, 0, 0);
 	z-index: 3;
-    display: none;
+    /* display: none; */
 }
 
 #t-3:checked ~ .testimonials label[for="t-1"],
@@ -273,7 +237,7 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-5:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-5"],
 #t-1:checked ~ .testimonials label[for="t-4"]{
-	transform: translate3d(-600px, 0, -180px);
+	transform: translate3d(0, 0, 0);
     display: none;
 }
 
@@ -283,6 +247,103 @@ input[type="number"]::-webkit-outer-spin-button{
 #t-4:checked ~ .testimonials label[for="t-4"],
 #t-5:checked ~ .testimonials label[for="t-4"],
 #t-5:checked ~ .testimonials label[for="t-5"]{
+	z-index: 4;
+}
+
+/* second slider */
+
+
+#t-11:checked ~ .testimonials2 label[for="t-33"],
+#t-22:checked ~ .testimonials2 label[for="t-44"],
+#t-33:checked ~ .testimonials2 label[for="t-55"],
+#t-44:checked ~ .testimonials2 label[for="t-11"],
+#t-55:checked ~ .testimonials2 label[for="t-22"]{
+	transform: translate3d(600px, 0, -80px);
+	z-index: 2;
+}
+
+#t-11:checked ~ .testimonials2 label[for="t-22"],
+#t-22:checked ~ .testimonials2 label[for="t-33"],
+#t-33:checked ~ .testimonials2 label[for="t-44"],
+#t-44:checked ~ .testimonials2 label[for="t-55"],
+#t-55:checked ~ .testimonials2 label[for="t-11"]{
+	transform: translate3d(290px, 0, -40px);
+	z-index: 3;
+}
+
+#t-22:checked ~ .testimonials2 label[for="t-11"],
+#t-33:checked ~ .testimonials2 label[for="t-22"],
+#t-44:checked ~ .testimonials2 label[for="t-33"],
+#t-55:checked ~ .testimonials2 label[for="t-44"],
+#t-11:checked ~ .testimonials2 label[for="t-55"]{
+	transform: translate3d(0, 0, 0);
+	z-index: 3;
+    /* display: none; */
+}
+
+#t-33:checked ~ .testimonials2 label[for="t-11"],
+#t-44:checked ~ .testimonials2 label[for="t-22"],
+#t-55:checked ~ .testimonials2 label[for="t-33"],
+#t-22:checked ~ .testimonials2 label[for="t-55"],
+#t-11:checked ~ .testimonials2 label[for="t-44"]{
+	transform: translate3d(0, 0, 0);
+    display: none;
+}
+
+#t-11:checked ~ .testimonials2 label[for="t-11"],
+#t-22:checked ~ .testimonials2 label[for="t-22"],
+#t-33:checked ~ .testimonials2 label[for="t-33"],
+#t-44:checked ~ .testimonials2 label[for="t-44"],
+#t-55:checked ~ .testimonials2 label[for="t-44"],
+#t-55:checked ~ .testimonials2 label[for="t-55"]{
+	z-index: 4;
+}
+
+/* third slider */
+
+#t-111:checked ~ .testimonials3 label[for="t-333"],
+#t-222:checked ~ .testimonials3 label[for="t-444"],
+#t-333:checked ~ .testimonials3 label[for="t-555"],
+#t-444:checked ~ .testimonials3 label[for="t-111"],
+#t-555:checked ~ .testimonials3 label[for="t-222"]{
+	transform: translate3d(600px, 0, -80px);
+	z-index: 2;
+}
+
+#t-111:checked ~ .testimonials3 label[for="t-222"],
+#t-222:checked ~ .testimonials3 label[for="t-333"],
+#t-333:checked ~ .testimonials3 label[for="t-444"],
+#t-444:checked ~ .testimonials3 label[for="t-555"],
+#t-555:checked ~ .testimonials3 label[for="t-111"]{
+	transform: translate3d(290px, 0, -40px);
+	z-index: 3;
+}
+
+#t-222:checked ~ .testimonials3 label[for="t-111"],
+#t-333:checked ~ .testimonials3 label[for="t-222"],
+#t-444:checked ~ .testimonials3 label[for="t-333"],
+#t-555:checked ~ .testimonials3 label[for="t-444"],
+#t-111:checked ~ .testimonials3 label[for="t-555"]{
+	transform: translate3d(0, 0, 0);
+	z-index: 3;
+    /* display: none; */
+}
+
+#t-333:checked ~ .testimonials3 label[for="t-111"],
+#t-444:checked ~ .testimonials3 label[for="t-222"],
+#t-555:checked ~ .testimonials3 label[for="t-333"],
+#t-222:checked ~ .testimonials3 label[for="t-555"],
+#t-111:checked ~ .testimonials3 label[for="t-444"]{
+	transform: translate3d(0, 0, 0);
+    display: none;
+}
+
+#t-111:checked ~ .testimonials3 label[for="t-111"],
+#t-222:checked ~ .testimonials3 label[for="t-222"],
+#t-333:checked ~ .testimonials3 label[for="t-333"],
+#t-444:checked ~ .testimonials3 label[for="t-444"],
+#t-555:checked ~ .testimonials3 label[for="t-444"],
+#t-555:checked ~ .testimonials3 label[for="t-555"]{
 	z-index: 4;
 }
 /* card slider css end */
